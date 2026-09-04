@@ -4,5 +4,30 @@
  "title": "When-Do-Frozen-VLMs-Respond-to-Image-Free-Object-Token-Edits",
  "token": "sk-TPYWIhRwY...",
  "created_at": "2026-09-04 06:58:15",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-04/d9e95c65-7d34-4875-88d7-a7be892f0a1e.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-04/d9e95c65-7d34-4875-88d7-a7be892f0a1e.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-09-04 15:36:59",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "VLM editing",
+    "counterfactual VQA",
+    "object tokens",
+    "answer-key-free protocol",
+    "remote sensing",
+    "intervention responsiveness"
+   ],
+   "field": "视觉语言模型干预与反事实推理",
+   "innovations": [
+    "无答案键编辑响应协议：编辑本身逻辑决定答案，无需后编辑人工标注",
+    "证明编辑响应需显式教学而非VQA训练的默认属性",
+    "清洁度-密度双轴刻画响应条件并验证跨架构符号一致性"
+   ],
+   "benchmarks": [
+    "iSAID",
+    "VRSBench"
+   ]
+  }
+ }
 }
