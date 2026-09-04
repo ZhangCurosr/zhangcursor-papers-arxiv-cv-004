@@ -4,5 +4,41 @@
  "title": "When-Depth-Hurts-Reliability-Aware-Geometry-Distillation-for",
  "token": "sk-vCwdEIcnG...",
  "created_at": "2026-09-04 17:23:04",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-04/7dd3e9f7-f374-4279-9a6c-32b7b65486d9.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-04/7dd3e9f7-f374-4279-9a6c-32b7b65486d9.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-09-04 18:39:38",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "RGB-D salient object detection",
+    "knowledge distillation",
+    "depth-free detection",
+    "reliability-aware fusion",
+    "geometry prior",
+    "cross-modal enhancement"
+   ],
+   "field": "显著性目标检测",
+   "innovations": [
+    "提出深度无关RGB-D SOD范式，训练时蒸馏冻结教师几何、推理时完全不使用深度",
+    "多层级几何蒸馏（值·特征·边界三级）替代单通道伪深度图",
+    "可靠性感知融合机制，通过像素级一致性估计器动态控制几何注入"
+   ],
+   "benchmarks": [
+    "NJU2K",
+    "NLPR",
+    "DUT-RGBD",
+    "ReDWeb-S",
+    "SIP",
+    "SSD",
+    "STERE",
+    "COME-E",
+    "COME-H",
+    "DUTS-TE",
+    "ECSSD",
+    "HKU-IS",
+    "PASCAL-S"
+   ]
+  }
+ }
 }

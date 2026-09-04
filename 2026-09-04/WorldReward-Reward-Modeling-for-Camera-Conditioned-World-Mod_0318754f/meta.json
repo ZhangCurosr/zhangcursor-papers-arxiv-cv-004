@@ -4,5 +4,32 @@
  "title": "WorldReward-Reward-Modeling-for-Camera-Conditioned-World-Mod",
  "token": "sk-9ieZJEGxv...",
  "created_at": "2026-09-04 17:22:15",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-04/9afd506e-d72a-4e73-a961-9ac45dfda3e6.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-04/9afd506e-d72a-4e73-a961-9ac45dfda3e6.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-09-04 18:39:42",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "reward modeling",
+    "world model",
+    "camera-conditioned video generation",
+    "VLM as judge",
+    "preference learning",
+    "reinforcement learning post-training"
+   ],
+   "field": "相机条件化世界模型的奖励建模与 RL 后训练",
+   "innovations": [
+    "首个统一评估动作一致性与视觉质量的VLM成对偏好奖励模型，通过chunk-level推理与投票聚合实现",
+    "推理增强型偏好数据集构造流水线：前沿VLM蒸馏+多轮Agent质检+人工校准",
+    "WorldReward-Bench人工基准及在HY-WorldPlay 1.5上同步提升动作与视觉质量的RL后训练实证"
+   ],
+   "benchmarks": [
+    "WorldReward-Bench",
+    "WorldPlay split",
+    "HPSv3",
+    "DepthAnything3"
+   ]
+  }
+ }
 }

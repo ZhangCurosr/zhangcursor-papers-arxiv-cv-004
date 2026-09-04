@@ -4,5 +4,31 @@
  "title": "Zero-Shot-Novel-Depth-Synthesis-Using-3D-Foundation-Models-S",
  "token": "sk-Jd4ujJMnj...",
  "created_at": "2026-09-04 17:22:46",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-04/51860c45-8202-40ec-b033-2ad377964e71.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-04/51860c45-8202-40ec-b033-2ad377964e71.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-09-04 18:39:45",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "novel-view depth synthesis",
+    "3D foundation models",
+    "latent diffusion",
+    "occlusion reasoning",
+    "zero-shot 3D reconstruction"
+   ],
+   "field": "3D 视觉与场景理解",
+   "innovations": [
+    "在 3DFM patch token 高维空间中进行潜变量扩散实现零样本深度合成",
+    "证明 3DFM 隐式编码遮挡区域几何并通过线性探针验证",
+    "提出维度依赖的 timestep shift 策略适配高维 diffusion 训练"
+   ],
+   "benchmarks": [
+    "DTU",
+    "7-Scenes",
+    "NRGBD",
+    "MegaDepth"
+   ]
+  }
+ }
 }

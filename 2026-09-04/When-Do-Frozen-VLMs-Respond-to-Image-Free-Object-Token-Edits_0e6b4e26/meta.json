@@ -4,5 +4,10 @@
  "title": "When-Do-Frozen-VLMs-Respond-to-Image-Free-Object-Token-Edits",
  "token": "sk-TPYWIhRwY...",
  "created_at": "2026-09-04 17:22:38",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-04/d9e95c65-7d34-4875-88d7-a7be892f0a1e.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-04/d9e95c65-7d34-4875-88d7-a7be892f0a1e.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-09-04 18:39:44",
+  "chunks": 1
+ }
 }
