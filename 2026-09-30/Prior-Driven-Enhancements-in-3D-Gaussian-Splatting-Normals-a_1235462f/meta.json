@@ -4,5 +4,31 @@
  "title": "Prior-Driven-Enhancements-in-3D-Gaussian-Splatting-Normals-a",
  "token": "sk-1W4pDEr0k...",
  "created_at": "2026-09-30 18:50:58",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/a1c87edd-3b17-497d-bcb1-edd1b1e05ea8.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/a1c87edd-3b17-497d-bcb1-edd1b1e05ea8.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 17:36:15",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "3D Gaussian Splatting",
+    "Normal Regularization",
+    "Depth Prior",
+    "Structure from Motion",
+    "Neural Rendering",
+    "Geometric Reconstruction"
+   ],
+   "field": "3D 场景重建与神经渲染",
+   "innovations": [
+    "提出法线-深度双先验正则化策略，约束3D高斯协方差与表面几何对齐",
+    "首次系统性验证多SfM管线（COLMAP/SP-SG/LoFTR）与先验正则化的交互效果",
+    "在户外街景、高反射地下停车场等挑战性真实场景中验证方法鲁棒性"
+   ],
+   "benchmarks": [
+    "Tanks & Temples (Train, Horse)",
+    "自定义地下停车场数据集",
+    "自定义街景数据集"
+   ]
+  }
+ }
 }

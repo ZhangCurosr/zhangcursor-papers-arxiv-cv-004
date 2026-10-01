@@ -4,5 +4,31 @@
  "title": "PartiCam-Camera-Controlled-Video-Generation-with-Reward-Guid",
  "token": "sk-2d8Cyf5aG...",
  "created_at": "2026-10-01 08:31:44",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/9f8ec542-2f26-4f6f-b58d-aa4f60160cc3.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/9f8ec542-2f26-4f6f-b58d-aa4f60160cc3.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 17:37:54",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "camera-controlled video generation",
+    "reward-guided sampling",
+    "sequential monte carlo",
+    "particle filtering",
+    "training-free diffusion",
+    "novel view synthesis",
+    "inference-time alignment"
+   ],
+   "field": "可控视频生成",
+   "innovations": [
+    "提出全局SMC种群探索与局部PF-Restart奖励引导重采样的两级无训练框架，同时解决轨迹漂移与多样性坍缩问题",
+    "将不可微相机奖励（VGGT轨迹误差）直接集成进扩散采样过程，无需梯度反向传播",
+    "证明美学奖励用于全局多样性维持、相机奖励用于局部几何修正的分层奖励策略的有效性"
+   ],
+   "benchmarks": [
+    "Tanks and Temples static NVS",
+    "NVS-Solver dynamic monocular video NVS"
+   ]
+  }
+ }
 }

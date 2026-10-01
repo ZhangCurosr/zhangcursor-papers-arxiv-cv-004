@@ -4,5 +4,30 @@
  "title": "Principled-MAP-estimation-for-inverse-problems-bridging-the",
  "token": "sk-Tq65tdoLK...",
  "created_at": "2026-09-30 18:50:14",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/fbc52e9f-0cf2-41e6-b51a-8d943fe6e079.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/fbc52e9f-0cf2-41e6-b51a-8d943fe6e079.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 17:36:01",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "逆问题",
+    "MAP估计",
+    "去噪器嵌入优化",
+    "退火调度",
+    "流匹配",
+    "收敛性保证"
+   ],
+   "field": "成像逆问题与生成模型",
+   "innovations": [
+    "将MMSE Averaging从去噪推广到一般反问题的GAMMA框架",
+    "在对数凹先验下证明退火去噪器方法的MAP收敛性",
+    "Renoising机制的理论化集成与性能提升"
+   ],
+   "benchmarks": [
+    "CelebA-128",
+    "AFHQ-Cat-256"
+   ]
+  }
+ }
 }

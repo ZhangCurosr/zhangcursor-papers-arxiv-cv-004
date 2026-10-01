@@ -4,5 +4,35 @@
  "title": "PLANETARY-FEATURE-FIELDS-ARE-SCALABLE-EARTH-REPRESENTATIONS",
  "token": "sk-aknYEUs8O...",
  "created_at": "2026-09-30 08:04:56",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/522a6c60-77c5-469f-8079-8f4cd7adb03d.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/522a6c60-77c5-469f-8079-8f4cd7adb03d.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 17:34:12",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "地球观测",
+    "神经场",
+    "特征压缩",
+    "多模态融合",
+    "持续学习",
+    "遥感表征"
+   ],
+   "field": "遥感机器学习",
+   "innovations": [
+    "提出PFFs：通过共享因式分解特征体实现多源EO数据的高压缩比联合表示",
+    "持续学习新时间步仅需0.19%参数增量且保持旧输出比特精确",
+    "在约1800x压缩比下下游任务性能保留约90%以上，检索速度比API/云存储快10倍以上"
+   ],
+   "benchmarks": [
+    "PFFBENCH",
+    "PASTIS",
+    "SwissCrop25",
+    "FTW",
+    "EuroMineNet",
+    "BigEarthNet-v2",
+    "So2Sat-LCZ42"
+   ]
+  }
+ }
 }

@@ -4,5 +4,33 @@
  "title": "Pow3R-SLAM-Real-Time-RGB-D-SLAM-with-3D-Reconstruction-Prior",
  "token": "sk-9ieZJEGxv...",
  "created_at": "2026-09-30 18:50:22",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/72e416fb-e88a-4bde-bce0-b783b8a6dd1e.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/72e416fb-e88a-4bde-bce0-b783b8a6dd1e.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 17:35:34",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "RGB-D SLAM",
+    "two-view reconstruction prior",
+    "depth conditioning",
+    "real-time dense mapping",
+    "neural SLAM",
+    "metric scale recovery",
+    "hybrid ICP tracking"
+   ],
+   "field": "实时RGB-D SLAM与稠密重建",
+   "innovations": [
+    "首次将传感器深度作为两视图点图网络的条件先验，并在条件、尺度、锚点三处引入",
+    "从Pow3R编码器与置信度头重建循环检索与逐对应权重，结合仅地图关键帧提升建图密度",
+    "提出混合网络/ICP前端，以2.1倍速度提升保持甚至改善跟踪与重建精度"
+   ],
+   "benchmarks": [
+    "TUM RGB-D",
+    "7-Scenes",
+    "Replica",
+    "ETH3D-SLAM"
+   ]
+  }
+ }
 }

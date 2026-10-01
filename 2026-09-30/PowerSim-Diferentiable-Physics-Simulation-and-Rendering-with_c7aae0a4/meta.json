@@ -4,5 +4,30 @@
  "title": "PowerSim-Diferentiable-Physics-Simulation-and-Rendering-with",
  "token": "sk-331OfnzjD...",
  "created_at": "2026-09-30 08:04:11",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/ef7b70f3-9ecf-4769-b531-d4cfa6734e7c.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/ef7b70f3-9ecf-4769-b531-d4cfa6734e7c.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 17:35:52",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "differentiable physics simulation",
+    "power diagrams",
+    "material point method",
+    "3D scene representation",
+    "material estimation",
+    "ray tracing"
+   ],
+   "field": "可微物理仿真与3D场景重建",
+   "innovations": [
+    "将PowerFoam有界Power图胞元与MPM耦合，构建端到端可微仿真-渲染管道",
+    "提出渲染加权投票原始元选择机制，无需优化即可从多视角掩码选取仿真对象",
+    "从单目变形视频微分反演空间变化材料场（杨氏模量与泊松比）"
+   ],
+   "benchmarks": [
+    "Vid2Sim",
+    "GSO"
+   ]
+  }
+ }
 }

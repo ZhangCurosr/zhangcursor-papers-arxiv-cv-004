@@ -4,5 +4,31 @@
  "title": "Principled-MAP-estimation-for-inverse-problems-bridging-the",
  "token": "sk-Tq65tdoLK...",
  "created_at": "2026-09-30 08:02:53",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/5daeb591-9c4a-4c5a-b77d-9893f738be79.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/5daeb591-9c4a-4c5a-b77d-9893f738be79.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 17:36:19",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "MAP 估计",
+    "逆问题",
+    "MMSE 降噪器",
+    "annealed RED",
+    "收敛性",
+    "流匹配",
+    "图像复原"
+   ],
+   "field": "生成模型与逆问题求解",
+   "innovations": [
+    "提出 GAMMA 算法，在递减噪声级下实现通用逆问题的可证明 MAP 估计",
+    "建立 log-concave 先验下 GAMMA 及重加噪变体的收敛理论，引导至最近 MAP 解",
+    "实验验证 GAMMA 在收敛速度和重建质量上显著优于 Approx-PGD 并与 PnP-Flow 竞争"
+   ],
+   "benchmarks": [
+    "CelebA-128",
+    "AFHQ-Cat-256"
+   ]
+  }
+ }
 }

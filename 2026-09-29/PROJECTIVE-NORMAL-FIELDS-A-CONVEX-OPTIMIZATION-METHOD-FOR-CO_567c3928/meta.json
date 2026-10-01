@@ -4,5 +4,30 @@
  "title": "PROJECTIVE-NORMAL-FIELDS-A-CONVEX-OPTIMIZATION-METHOD-FOR-CO",
  "token": "sk-ZWbnnHdTr...",
  "created_at": "2026-09-29 19:09:55",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/8044ce5e-53c8-4016-9de8-72fa1159ca73.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/8044ce5e-53c8-4016-9de8-72fa1159ca73.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 17:32:25",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "无符号距离场",
+    "凸优化",
+    "法向量估计",
+    "点云重建",
+    "射影法向量场",
+    "热扩散"
+   ],
+   "field": "几何处理与隐式场重建",
+   "innovations": [
+    "提出射影法向量场凸优化框架，无方向性地联合估计双向法向轴与置信度",
+    "设计强凸目标保证唯一全局解，软张量保留多向偏好信息",
+    "置信度引导的热扩散与泊松积分两阶段UDF构建流水线"
+   ],
+   "benchmarks": [
+    "60-model benchmark with noise/outlier corruptions",
+    "Non-manifold synthetic models (cross-junction, multi-junction, Henneberg surface)"
+   ]
+  }
+ }
 }

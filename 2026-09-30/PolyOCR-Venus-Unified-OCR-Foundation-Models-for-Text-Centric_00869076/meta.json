@@ -4,5 +4,35 @@
  "title": "PolyOCR-Venus-Unified-OCR-Foundation-Models-for-Text-Centric",
  "token": "sk-zw57yHIgm...",
  "created_at": "2026-09-30 08:11:40",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/e3944ab8-8d3b-4559-a068-d73a757238e6.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/e3944ab8-8d3b-4559-a068-d73a757238e6.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 17:35:18",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "OCR",
+    "Unified Foundation Model",
+    "GRPO",
+    "On-Policy Distillation",
+    "CGPO",
+    "Document Parsing",
+    "Multilingual OCR",
+    "Benchmark"
+   ],
+   "field": "多模态视觉-语言模型与OCR",
+   "innovations": [
+    "提出PolyOCR统一OCR基础模型家族（2B/9B）覆盖六维OCR能力",
+    "设计能力引导的策略优化CGPO，动态路由GRPO与on-policy蒸馏权重",
+    "构建大规模OCR数据引擎并推出OCRBench v2.1修订版评测协议"
+   ],
+   "benchmarks": [
+    "OCRBench v2.1",
+    "CC-OCR",
+    "OmniDocBench v1.6",
+    "MDPBench",
+    "In-house KIE Benchmark"
+   ]
+  }
+ }
 }

@@ -4,5 +4,33 @@
  "title": "RRG-SLAM-Real-time-Reflection-aware-Gaussian-SLAM-for-Indoor",
  "token": "sk-dL4eG1TgK...",
  "created_at": "2026-09-29 08:04:48",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/2e749473-10bc-4e93-9c3c-da8b2a1aa18d.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/2e749473-10bc-4e93-9c3c-da8b2a1aa18d.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 17:32:27",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "RGB-D SLAM",
+    "3D Gaussian Splatting",
+    "Reflection Modeling",
+    "TSDF",
+    "Real-time Reconstruction",
+    "Indoor Scene"
+   ],
+   "field": "实时三维重建与SLAM",
+   "innovations": [
+    "TSDF-反射高斯混合表示，显式分离漫反射与平面反射",
+    "三线渲染管线与平面ID条件光栅化实现高效反射合成",
+    "反射感知跟踪通过渲染掩码排除反射区特征"
+   ],
+   "benchmarks": [
+    "RIRD-Syn",
+    "RIRD-Real",
+    "ScanNet++",
+    "Replica",
+    "TUM-RGBD"
+   ]
+  }
+ }
 }

@@ -4,5 +4,32 @@
  "title": "NHO-A-NEURAL-HAMILTONIAN-OPERATOR-FORANCHOR-BASED-REGION-LOC",
  "token": "sk-SRpYy0JAC...",
  "created_at": "2026-09-30 08:13:19",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/811b0146-f995-4025-9de4-d710df097ad1.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/811b0146-f995-4025-9de4-d710df097ad1.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 17:32:56",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "partial-to-full shape correspondence",
+    "Hamiltonian operator",
+    "region localization",
+    "spectral shape analysis",
+    "functional maps",
+    "reciprocal refinement"
+   ],
+   "field": "非刚性部分-全形匹配与谱几何学习",
+   "innovations": [
+    "将 Hamilton 势参数化为内蕴神经场并从稀疏锚点联合学习局部谱表示",
+    "提出算子估计与对应恢复的双向迭代精炼机制以耦合区域定位与密集对应",
+    "在同一框架下同时输出区域定位与密集对应，并展示对均匀缩放与旋转的内在鲁棒性"
+   ],
+   "benchmarks": [
+    "CUTS'24",
+    "PFAUST-M",
+    "PFAUST-H",
+    "PFARM"
+   ]
+  }
+ }
 }

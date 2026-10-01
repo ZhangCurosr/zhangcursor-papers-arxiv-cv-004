@@ -4,5 +4,34 @@
  "title": "PLANETARY-FEATURE-FIELDS-ARE-SCALABLE-EARTH-REPRESENTATIONS",
  "token": "sk-aknYEUs8O...",
  "created_at": "2026-09-30 18:51:08",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/522a6c60-77c5-469f-8079-8f4cd7adb03d.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/522a6c60-77c5-469f-8079-8f4cd7adb03d.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 17:34:19",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "Planetary Feature Fields",
+    "Earth Representation",
+    "Neural Fields",
+    "Compressed EO Data",
+    "Continual Learning"
+   ],
+   "field": "遥感地球表征学习",
+   "innovations": [
+    "提出 PFFs：共享因式分解特征体积的显式-隐式混合神经场，实现多产品联合高压缩比表示",
+    "比特精确持续学习机制：追加时间切片/解码器并冻结历史参数，避免灾难性遗忘",
+    "端到端特征检索延迟降低一个数量级，相比 Earth Engine API 快 17.9×"
+   ],
+   "benchmarks": [
+    "PFFBench",
+    "PASTIS",
+    "SwissCrop25",
+    "FTW",
+    "EuroMineNet",
+    "BigEarthNet-v2",
+    "So2Sat-LCZ42"
+   ]
+  }
+ }
 }

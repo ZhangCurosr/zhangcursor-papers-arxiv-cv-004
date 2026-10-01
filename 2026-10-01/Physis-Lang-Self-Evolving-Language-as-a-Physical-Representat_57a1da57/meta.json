@@ -4,5 +4,33 @@
  "title": "Physis-Lang-Self-Evolving-Language-as-a-Physical-Representat",
  "token": "sk-EqwJR1nOB...",
  "created_at": "2026-10-01 08:28:46",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/5a803be2-8079-43c7-8b13-e220685cc79c.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/5a803be2-8079-43c7-8b13-e220685cc79c.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 17:38:39",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "video world model",
+    "physical reasoning",
+    "self-evolving agent",
+    "physics caption",
+    "language-guided retrieval",
+    "video generation"
+   ],
+   "field": "视频生成与物理推理",
+   "innovations": [
+    "将语言作为贯穿数据-训练-推理的统一物理表示",
+    "基于断言级 Precision/Recall 的自进化 prompt 优化循环",
+    "用物理领域标签进行语言引导的数据检索与负向物理提示"
+   ],
+   "benchmarks": [
+    "PhysCapBench",
+    "VideoPhy-2",
+    "PhyGenBench",
+    "PhyGround",
+    "Physics-IQ Verified"
+   ]
+  }
+ }
 }

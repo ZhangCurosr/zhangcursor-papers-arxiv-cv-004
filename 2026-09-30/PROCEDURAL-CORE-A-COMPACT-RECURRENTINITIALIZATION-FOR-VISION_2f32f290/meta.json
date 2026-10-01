@@ -4,5 +4,36 @@
  "title": "PROCEDURAL-CORE-A-COMPACT-RECURRENTINITIALIZATION-FOR-VISION",
  "token": "sk-WcZzSI744...",
  "created_at": "2026-09-30 18:50:10",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/2e7e1b60-49b4-473b-8c92-68d931b68345.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/2e7e1b60-49b4-473b-8c92-68d931b68345.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 17:34:52",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "Transformer 初始化",
+    "Procedural pretraining",
+    "Recurrence / weight tying",
+    "Vision Transformer",
+    "Self-supervised learning",
+    "Inductive bias"
+   ],
+   "field": "Transformer 初始化与表征学习",
+   "innovations": [
+    "将程序化数据预训练的通用结构压缩为可复用的 compact recurrent core，一次学习展开到任意大小 Transformer",
+    "揭示 attention value/output 通路是抑制高范数 token、提升密集预测任务表征的关键载体",
+    "以光谱平坦度与 rank-truncation 敏感度量化初始化可迁移性"
+   ],
+   "benchmarks": [
+    "ImageNet-1K",
+    "CIFAR-100",
+    "ADE20K",
+    "ImageNet-S",
+    "VOC07",
+    "NYUV2",
+    "FINEWEB-EDU",
+    "CODEPARROT"
+   ]
+  }
+ }
 }

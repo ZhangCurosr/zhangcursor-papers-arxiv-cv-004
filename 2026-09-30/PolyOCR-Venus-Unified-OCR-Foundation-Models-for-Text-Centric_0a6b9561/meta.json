@@ -4,5 +4,33 @@
  "title": "PolyOCR-Venus-Unified-OCR-Foundation-Models-for-Text-Centric",
  "token": "sk-zw57yHIgm...",
  "created_at": "2026-09-30 18:50:06",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/e3944ab8-8d3b-4559-a068-d73a757238e6.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/e3944ab8-8d3b-4559-a068-d73a757238e6.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 17:35:14",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "Unified OCR",
+    "Foundation Model",
+    "Competence-Guided Policy Optimization",
+    "Multimodal Large Language Model",
+    "Document Parsing",
+    "OCRBench"
+   ],
+   "field": "OCR with Vision-Language Models",
+   "innovations": [
+    "Proposes PolyOCR, a unified OCR foundation model family integrating recognition, localization, parsing, extraction, understanding and reasoning in one generative framework.",
+    "Introduces Competence-Guided Policy Optimization (CGPO) that dynamically routes on-policy distillation based on calibrated teacher quality and teacher-student competence gap.",
+    "Builds a large-scale OCR data engine with cross-model verification and targeted synthesis to cover underrepresented capabilities."
+   ],
+   "benchmarks": [
+    "OCRBench v2.1",
+    "CC-OCR",
+    "OmniDocBench v1.6",
+    "MDPBench",
+    "In-house KIE Benchmark"
+   ]
+  }
+ }
 }

@@ -4,5 +4,33 @@
  "title": "NHO-A-NEURAL-HAMILTONIAN-OPERATOR-FORANCHOR-BASED-REGION-LOC",
  "token": "sk-SRpYy0JAC...",
  "created_at": "2026-09-30 18:53:12",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/811b0146-f995-4025-9de4-d710df097ad1.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/811b0146-f995-4025-9de4-d710df097ad1.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 17:33:48",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "partial-to-full shape correspondence",
+    "Hamiltonian operator",
+    "neural spectral field",
+    "region localization",
+    "functional maps",
+    "reciprocal refinement",
+    "intrinsic geometry"
+   ],
+   "field": "几何形状分析与匹配",
+   "innovations": [
+    "提出内蕴神经 Hamiltonian 场，以 LBO 本征函数为位置编码将势场参数化为可微神经映射，联合锚点与谱/几何约束学习局部谱表示",
+    "设计锚损失+面积先验+拓扑正则+相对谱对齐的四项联合优化，实现从稀疏锚点同时支持区域定位与密集对应",
+    "提出算子-对应双向精炼机制，用本征能量生成支持并过滤可信对应反哺势场更新，提高耦合任务的一致性与尺度/旋转鲁棒性"
+   ],
+   "benchmarks": [
+    "CUTS'24",
+    "PFAUST-M",
+    "PFAUST-H",
+    "PFARM"
+   ]
+  }
+ }
 }

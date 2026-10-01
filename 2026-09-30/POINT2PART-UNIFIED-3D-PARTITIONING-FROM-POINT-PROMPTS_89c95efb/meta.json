@@ -4,5 +4,30 @@
  "title": "POINT2PART-UNIFIED-3D-PARTITIONING-FROM-POINT-PROMPTS",
  "token": "sk-WJrSFDicB...",
  "created_at": "2026-09-30 18:49:41",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/0dd2fa7c-7672-4bf6-ba40-45a849b36934.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/0dd2fa7c-7672-4bf6-ba40-45a849b36934.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 17:34:39",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "3D part decomposition",
+    "point prompts",
+    "exclusive partition",
+    "joint partitioning",
+    "3D generation",
+    "promptable segmentation"
+   ],
+   "field": "3D 形状理解与生成",
+   "innovations": [
+    "将部件分解形式化为全局联合划分（exclusive & exhaustive），通过 argmax 天然保证互斥且完备",
+    "提出 Prompt Encoder + Part Decoder 架构，在共享 shape latent 空间内一次性联合解码所有部件",
+    "统一支持图像/网格输入下的部件生成与表面分割三项任务，穿透率降低一个数量级"
+   ],
+   "benchmarks": [
+    "PartObjaverse-Tiny",
+    "PartNeXt"
+   ]
+  }
+ }
 }

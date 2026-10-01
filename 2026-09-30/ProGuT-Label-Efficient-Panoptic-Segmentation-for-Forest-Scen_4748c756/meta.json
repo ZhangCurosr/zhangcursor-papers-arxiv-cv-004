@@ -4,5 +4,34 @@
  "title": "ProGuT-Label-Efficient-Panoptic-Segmentation-for-Forest-Scen",
  "token": "sk-8zjLxCqN4...",
  "created_at": "2026-09-30 08:06:57",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/abd27ae2-102f-425a-a665-051d02c819be.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/abd27ae2-102f-425a-a665-051d02c819be.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 17:36:41",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "Panoptic Segmentation",
+    "Unsupervised Segmentation",
+    "Forest Perception",
+    "Geometric Prior",
+    "CLIP",
+    "SAM2",
+    "Instance Segmentation",
+    "Pseudo-label"
+   ],
+   "field": "无监督全景分割",
+   "innovations": [
+    "多尺度几何证伪先验（结构张量）实现树干实例分离，替代显著性/深度依赖方法",
+    "CLIP patch 聚类 + 一次性类别映射生成无掩码全景伪标签的数据引擎",
+    "几何与外观双通道 SAM2 提示分割解决密集重复结构的实例分离问题"
+   ],
+   "benchmarks": [
+    "Our-forest",
+    "Finnwoodlands",
+    "Freiburg Forest",
+    "CanaTree100"
+   ]
+  }
+ }
 }
