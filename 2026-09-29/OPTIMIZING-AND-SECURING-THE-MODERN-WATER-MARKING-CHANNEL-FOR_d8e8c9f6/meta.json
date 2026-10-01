@@ -4,5 +4,10 @@
  "title": "OPTIMIZING-AND-SECURING-THE-MODERN-WATER-MARKING-CHANNEL-FOR",
  "token": "sk-gpAzKtmRM...",
  "created_at": "2026-09-29 07:54:20",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/051d0161-9a83-40cd-b67f-3a9fef35a172.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/051d0161-9a83-40cd-b67f-3a9fef35a172.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:52:04",
+  "chunks": 1
+ }
 }

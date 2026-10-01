@@ -4,5 +4,35 @@
  "title": "PSM-DATASET-DISTILLATION-BASED-ON-PRECISE-STATISTICAL-MATCHI",
  "token": "sk-wqji9kxkl...",
  "created_at": "2026-09-29 19:08:55",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/2515a7d7-dc90-4601-8e47-fcc2861464a1.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/2515a7d7-dc90-4601-8e47-fcc2861464a1.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:54:36",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "dataset distillation",
+    "decoupled distillation",
+    "BN statistics matching",
+    "difficulty-aware distillation",
+    "batch normalization",
+    "SRe2L",
+    "FADRM"
+   ],
+   "field": "数据集压缩与蒸馏",
+   "innovations": [
+    "提出 GPS 在全局 BN 统计空间内度量样本难度并完成难度分组",
+    "提出 SUA 冻结教师参数仅更新 BN 统计以实现难度自适应监督",
+    "提出 ISS 以难度对齐的真实样本初始化蒸馏数据"
+   ],
+   "benchmarks": [
+    "CIFAR-10",
+    "CIFAR-100",
+    "Tiny-ImageNet",
+    "ImageNette",
+    "ImageWoof",
+    "ImageNet-1K"
+   ]
+  }
+ }
 }

@@ -4,5 +4,31 @@
  "title": "QUANTILE-HEAD-FOR-VISION-LANGUAGE-ACTION-MODELS",
  "token": "sk-YployDpk7...",
  "created_at": "2026-09-29 19:09:44",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/74784288-36a0-4639-96bd-659c0530411d.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/74784288-36a0-4639-96bd-659c0530411d.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:55:53",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "VLA",
+    "quantile head",
+    "flow matching",
+    "pinball loss",
+    "robot control",
+    "distributional action prediction"
+   ],
+   "field": "具身智能/视觉-语言-动作模型",
+   "innovations": [
+    "统一回归与流匹配目标并推导分位数监督（Theorem 1）",
+    "提出 Quantile Head：单次前向输出有序边缘分位数（中位数+正间隙）",
+    "证明辅助分位数监督降低中位数更新方差（Theorem 2）"
+   ],
+   "benchmarks": [
+    "LIBERO",
+    "LIBERO-Plus",
+    "LIBERO-Pro"
+   ]
+  }
+ }
 }

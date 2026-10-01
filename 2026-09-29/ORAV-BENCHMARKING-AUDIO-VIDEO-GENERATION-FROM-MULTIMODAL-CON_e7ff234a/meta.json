@@ -4,5 +4,30 @@
  "title": "ORAV-BENCHMARKING-AUDIO-VIDEO-GENERATION-FROM-MULTIMODAL-CON",
  "token": "sk-buGER5YIq...",
  "created_at": "2026-09-29 19:07:08",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/e8fecc4f-5d0e-487e-910c-888eb53b4098.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/e8fecc4f-5d0e-487e-910c-888eb53b4098.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:51:55",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "audio-video generation",
+    "multimodal benchmark",
+    "reference-conditioned generation",
+    "pairwise evaluation",
+    "compositional controllability",
+    "reference substitution"
+   ],
+   "field": "多模态生成评测与可控合成",
+   "innovations": [
+    "提出语义角色合约 c_j=(r,s,b,P,N) 将多参考组合可控性形式化",
+    "参考感知配对评估协议在留外人评上达 86.08% 有效一致性",
+    "诊断矩阵分离渲染质量/源亲和/任务达标并揭示参考替换为普遍失败"
+   ],
+   "benchmarks": [
+    "ORAV Bench (380 instances, 30 composition signatures, 9 semantic roles)",
+    "VBench / T2AV-Compass / LongAV-Compass / MSAVBench / MultiRef-Compass (对比基线)"
+   ]
+  }
+ }
 }

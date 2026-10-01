@@ -4,5 +4,31 @@
  "title": "Physics-Guided-Spectral-Distillation-for-Underwater-Image-En",
  "token": "sk-6g8ixta3t...",
  "created_at": "2026-09-29 08:07:27",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/b86004c6-46b1-4932-be86-4c0efbc9022e.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/b86004c6-46b1-4932-be86-4c0efbc9022e.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:54:40",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "水下图像增强",
+    "知识蒸馏",
+    "物理引导学习",
+    "谱学习",
+    "实时部署"
+   ],
+   "field": "水下计算机视觉",
+   "innovations": [
+    "物理引导的退化感知谱蒸馏框架",
+    "GT引导的可靠性门控机制",
+    "零推理开销的多级Haar输出级蒸馏"
+   ],
+   "benchmarks": [
+    "UIEB",
+    "LSUI",
+    "EUVP",
+    "UDD"
+   ]
+  }
+ }
 }

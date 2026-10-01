@@ -4,5 +4,29 @@
  "title": "PACER-PROGRESSIVE-AVAILABILITY-CONDITIONEDEVIDENCE-ROUTING-F",
  "token": "sk-57bzKRZBk...",
  "created_at": "2026-09-29 19:07:38",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/53878819-f006-46a1-b6e1-cb5f2a47a873.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/53878819-f006-46a1-b6e1-cb5f2a47a873.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:52:38",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "radiology report generation",
+    "incomplete multimodal",
+    "evidence routing",
+    "availability-conditioned",
+    "structured generation"
+   ],
+   "field": "医学视觉-语言生成",
+   "innovations": [
+    "保终端特征的逐patch深度路由增强视觉表征",
+    "可用性条件化低秩前缀校准适配共享生成器",
+    "极性结构化临床承诺引导自回归报告生成"
+   ],
+   "benchmarks": [
+    "MIMIC-RG4",
+    "MIMIC-CXR"
+   ]
+  }
+ }
 }

@@ -4,5 +4,30 @@
  "title": "Privacy-Preserving-Full-Body-Meshing-from-mmWave-Radar-via-M",
  "token": "sk-o7hgvdkWW...",
  "created_at": "2026-09-29 07:54:18",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/de662b32-c921-493d-83cf-334435ce1441.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/de662b32-c921-493d-83cf-334435ce1441.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:55:38",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "毫米波雷达",
+    "隐私保护感知",
+    "跨模态蒸馏",
+    "CVAE不确定性",
+    "网格基础模型",
+    "全身体网格重建"
+   ],
+   "field": "低资源机器翻译",
+   "innovations": [
+    "用SAM 3D Body零样本教师为稀疏商用雷达生成带质量门控的伪网格真值",
+    "StudentPoseFormer通过CVAE多假设头输出带每关节方差的诚实不确定性",
+    "因果消融证明Doppler/累积/速度损失的信息增益并揭示多样性是缩放绑定变量"
+   ],
+   "benchmarks": [
+    "MM-Fi cross-subject S08-S10",
+    "自建同步雷达+RGB-D block-level held-out"
+   ]
+  }
+ }
 }

@@ -4,5 +4,30 @@
  "title": "PROXY2WORLD-LEARNING-TO-GENERATE-WORLDSFROM-LIGHTWEIGHT-PROX",
  "token": "sk-vCwdEIcnG...",
  "created_at": "2026-09-29 08:02:00",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/194b7d51-238f-4bca-8212-55dedb86a8f4.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/194b7d51-238f-4bca-8212-55dedb86a8f4.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:54:05",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "video generation",
+    "world model",
+    "proxy-based control",
+    "flow matching",
+    "RGBD generation",
+    "camera control",
+    "geometry-conditioned synthesis"
+   ],
+   "field": "视频生成与可控世界模型",
+   "innovations": [
+    "从普通RGBD视频学习代理控制无需配对proxy-video数据",
+    "跨模态流匹配联合训练深度条件RGB与联合RGBD生成",
+    "代理-相机混合去噪通过两阶段采样连续权衡结构遵从与视觉精炼"
+   ],
+   "benchmarks": [
+    "ProxyBench"
+   ]
+  }
+ }
 }

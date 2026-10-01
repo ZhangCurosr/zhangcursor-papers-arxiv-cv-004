@@ -4,5 +4,29 @@
  "title": "Preference-Guided-Adaptation-for-Open-Vocabulary-Semantic-Se",
  "token": "sk-jqdHJ0gJC...",
  "created_at": "2026-09-29 08:08:55",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/beda5c0a-3d5b-4791-8d6c-c2596d8135f6.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/beda5c0a-3d5b-4791-8d6c-c2596d8135f6.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:55:11",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "open-vocabulary semantic segmentation",
+    "preference optimization",
+    "DPO",
+    "domain adaptation",
+    "prompt disagreement",
+    "zero-shot segmentation"
+   ],
+   "field": "开放词汇语义分割",
+   "innovations": [
+    "将prompt分歧重新定位为无需像素标注的偏好监督源",
+    "提出Region-Localized Preference Optimization（RLPO），在区域级实现class-balanced Bradley-Terry偏好优化",
+    "引入一致性正则化防止区域外预测漂移，支撑流式单步高效适配"
+   ],
+   "benchmarks": [
+    "MESS benchmark"
+   ]
+  }
+ }
 }

@@ -4,5 +4,33 @@
  "title": "RESIGHT-SMC-TWO-STAGE-POWER-SAMPLING-VIA-ISLAND-SMC-WITH-VIS",
  "token": "sk-Dw4PCoiSK...",
  "created_at": "2026-09-29 07:54:13",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/8a437b36-2698-4c93-bf1a-f097885b0136.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/8a437b36-2698-4c93-bf1a-f097885b0136.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:57:40",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "Power Sampling",
+    "Island SMC",
+    "Visual Scouts",
+    "LVLM Test-time Scaling",
+    "Answer Marginal Sharpening",
+    "Training-free Inference"
+   ],
+   "field": "多模态大模型测试时推理与采样",
+   "innovations": [
+    "将序列幂采样迁移至LVLM并提出两阶段序列-答案幂框架",
+    "岛屿隔离SMC结合精确重要性修正防止谱系坍缩",
+    "前缀条件视觉侦察员以无偏提议变化提升多模态探索多样性"
+   ],
+   "benchmarks": [
+    "MathVista",
+    "LogicVista",
+    "MMStar-R",
+    "MMStar-P",
+    "RealWorldQA"
+   ]
+  }
+ }
 }

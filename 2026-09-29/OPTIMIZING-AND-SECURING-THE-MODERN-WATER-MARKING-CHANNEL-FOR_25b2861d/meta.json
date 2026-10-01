@@ -4,5 +4,33 @@
  "title": "OPTIMIZING-AND-SECURING-THE-MODERN-WATER-MARKING-CHANNEL-FOR",
  "token": "sk-gpAzKtmRM...",
  "created_at": "2026-09-29 19:08:11",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/051d0161-9a83-40cd-b67f-3a9fef35a172.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/051d0161-9a83-40cd-b67f-3a9fef35a172.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:51:50",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "图像水印",
+    "后处理水印",
+    "网络安全",
+    "信息论",
+    "深度学习",
+    "密钥安全",
+    "AWGN信道",
+    "BPSK调制"
+   ],
+   "field": "数字水印与安全",
+   "innovations": [
+    "提出现代后处理水印的AWGN+BPSK隐式信道理论模型",
+    "设计含密钥的SNW系统支持连续字母表实现近香农容量",
+    "严格区分水印安全与对抗鲁棒性并提出η-安全度量"
+   ],
+   "benchmarks": [
+    "MFlickr 1024x1024",
+    "ImageNet 10k",
+    "COCO 2017 train"
+   ]
+  }
+ }
 }

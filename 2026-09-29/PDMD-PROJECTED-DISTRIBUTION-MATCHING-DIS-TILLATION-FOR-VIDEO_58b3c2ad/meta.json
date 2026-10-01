@@ -4,5 +4,29 @@
  "title": "PDMD-PROJECTED-DISTRIBUTION-MATCHING-DIS-TILLATION-FOR-VIDEO",
  "token": "sk-aQHhxC28I...",
  "created_at": "2026-09-29 19:06:35",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/f6acf02b-2de0-4ba4-b9a8-27b0f84f7b0a.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/f6acf02b-2de0-4ba4-b9a8-27b0f84f7b0a.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:53:31",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "Distribution Matching Distillation",
+    "Video Diffusion",
+    "Few-step Generation",
+    "Critics Error Filtering",
+    "Model Distillation"
+   ],
+   "field": "视频生成与模型压缩",
+   "innovations": [
+    "提出沿学生-评论家端点残差的投影操作过滤DMD评论家误差，实现无额外开销的稳定少步蒸馏",
+    "在高维假设下证明投影移除常数比例误差且仅损失可忽略的理想信号",
+    "以一行代码改动在Wan2.1与MiniMax-H3上均获最强4-NFE视频生成结果"
+   ],
+   "benchmarks": [
+    "VBench",
+    "VideoGen-Eval"
+   ]
+  }
+ }
 }

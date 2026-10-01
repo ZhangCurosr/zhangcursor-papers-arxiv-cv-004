@@ -4,5 +4,34 @@
  "title": "ORAV-BENCHMARKING-AUDIO-VIDEO-GENERATION-FROM-MULTIMODAL-CON",
  "token": "sk-buGER5YIq...",
  "created_at": "2026-09-29 08:02:38",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/e8fecc4f-5d0e-487e-910c-888eb53b4098.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/e8fecc4f-5d0e-487e-910c-888eb53b4098.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:51:43",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "多参考音频视频生成",
+    "组合控制评测",
+    "语义角色契约",
+    "参考替换失败",
+    "配对评估协议",
+    "多模态生成基准"
+   ],
+   "field": "多模态生成评估与可控合成",
+   "innovations": [
+    "提出语义角色契约 c_j=(r,s,b,P,N) 形式化多参考的组合控制任务",
+    "参考感知配对评估协议在保留实例上达 86.08% 人类一致率",
+    "揭示参考替换（reference substitution）为系统性失败模式，95% 不可用输出含该线索"
+   ],
+   "benchmarks": [
+    "ORAV Bench (380 instances)",
+    "VABench",
+    "MSAVBench",
+    "MultiRef-Compass",
+    "MotionBench",
+    "T2AV-Compass"
+   ]
+  }
+ }
 }

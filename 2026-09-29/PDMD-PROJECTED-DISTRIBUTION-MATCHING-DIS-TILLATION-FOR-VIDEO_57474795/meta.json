@@ -4,5 +4,30 @@
  "title": "PDMD-PROJECTED-DISTRIBUTION-MATCHING-DIS-TILLATION-FOR-VIDEO",
  "token": "sk-aQHhxC28I...",
  "created_at": "2026-09-29 07:58:22",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/f6acf02b-2de0-4ba4-b9a8-27b0f84f7b0a.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/f6acf02b-2de0-4ba4-b9a8-27b0f84f7b0a.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:53:14",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "视频扩散模型",
+    "分布匹配蒸馏",
+    "少步生成",
+    "critic误差滤波",
+    "正交投影",
+    "视频-音频联合生成"
+   ],
+   "field": "视频生成模型蒸馏加速",
+   "innovations": [
+    "提出PDMD，通过正交投影学生-评论者端点残差滤除DMD更新中的critic误差",
+    "证明残差是critic误差的无偏估计，在高维下移除常数比例误差而仅损失趋于零的信号",
+    "一行代码改动即稳定训练并提升Wan2.1和MiniMax-H3的4-NFE生成质量"
+   ],
+   "benchmarks": [
+    "VBench",
+    "VideoGen-Eval"
+   ]
+  }
+ }
 }

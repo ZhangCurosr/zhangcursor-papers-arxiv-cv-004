@@ -4,5 +4,30 @@
  "title": "PIVOT-PIVOT-AWARE-ON-POLICY-SELF-DISTILLA-TION-FOR-MULTI-TUR",
  "token": "sk-sKVjU65N5...",
  "created_at": "2026-09-29 19:06:45",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/17e5776d-091f-477e-998d-4ba2fa49cac1.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/17e5776d-091f-477e-998d-4ba2fa49cac1.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:53:39",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "VLM Agent",
+    "Reinforcement Learning",
+    "On-Policy Distillation",
+    "Credit Assignment",
+    "Multi-turn Reasoning",
+    "Visual Language Model",
+    "GRPO"
+   ],
+   "field": "多模态大模型强化学习",
+   "innovations": [
+    "揭示OPSD增益来源于pivot步物理状态回滚而非技能提示，并提出非侵入式可视化定位方案",
+    "提出三角色共享参数架构（Student/Analyzer/Teacher），将状态回滚内化到token级梯度更新中",
+    "在五个多轮VLM Agent基准上达到SOTA，Qwen2.5-VL-3B总准确率0.90，推理零额外开销"
+   ],
+   "benchmarks": [
+    "VAGEN (Sokoban, FrozenLake, Navigation, PrimitiveSkill, SVG Reconstruction)"
+   ]
+  }
+ }
 }

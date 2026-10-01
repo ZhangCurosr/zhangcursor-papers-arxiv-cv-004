@@ -4,5 +4,29 @@
  "title": "PROJECTIVE-NORMAL-FIELDS-A-CONVEX-OPTIMIZATION-METHOD-FOR-CO",
  "token": "sk-ZWbnnHdTr...",
  "created_at": "2026-09-29 08:07:40",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/8044ce5e-53c8-4016-9de8-72fa1159ca73.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/8044ce5e-53c8-4016-9de8-72fa1159ca73.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:54:17",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "unsigned distance field",
+    "point cloud reconstruction",
+    "convex optimization",
+    "normal field estimation",
+    "projective normal field",
+    "non-manifold geometry"
+   ],
+   "field": "几何重建与隐式表示",
+   "innovations": [
+    "将秩一法线投影算子松弛为对称半正定单位迹张量，实现无向法线轴的强凸联合优化",
+    "引入谱置信度（特征间隙）引导热扩散方向源选择与截断，避免歧义法线对UDF的干扰"
+   ],
+   "benchmarks": [
+    "60-model multi-condition benchmark",
+    "non-manifold synthetic models (Cross-junction, Multi-junction, Henneberg surface)"
+   ]
+  }
+ }
 }

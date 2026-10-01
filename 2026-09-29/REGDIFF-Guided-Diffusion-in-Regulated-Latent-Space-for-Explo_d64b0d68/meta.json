@@ -4,5 +4,31 @@
  "title": "REGDIFF-Guided-Diffusion-in-Regulated-Latent-Space-for-Explo",
  "token": "sk-gFvvi8BZy...",
  "created_at": "2026-09-29 08:00:36",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/51f31ad5-accf-4df3-bf0b-bb1eae80f905.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/51f31ad5-accf-4df3-bf0b-bb1eae80f905.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:56:48",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "metamaterial generation",
+    "latent diffusion",
+    "voxel representation",
+    "geometric plausibility",
+    "novelty-diversity trade-off",
+    "RAS regularization",
+    "SRR guidance"
+   ],
+   "field": "3D 几何生成与材料设计",
+   "innovations": [
+    "RAS 潜空间排斥-吸引正则机制分离合理/退化体素几何",
+    "SRR 短程对数衰减引导在扩散推理期提升新颖性",
+    "MetaTruss 体素数据集与五指标系统性评估基准"
+   ],
+   "benchmarks": [
+    "MetaTruss",
+    "MetaShell"
+   ]
+  }
+ }
 }

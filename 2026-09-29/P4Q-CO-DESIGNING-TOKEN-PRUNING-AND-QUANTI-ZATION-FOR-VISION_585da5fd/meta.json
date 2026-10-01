@@ -4,5 +4,35 @@
  "title": "P4Q-CO-DESIGNING-TOKEN-PRUNING-AND-QUANTI-ZATION-FOR-VISION",
  "token": "sk-ceCpd81tF...",
  "created_at": "2026-09-29 07:53:51",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/f9b7e00d-833b-45e3-a7ae-7ecee7051e54.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/f9b7e00d-833b-45e3-a7ae-7ecee7051e54.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:52:30",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "视觉语言模型",
+    "token剪枝",
+    "后训练量化",
+    "联合优化",
+    "推理加速",
+    "低比特部署"
+   ],
+   "field": "多模态模型压缩与高效推理",
+   "innovations": [
+    "量化感知预LLM token选择策略，使用fake量化特征模拟低比特扰动",
+    "剪枝感知量化校准，使校准序列与实际推理序列结构严格对齐"
+   ],
+   "benchmarks": [
+    "MMMU",
+    "VizWiz",
+    "ScienceQA-TEST",
+    "MME",
+    "GQA",
+    "MMBench-CN",
+    "POPE",
+    "SEEDBench-IMG"
+   ]
+  }
+ }
 }

@@ -4,5 +4,29 @@
  "title": "PACER-PROGRESSIVE-AVAILABILITY-CONDITIONEDEVIDENCE-ROUTING-F",
  "token": "sk-57bzKRZBk...",
  "created_at": "2026-09-29 08:01:21",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/53878819-f006-46a1-b6e1-cb5f2a47a873.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/53878819-f006-46a1-b6e1-cb5f2a47a873.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:52:58",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "radiology report generation",
+    "incomplete multimodal learning",
+    "evidence routing",
+    "availability-conditioned adaptation",
+    "clinical efficacy"
+   ],
+   "field": "医学视觉-语言生成（放射科报告生成）",
+   "innovations": [
+    "提出 Refine-Calibrate-Commit 三阶段渐进式证据路由框架，将结构化不完整上下文 RRG 形式化为可用性条件化证据路由问题",
+    "端点保留的 patchwise 深度路由：在冻结 RAD-DINO 多深度特征上按 patch 独立路由，以残差形式补充互补视觉信息",
+    "可用性条件化低秩 prefix 校准 + 极性结构化临床承诺（anchor）引导的报告生成，三者联合实现跨四种输入配置的 SOTA CE F1"
+   ],
+   "benchmarks": [
+    "MIMIC-RG4 (SN/SW/MN/MW)",
+    "MIMIC-CXR conventional SN"
+   ]
+  }
+ }
 }

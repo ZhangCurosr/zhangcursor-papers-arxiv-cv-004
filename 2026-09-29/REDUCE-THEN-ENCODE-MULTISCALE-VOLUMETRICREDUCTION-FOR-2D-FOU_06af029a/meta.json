@@ -4,5 +4,33 @@
  "title": "REDUCE-THEN-ENCODE-MULTISCALE-VOLUMETRICREDUCTION-FOR-2D-FOU",
  "token": "sk-mtKOSZtKc...",
  "created_at": "2026-09-29 08:02:53",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/a0757f7f-0be9-413e-93a5-ba4f6c2300e4.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/a0757f7f-0be9-413e-93a5-ba4f6c2300e4.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:56:18",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "brain MRI",
+    "foundation model",
+    "volumetric reduction",
+    "2D-to-3D adaptation",
+    "DINOv3",
+    "Alzheimer's classification",
+    "reduce-then-encode"
+   ],
+   "field": "医学影像AI / 3D体积表征学习",
+   "innovations": [
+    "提出reduce-then-encode范式，在2D编码器输入前融合跨切片体积信息",
+    "设计MVR多尺度base-detail降维框架，无需梯度优化从D切片生成M互补2D组件",
+    "冻结DINOv3编码器下在ADNI/OASIS/ABIDE多队列上超越3D医学基础模型及2D-to-3D适配方法"
+   ],
+   "benchmarks": [
+    "ADNI",
+    "OASIS-3",
+    "ABIDE",
+    "AIBL"
+   ]
+  }
+ }
 }

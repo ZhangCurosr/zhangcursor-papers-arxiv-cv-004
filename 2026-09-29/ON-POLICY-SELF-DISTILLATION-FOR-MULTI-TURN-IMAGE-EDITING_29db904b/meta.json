@@ -4,5 +4,30 @@
  "title": "ON-POLICY-SELF-DISTILLATION-FOR-MULTI-TURN-IMAGE-EDITING",
  "token": "sk-jywkrqzJV...",
  "created_at": "2026-09-29 07:58:52",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/6d464f77-cbd8-4d07-9724-001150b1cc3a.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/6d464f77-cbd8-4d07-9724-001150b1cc3a.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:51:05",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "多轮图像编辑",
+    "在线策略自蒸馏",
+    "训练-测试不匹配",
+    "扩散模型",
+    "长程鲁棒性"
+   ],
+   "field": "图像编辑与生成",
+   "innovations": [
+    "提出MT-OPSD在线策略自蒸馏框架，无需多轮标注即可提升多轮编辑鲁棒性",
+    "设计身份展开隔离模型误差，结合自适应课程与门控教师提升",
+    "构建LME-Bench十轮编辑基准并系统性评估长程退化"
+   ],
+   "benchmarks": [
+    "LME-Bench",
+    "MSE-Bench",
+    "ImgEdit"
+   ]
+  }
+ }
 }

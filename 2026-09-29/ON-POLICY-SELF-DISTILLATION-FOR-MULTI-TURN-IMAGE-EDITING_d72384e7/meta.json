@@ -4,5 +4,31 @@
  "title": "ON-POLICY-SELF-DISTILLATION-FOR-MULTI-TURN-IMAGE-EDITING",
  "token": "sk-jywkrqzJV...",
  "created_at": "2026-09-29 19:09:52",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/1f25deff-3d68-4f21-b190-5ccdf694d9f7.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/1f25deff-3d68-4f21-b190-5ccdf694d9f7.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:51:08",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "多轮图像编辑",
+    "on-policy self-distillation",
+    "流匹配",
+    "长程鲁棒性",
+    "训练-测试分布偏移",
+    "LME-Bench"
+   ],
+   "field": "图像编辑与生成",
+   "innovations": [
+    "通过身份rollout隔离模型自生误差并进行on-policy自蒸馏",
+    "稀疏查询速度匹配实现干净条件教师的跨状态监督",
+    "自适应rollout课程与门控教师晋升机制"
+   ],
+   "benchmarks": [
+    "LME-Bench",
+    "MSE-Bench",
+    "ImgEdit"
+   ]
+  }
+ }
 }

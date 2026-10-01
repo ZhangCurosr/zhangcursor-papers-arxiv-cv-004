@@ -4,5 +4,31 @@
  "title": "RATE-DISTORTION-ADAPTIVE-PRIMITIVE-SELECTIONFOR-OMNIDIRECTIO",
  "token": "sk-pPTU9MbMU...",
  "created_at": "2026-09-29 07:59:43",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/651398c8-1c7b-4720-9fb0-9ee7bf124fe4.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/651398c8-1c7b-4720-9fb0-9ee7bf124fe4.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:56:07",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "全向图像压缩",
+    "高斯溅射",
+    "率失真优化",
+    "HEALPix",
+    "视口自适应解码",
+    "神经编解码"
+   ],
+   "field": "全向/360° 图像与视频编码",
+   "innovations": [
+    "率失真自适应图元选择（RDPS）：将量化不透明度与熵模型码率耦合，通过梯度信号自动驱赶低效图元",
+    "渲染条件上下文（RCC）：零边信息的层次化熵建模，上下文完全由已解码渲染状态派生",
+    "单一码流支持全球面/视口依赖/渐进三种解码模式，首个视口仅需52%码流"
+   ],
+   "benchmarks": [
+    "Flickr 360° 100-image benchmark (2048×1024)",
+    "SUN360 test set (100 images)",
+    "WS-PSNR / V-PSNR / V-SSIM / V-LPIPS (JVET common test conditions)"
+   ]
+  }
+ }
 }

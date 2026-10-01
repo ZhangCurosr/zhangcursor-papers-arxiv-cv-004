@@ -4,5 +4,27 @@
  "title": "OPIS-An-Input-Grounded-Benchmark-for-Multi-Object-Memory-in",
  "token": "sk-2d8Cyf5aG...",
  "created_at": "2026-09-29 19:06:51",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/5d25854a-c157-486f-a85a-5efba10ef7e8.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/5d25854a-c157-486f-a85a-5efba10ef7e8.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:51:02",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "视频世界模型",
+    "多对象记忆",
+    "输入锚定评估",
+    "对象一致性",
+    "视频生成基准"
+   ],
+   "field": "视频生成评估",
+   "innovations": [
+    "输入锚定的多对象记忆评估框架",
+    "分层 P/I/S 对象记忆评估器结合显式可见性推理"
+   ],
+   "benchmarks": [
+    "OPIS"
+   ]
+  }
+ }
 }

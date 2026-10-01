@@ -4,5 +4,30 @@
  "title": "One-Sensor-Whole-Body-3D-Body-Pose-from-a-Single-Consumer-Ea",
  "token": "sk-EwecAZ9oF...",
  "created_at": "2026-09-29 07:53:24",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/356134e9-bbe1-47db-bddc-25dcbe5f569a.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/356134e9-bbe1-47db-bddc-25dcbe5f569a.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:52:27",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "sparse IMU pose estimation",
+    "consumer earbud sensing",
+    "wearable motion capture",
+    "sensor reliability",
+    "pseudo-ground truth",
+    "inertial pose"
+   ],
+   "field": "消费级可穿戴惯性动捕",
+   "innovations": [
+    "配对逐片段统计证明单耳机IMU优于头+足三传感器组合",
+    "通过挂载偏差注入揭示足IMU退化机制为可靠性而非位置",
+    "分阶段微调划定单头IMU可恢复性边界并恢复腿部精度"
+   ],
+   "benchmarks": [
+    "35-take single-subject real-capture benchmark with SAM 3D Body pseudo-GT",
+    "rigid-MPJPE, distal R^2, macro-F1 foot contact"
+   ]
+  }
+ }
 }

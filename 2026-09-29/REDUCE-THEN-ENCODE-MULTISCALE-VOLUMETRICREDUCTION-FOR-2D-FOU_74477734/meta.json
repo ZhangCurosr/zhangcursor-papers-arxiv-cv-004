@@ -4,5 +4,32 @@
  "title": "REDUCE-THEN-ENCODE-MULTISCALE-VOLUMETRICREDUCTION-FOR-2D-FOU",
  "token": "sk-mtKOSZtKc...",
  "created_at": "2026-09-29 19:06:44",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/a0757f7f-0be9-413e-93a5-ba4f6c2300e4.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/a0757f7f-0be9-413e-93a5-ba4f6c2300e4.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 03:56:17",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "脑MRI",
+    "2D基础模型",
+    "体积缩减",
+    "多尺度分解",
+    "医学影像分析",
+    "基础模型适配"
+   ],
+   "field": "医学影像分析",
+   "innovations": [
+    "提出reduce-then-encode范式，在冻结2D编码器前先整合跨切片信息",
+    "设计数据自适应的无梯度基-细节分解方法，结合未中心化PCA与多尺度残差描述符",
+    "在多个脑MRI队列验证冻结2D基础模型的高效适配"
+   ],
+   "benchmarks": [
+    "ADNI",
+    "OASIS-3",
+    "ABIDE",
+    "AIBL"
+   ]
+  }
+ }
 }
