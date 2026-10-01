@@ -4,5 +4,31 @@
  "title": "SOFT-SPATIAL-REASONING",
  "token": "sk-dL4eG1TgK...",
  "created_at": "2026-10-01 08:29:10",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/d8db4ead-44df-4f51-9254-467aefda467c.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/d8db4ead-44df-4f51-9254-467aefda467c.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 21:36:32",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "soft thinking",
+    "spatial reasoning",
+    "LVLM",
+    "reinforcement learning",
+    "gradient alignment",
+    "chain-of-thought"
+   ],
+   "field": "视觉语言模型空间推理",
+   "innovations": [
+    "AdaptSoft步级自适应软度控制器：基于隐藏状态和预测熵动态调节token嵌入混合温度",
+    "梯度对齐学习目标：无需中间推理标注，通过步级策略梯度与参考梯度的一致性分配信用",
+    "Gumbel重参数化Soft-GRPO扩展至LVLM空间推理：推导软步似然比支持后训练优化"
+   ],
+   "benchmarks": [
+    "OmniSpatial",
+    "SpatiaLab",
+    "MindCube"
+   ]
+  }
+ }
 }

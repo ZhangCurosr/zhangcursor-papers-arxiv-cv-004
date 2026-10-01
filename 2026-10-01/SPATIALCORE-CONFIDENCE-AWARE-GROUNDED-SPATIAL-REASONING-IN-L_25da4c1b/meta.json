@@ -4,5 +4,30 @@
  "title": "SPATIALCORE-CONFIDENCE-AWARE-GROUNDED-SPATIAL-REASONING-IN-L",
  "token": "sk-o28Oo64R2...",
  "created_at": "2026-10-01 08:29:41",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/41143ded-db25-4b82-8130-cbd2c5540946.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/41143ded-db25-4b82-8130-cbd2c5540946.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 21:36:40",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "spatial reasoning",
+    "vision-language models",
+    "confidence-aware reward",
+    "GRPO",
+    "grounded reasoning",
+    "bounding box uncertainty"
+   ],
+   "field": "多模态大模型空间推理",
+   "innovations": [
+    "提出置信度感知的自调节空间奖励，用 BBox 坐标 token 不确定性加权定位质量作为学习信号",
+    "设计答案门机制将空间奖励与最终答案正确性耦合，保留错误轨迹的部分接地信用",
+    "理论证明答案奖励下 GRPO 对接地置信度存在梯度 indifferent，置信度加权打破等价性"
+   ],
+   "benchmarks": [
+    "OmniSpatial",
+    "SpatiaLab"
+   ]
+  }
+ }
 }

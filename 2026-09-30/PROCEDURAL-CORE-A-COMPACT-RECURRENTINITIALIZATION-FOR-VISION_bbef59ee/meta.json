@@ -4,5 +4,36 @@
  "title": "PROCEDURAL-CORE-A-COMPACT-RECURRENTINITIALIZATION-FOR-VISION",
  "token": "sk-WcZzSI744...",
  "created_at": "2026-09-30 08:03:23",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/3fd3dd08-e486-46db-ade3-305a415f3b0b.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/3fd3dd08-e486-46db-ade3-305a415f3b0b.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 21:35:16",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "Vision Transformer",
+    "initialization",
+    "procedural data",
+    "recurrence",
+    "parameter sharing",
+    "high-norm token suppression"
+   ],
+   "field": "Transformer 初始化与表示学习",
+   "innovations": [
+    "将程序化预训练的结构蒸馏为可跨尺寸复用的循环紧凑核心权重",
+    "通过 tiling+Frobenius 归一化实现任意深度/宽度展开",
+    "从机制层面定位可迁移结构集中于 attention V/proj 路径并揭示其对高范数 token 的抑制效应"
+   ],
+   "benchmarks": [
+    "ImageNet-1K",
+    "CIFAR-100",
+    "ADE20K",
+    "IMAGENET-S",
+    "VOC07",
+    "NYUV2",
+    "FINEWEB-EDU",
+    "CODEPARROT"
+   ]
+  }
+ }
 }

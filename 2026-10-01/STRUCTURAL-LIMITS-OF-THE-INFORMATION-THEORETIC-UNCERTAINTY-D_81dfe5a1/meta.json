@@ -4,5 +4,32 @@
  "title": "STRUCTURAL-LIMITS-OF-THE-INFORMATION-THEORETIC-UNCERTAINTY-D",
  "token": "sk-xfpcKPjW4...",
  "created_at": "2026-10-01 08:31:52",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/bc070dee-9ae8-4f0a-8d91-7d3d68dc6989.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/bc070dee-9ae8-4f0a-8d91-7d3d68dc6989.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 21:36:45",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "uncertainty decomposition",
+    "aleatoric uncertainty",
+    "epistemic uncertainty",
+    "information-theoretic bounds",
+    "epistemic collapse",
+    "ensemble uncertainty",
+    "finite-sample bias",
+    "entropy geometry"
+   ],
+   "field": "不确定性估计与信息论分解",
+   "innovations": [
+    "推导有限后验样本下 AU-TU 可实现区域的严格边界 AU≤log(2)/N",
+    "从不可行区域几何解释认知不确定性塌缩现象",
+    "引入 Jackknife 校正消除有限样本 EU 估计下偏"
+   ],
+   "benchmarks": [
+    "CIFAR-10 OOD detection AUROC",
+    "MNIST OOD detection AUROC"
+   ]
+  }
+ }
 }

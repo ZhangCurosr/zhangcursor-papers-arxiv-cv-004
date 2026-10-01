@@ -4,5 +4,31 @@
  "title": "NOWCASTDIT-DIFFUSION-TRANSFORMERS-ARE-EFFECTIVE-PRECIPITATIO",
  "token": "sk-yEKi8NUQa...",
  "created_at": "2026-09-30 08:08:26",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/9c244021-a84d-4d0d-9213-2a4fe9ca5ae5.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/9c244021-a84d-4d0d-9213-2a4fe9ca5ae5.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 21:34:55",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "降水临近预报",
+    "Diffusion Transformer",
+    "流匹配",
+    "强化学习后训练",
+    "GRPO",
+    "DyPro",
+    "时间步感知奖励"
+   ],
+   "field": "气象生成模型",
+   "innovations": [
+    "标准DiT作为降水临近预报基础架构，无需专用建模模块",
+    "DyPro动力学感知噪声先验，时间步依赖跨帧噪声相关性",
+    "时间步感知奖励GRPO后训练，从结构到细节平滑过渡"
+   ],
+   "benchmarks": [
+    "SEVIR",
+    "MRMS"
+   ]
+  }
+ }
 }

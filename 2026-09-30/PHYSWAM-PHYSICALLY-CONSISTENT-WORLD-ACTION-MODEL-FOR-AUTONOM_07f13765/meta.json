@@ -4,5 +4,32 @@
  "title": "PHYSWAM-PHYSICALLY-CONSISTENT-WORLD-ACTION-MODEL-FOR-AUTONOM",
  "token": "sk-yJ5h9Go8b...",
  "created_at": "2026-09-30 18:49:53",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/e5ef6c02-077e-4da9-8486-2ffdac5d8b6c.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/e5ef6c02-077e-4da9-8486-2ffdac5d8b6c.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 21:34:55",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "world-action model",
+    "flow matching",
+    "geometric consistency",
+    "autonomous driving planning",
+    "metric depth prediction",
+    "zero-shot transfer"
+   ],
+   "field": "自动驾驶世界模型与几何一致性",
+   "innovations": [
+    "CPP：生成深度与自车运动在三维点云中联合受 LiDAR 监督的几何耦合损失",
+    "输出梯度平衡：以 velocity output 梯度范数为基准动态设几何项系数",
+    "无标签 medoid 选轨：多采样轨迹间 pairwise 距离最小化"
+   ],
+   "benchmarks": [
+    "NAVSIM v1 navtest PDMS",
+    "NAVSIM v2 navtest EPDMS",
+    "navhard 两阶段伪仿真",
+    "HUGSIM 零样本闭环 RC/HD-Score"
+   ]
+  }
+ }
 }

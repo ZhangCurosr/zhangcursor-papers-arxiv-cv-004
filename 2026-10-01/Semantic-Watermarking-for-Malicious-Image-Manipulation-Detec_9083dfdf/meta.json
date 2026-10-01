@@ -4,5 +4,10 @@
  "title": "Semantic-Watermarking-for-Malicious-Image-Manipulation-Detec",
  "token": "sk-yjjHVmEWF...",
  "created_at": "2026-10-01 08:28:51",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/9666a0ba-556c-40e4-8de7-b85f98bc564c.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/9666a0ba-556c-40e4-8de7-b85f98bc564c.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 21:37:24",
+  "chunks": 1
+ }
 }

@@ -4,5 +4,31 @@
  "title": "Spatial-Temporal-Multi-scale-Network-for-Screen-Content-Vide",
  "token": "sk-Ir4JqYCnj...",
  "created_at": "2026-10-01 08:29:13",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/e2d853d1-20dd-4e13-8aab-aca808b5d54e.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/e2d853d1-20dd-4e13-8aab-aca808b5d54e.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 21:37:15",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "屏幕内容视频",
+    "视频增强",
+    "时空特征提取",
+    "多尺度特征蒸馏",
+    "场景切换处理",
+    "深度学习"
+   ],
+   "field": "视频质量增强",
+   "innovations": [
+    "三路并行流分发机制避免场景切换特征污染",
+    "隐式双流优先化时序提取无需显式场景检测",
+    "级联多尺度特征蒸馏保留高频文字和图形细节"
+   ],
+   "benchmarks": [
+    "CTC SCV序列",
+    "公共SCV数据集",
+    "自采SCV序列"
+   ]
+  }
+ }
 }

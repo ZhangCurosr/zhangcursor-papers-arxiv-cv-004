@@ -4,5 +4,10 @@
  "title": "Seeing-as-Humans-Do-Learning-from-Motion-to-Segment-Anything",
  "token": "sk-RdV3tP4AZ...",
  "created_at": "2026-10-01 08:30:36",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/cda355bf-2316-4ed2-90df-3a75a2d5ee5e.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/cda355bf-2316-4ed2-90df-3a75a2d5ee5e.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 21:37:18",
+  "chunks": 1
+ }
 }

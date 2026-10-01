@@ -4,5 +4,29 @@
  "title": "Pixels-to-Keys-Exploring-Spatial-and-Motion-Cues-in-Gameplay",
  "token": "sk-owp49a3rO...",
  "created_at": "2026-09-30 08:10:31",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/38427b86-1f6f-4292-83fa-aa0e04104a3f.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/38427b86-1f6f-4292-83fa-aa0e04104a3f.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 21:35:46",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "Inverse Dynamics Model",
+    "Key-Press Reconstruction",
+    "Optical Flow",
+    "Video Transformer",
+    "Contrastive Learning",
+    "Game AI"
+   ],
+   "field": "游戏AI与具身智能",
+   "innovations": [
+    "系统消融揭示HT+光流+对比初始化为数据受限场景最优组合",
+    "提出per-key平衡评估范式揭示聚合指标偏差"
+   ],
+   "benchmarks": [
+    "Trackmania",
+    "Cyberpunk 2077"
+   ]
+  }
+ }
 }

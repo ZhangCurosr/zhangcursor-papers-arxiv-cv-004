@@ -4,5 +4,30 @@
  "title": "NOT-EVERY-CORRECTION-HELPS-GAIN-GUIDED-CONTINUAL-TEST-TIME-A",
  "token": "sk-9GUbCO4kb...",
  "created_at": "2026-09-30 18:51:36",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/275f2fa0-74be-47ef-b041-e6dfeb60f685.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/275f2fa0-74be-47ef-b041-e6dfeb60f685.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 21:35:30",
+  "chunks": 3,
+  "meta": {
+   "keywords": [
+    "持续测试时自适应",
+    "增益感知干预",
+    "无需反向传播",
+    "后验预测分布",
+    "条件点互信息"
+   ],
+   "field": "持续测试时自适应",
+   "innovations": [
+    "Proposal-Evaluator角色分离防止自我评估退化",
+    "C-PMI精确刻画历史累积修正信息",
+    "严格凹路径风险减函数保证全局最优干预强度"
+   ],
+   "benchmarks": [
+    "ImageNet-C severity 5",
+    "ImageNet-3DCC",
+    "ImageNet-R/V2/Sketch"
+   ]
+  }
+ }
 }

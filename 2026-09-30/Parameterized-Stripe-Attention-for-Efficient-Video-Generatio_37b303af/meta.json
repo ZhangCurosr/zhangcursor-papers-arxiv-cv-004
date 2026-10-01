@@ -4,5 +4,31 @@
  "title": "Parameterized-Stripe-Attention-for-Efficient-Video-Generatio",
  "token": "sk-t5rU5DeOT...",
  "created_at": "2026-09-30 08:05:48",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/c0eb3c5f-a4e3-4853-9672-75528aea35ad.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/c0eb3c5f-a4e3-4853-9672-75528aea35ad.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 21:35:23",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "视频生成",
+    "稀疏注意力",
+    "Diffusion Transformer",
+    "硬件高效计算",
+    "RoPE-3D",
+    "CUDA kernel优化"
+   ],
+   "field": "视频生成效率优化",
+   "innovations": [
+    "揭示视频DiT注意力具有沿时空维度的周期性对角条纹结构并给出理论推导",
+    "提出六参数统一掩码表示覆盖全部稀疏模式，支持单CUDA内核处理所有模式",
+    "开发无训练离线搜索算法自动为每头部分配最优掩码，消除运行时开销"
+   ],
+   "benchmarks": [
+    "VBench",
+    "HunyuanVideo",
+    "Wan 2.1 14B"
+   ]
+  }
+ }
 }

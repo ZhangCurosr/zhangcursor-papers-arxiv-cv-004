@@ -4,5 +4,32 @@
  "title": "Pixel-wise-Exposure-for-Highly-Robust-In-Vehicle-Remote-PPG",
  "token": "sk-Ow5x4gcSo...",
  "created_at": "2026-09-30 08:10:03",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/e20040fa-8b30-403b-93f8-b0a13b8f736a.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/e20040fa-8b30-403b-93f8-b0a13b8f736a.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 21:35:46",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "remote PPG",
+    "multi-exposure fusion",
+    "camera exposure control",
+    "in-vehicle monitoring",
+    "pixel-wise selection"
+   ],
+   "field": "车载远端光电容积脉搏波(rPPG)信号采集与增强",
+   "innovations": [
+    "提出'时间换空间'循环多曝光+像素级rPPG导向融合框架，突破全局曝光硬件瓶颈",
+    "设计非迭代的photometric偏差选择准则与one-hot融合策略，优于感知导向MEF与全局自适应AE"
+   ],
+   "benchmarks": [
+    "MEX-Drive",
+    "POS",
+    "EfficientPhys",
+    "FactorizePhys",
+    "PhysFormer",
+    "iBVPNet"
+   ]
+  }
+ }
 }

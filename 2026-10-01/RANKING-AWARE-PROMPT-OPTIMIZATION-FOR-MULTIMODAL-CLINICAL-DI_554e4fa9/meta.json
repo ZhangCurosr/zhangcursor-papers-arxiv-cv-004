@@ -4,5 +4,30 @@
  "title": "RANKING-AWARE-PROMPT-OPTIMIZATION-FOR-MULTIMODAL-CLINICAL-DI",
  "token": "sk-aQHhxC28I...",
  "created_at": "2026-10-01 08:24:33",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/dd6a798a-1ef2-432b-a17b-5dc5473837d5.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/dd6a798a-1ef2-432b-a17b-5dc5473837d5.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 21:35:56",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "prompt optimization",
+    "multimodal clinical diagnosis",
+    "AUROC",
+    "Pareto evolution",
+    "rank-aware learning",
+    "class imbalance"
+   ],
+   "field": "多模态临床诊断中的提示优化",
+   "innovations": [
+    "将 Pareto 分数矩阵行替换为正负样本对排名事件，列均值直接等于经验 AUROC",
+    "同步对齐 Pareto 支配、反射器反馈与最终选择三层组件至排名目标",
+    "揭示视觉编码器微调是 prompt search 发挥效果的前提"
+   ],
+   "benchmarks": [
+    "MIMIC-CXR/JPG + MIMIC-IV",
+    "CheXpert 三个病理（Atelectasis/Cardiomegaly/Consolidation）"
+   ]
+  }
+ }
 }

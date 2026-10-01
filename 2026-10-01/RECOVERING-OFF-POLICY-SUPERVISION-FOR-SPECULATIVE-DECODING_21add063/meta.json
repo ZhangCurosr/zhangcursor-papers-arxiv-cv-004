@@ -4,5 +4,41 @@
  "title": "RECOVERING-OFF-POLICY-SUPERVISION-FOR-SPECULATIVE-DECODING",
  "token": "sk-7yAuxnEAp...",
  "created_at": "2026-10-01 08:29:31",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/6ff9a43a-48ed-4fe1-8ae9-a054bdd077ad.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/6ff9a43a-48ed-4fe1-8ae9-a054bdd077ad.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 21:36:16",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "speculative decoding",
+    "draft model training",
+    "off-policy correction",
+    "knowledge distillation",
+    "vision-language models",
+    "parallel drafting"
+   ],
+   "field": "大模型推理加速/投机解码",
+   "innovations": [
+    "ALR: 用目标模型greedy rollout分布替换离策略语料标签，保留全部slot监督",
+    "IRA: 将secondary block锚入rollout内部复用中间特征，零额外target前向开销",
+    "证明短rollout校正可逼近目标重生成语料的接受长度性能（差距仅0.4%）"
+   ],
+   "benchmarks": [
+    "ALLaVA",
+    "ShareGPT4V",
+    "UltraChat",
+    "COCO captioning",
+    "TextVQA",
+    "DocVQA",
+    "MT-Bench",
+    "GSM8K",
+    "HumanEval",
+    "AIME24",
+    "AIME25",
+    "LiveCodeBench",
+    "Alpaca"
+   ]
+  }
+ }
 }

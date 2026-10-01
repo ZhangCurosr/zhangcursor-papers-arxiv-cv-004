@@ -4,5 +4,31 @@
  "title": "Spherical-Interpolation-for-Backward-Compatible-Multimodal-R",
  "token": "sk-FMTQpgZxg...",
  "created_at": "2026-10-01 08:28:49",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/26249a8f-f3bc-43f2-935a-e3ed9de6b7a8.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/26249a8f-f3bc-43f2-935a-e3ed9de6b7a8.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 21:38:30",
+  "chunks": 4,
+  "meta": {
+   "keywords": [
+    "向后兼容检索",
+    "SLERP插值",
+    "正交Procrustes对齐",
+    "视觉-语言模型",
+    "跨模型嵌入对齐",
+    "多模态检索"
+   ],
+   "field": "多模态检索",
+   "innovations": [
+    "首次将SLERP用于查询侧跨模型向后兼容检索，无需重训练/重索引",
+    "提出正交Procrustes+SLERP两步框架，支持不等维嵌入",
+    "提供几何理论刻画：内点最优当且仅当投影落在弧的相对内部"
+   ],
+   "benchmarks": [
+    "Flickr30k",
+    "COCO2014",
+    "NoCaps"
+   ]
+  }
+ }
 }

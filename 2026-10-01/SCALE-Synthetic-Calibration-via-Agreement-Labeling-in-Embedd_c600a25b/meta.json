@@ -4,5 +4,30 @@
  "title": "SCALE-Synthetic-Calibration-via-Agreement-Labeling-in-Embedd",
  "token": "sk-RV5chRIVy...",
  "created_at": "2026-10-01 08:26:26",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/59f45ce6-ae0b-4b44-ba3e-7fb295db2873.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/59f45ce6-ae0b-4b44-ba3e-7fb295db2873.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 21:36:20",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "校准",
+    "病理学基础模型",
+    "标签平滑",
+    "嵌入空间插值",
+    "线性探测",
+    "医学图像分析"
+   ],
+   "field": "计算病理学模型校准",
+   "innovations": [
+    "提出 SCALE 方法，通过嵌入空间插值生成合成一致性标签实现无需多标注者的校准改进",
+    "首次系统性提出按病理学家一致性分层的校准审计协议，揭示聚合 ECE 掩盖的低一致性校准缺陷"
+   ],
+   "benchmarks": [
+    "MHIST",
+    "PatchCamelyon",
+    "BreakHis"
+   ]
+  }
+ }
 }

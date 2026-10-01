@@ -4,5 +4,35 @@
  "title": "TED-Text-Axis-Evidence-Decomposition-for-Prompted-Anomaly-Lo",
  "token": "sk-tFRB7xMvI...",
  "created_at": "2026-10-01 08:27:52",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/0ec31012-4f40-4ff5-83b0-55d4b3076b7b.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/0ec31012-4f40-4ff5-83b0-55d4b3076b7b.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 21:37:58",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "anomaly localization",
+    "vision-language model",
+    "CLIP",
+    "hard false positive",
+    "prompt tuning",
+    "post-hoc scoring",
+    "domain shift",
+    "evidence decomposition"
+   ],
+   "field": "基于视觉-语言模型的工业异常定位",
+   "innovations": [
+    "提出文本轴证据分解（TED），在源缺陷与硬误报库之间比较局部 patch 的支持度以重排模糊异常图",
+    "给出 T-TED 无训练变体与 C-TED 有界残差变体，不修改 backbone 与 prompt 即可跨域提升像素级定位",
+    "揭示 adapted CLIP-AD 中敏感性与可区分性不等同的普遍失败模式，并通过失败条件化增益验证机制"
+   ],
+   "benchmarks": [
+    "MVTec AD",
+    "VisA",
+    "MPDD",
+    "BTAD",
+    "MVTec AD 2"
+   ]
+  }
+ }
 }

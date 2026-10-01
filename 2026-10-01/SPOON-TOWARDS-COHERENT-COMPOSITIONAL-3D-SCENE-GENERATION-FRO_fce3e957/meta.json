@@ -4,5 +4,30 @@
  "title": "SPOON-TOWARDS-COHERENT-COMPOSITIONAL-3D-SCENE-GENERATION-FRO",
  "token": "sk-iG65PZaJv...",
  "created_at": "2026-10-01 08:24:48",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/4f7ba41f-940a-46ef-b048-d0d0057715ee.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/4f7ba41f-940a-46ef-b048-d0d0057715ee.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 21:36:46",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "3D场景生成",
+    "多视角几何",
+    "姿态推理",
+    "组合3D",
+    "可微分渲染",
+    "流匹配"
+   ],
+   "field": "3D视觉与生成",
+   "innovations": [
+    "提出Guide-Route-Reconcile范式将多视角姿态假设协调为全局一致的场景布局",
+    "表面坐标桥接结合流一致端点注入实现几何引导的姿态生成",
+    "基于几何可靠性评分的自适应视角路由机制"
+   ],
+   "benchmarks": [
+    "ARSG-110K",
+    "MIDI-3D-Front"
+   ]
+  }
+ }
 }

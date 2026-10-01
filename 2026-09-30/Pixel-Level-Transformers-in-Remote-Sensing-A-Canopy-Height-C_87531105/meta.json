@@ -4,5 +4,32 @@
  "title": "Pixel-Level-Transformers-in-Remote-Sensing-A-Canopy-Height-C",
  "token": "sk-JMLCbBCEj...",
  "created_at": "2026-09-30 08:07:10",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/157f0c54-0b70-4223-b8b5-ef580c5b9b03.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/157f0c54-0b70-4223-b8b5-ef580c5b9b03.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 21:35:29",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "Vision Transformer",
+    "Pixel-level Attention",
+    "Canopy Height Estimation",
+    "Efficient Attention",
+    "Remote Sensing",
+    "Dense Regression",
+    "Patchification Scaling Laws"
+   ],
+   "field": "遥感密集回归与视觉Transformer",
+   "innovations": [
+    "系统验证像素级ViT在遥感密集回归上的优越性，揭示最优超参配置(P=1,d_m=96)",
+    "首次量化GEDI标签噪声导致的评估偏差，证明大patch模型在noisy标签上被高估",
+    "提出efficient attention+MiT+U-MixFormer组合，在ALS评估下MAE_{>5m}=3.84m超越所有CNN与ViT基线"
+   ],
+   "benchmarks": [
+    "Europe Dataset (GEDI labels)",
+    "France Dataset (ALS labels)",
+    "OpenCanopy"
+   ]
+  }
+ }
 }
