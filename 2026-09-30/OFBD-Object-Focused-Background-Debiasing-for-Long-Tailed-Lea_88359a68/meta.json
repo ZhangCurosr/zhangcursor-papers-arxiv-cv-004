@@ -4,5 +4,31 @@
  "title": "OFBD-Object-Focused-Background-Debiasing-for-Long-Tailed-Lea",
  "token": "sk-5sRpPz5k4...",
  "created_at": "2026-09-30 08:09:23",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/d393e96f-b892-4c40-a964-55d3826f7a3e.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/d393e96f-b892-4c40-a964-55d3826f7a3e.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:45:34",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "长尾学习",
+    "背景去偏",
+    "CutMix",
+    "无参数特征修正",
+    "强化学习区域选择"
+   ],
+   "field": "长尾视觉识别",
+   "innovations": [
+    "揭示长尾学习中分布与优化两层背景偏差机制并提出双去偏框架",
+    "FG-CutMix：RL 选择器前景引导 CutMix 打破前景-背景共现",
+    "BFR：无参数背景感知特征修正避免头部类别梯度主导"
+   ],
+   "benchmarks": [
+    "CIFAR-10-LT",
+    "CIFAR-100-LT",
+    "ImageNet-LT",
+    "iNaturalist 2018"
+   ]
+  }
+ }
 }

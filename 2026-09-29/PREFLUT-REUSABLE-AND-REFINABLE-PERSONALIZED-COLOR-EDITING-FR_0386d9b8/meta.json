@@ -4,5 +4,10 @@
  "title": "PREFLUT-REUSABLE-AND-REFINABLE-PERSONALIZED-COLOR-EDITING-FR",
  "token": "sk-pbKDuH2mM...",
  "created_at": "2026-09-29 19:09:55",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/71829677-8c8e-4a48-88b4-b6c7272c3ea0.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/71829677-8c8e-4a48-88b4-b6c7272c3ea0.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:43:27",
+  "chunks": 1
+ }
 }

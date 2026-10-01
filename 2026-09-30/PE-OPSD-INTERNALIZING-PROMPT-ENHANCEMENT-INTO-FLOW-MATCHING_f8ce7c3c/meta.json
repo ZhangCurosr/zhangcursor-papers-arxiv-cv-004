@@ -4,5 +4,33 @@
  "title": "PE-OPSD-INTERNALIZING-PROMPT-ENHANCEMENT-INTO-FLOW-MATCHING",
  "token": "sk-gFvvi8BZy...",
  "created_at": "2026-09-30 18:52:21",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/edab7d33-95e8-4834-afdb-40d6818d5a00.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/edab7d33-95e8-4834-afdb-40d6818d5a00.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:48:21",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "Prompt Enhancement",
+    "On-Policy Self-Distillation",
+    "Flow-Matching",
+    "Privileged Information",
+    "Text-to-Image Generation",
+    "Knowledge Distillation"
+   ],
+   "field": "文生图模型后训练",
+   "innovations": [
+    "将提示词增强重新定义为文生图生成中的文本侧特权信息，突破特权信息需来自多模态的先验假设",
+    "提出 PE-OPSD 框架，在学生原始提示词轨迹上用增强提示词教师提供向量场蒸馏，无需额外图像对",
+    "在多个模型族和多种 PE 下实现最强的聚合提示词忠实度，同时保留基础模型的推理延迟"
+   ],
+   "benchmarks": [
+    "GenEval",
+    "GenEval2",
+    "DPG-bench",
+    "T2I-CompBench++",
+    "EvalMuse"
+   ]
+  }
+ }
 }

@@ -4,5 +4,41 @@
  "title": "OMNITASKONOMY-WHEN-DOES-VISUAL-GENERATION-IMPROVE-VISUAL-UND",
  "token": "sk-jywkrqzJV...",
  "created_at": "2026-09-30 08:05:54",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/53bc944c-eefe-48ba-93da-e8793355a911.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/53bc944c-eefe-48ba-93da-e8793355a911.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:46:01",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "visual generation",
+    "visual understanding",
+    "OmniTaskonomy",
+    "gradient alignment",
+    "image-to-image",
+    "image-to-text",
+    "multimodal model",
+    "transfer learning"
+   ],
+   "field": "多模态预训练与生成-理解转移",
+   "innovations": [
+    "提出I2I→I2T两阶段训练策略，证明生成预训练可显著减少对I2T标注数据的依赖",
+    "构建OmniTaskonomy统一能力分类体系，首次系统测量19个生成任务对25个理解能力的跨模态迁移图谱",
+    "发现梯度对齐是预测生成-理解迁移收益的有效优化层信号，最强对齐集中在理解分支早期pre-attention RMSNorm层"
+   ],
+   "benchmarks": [
+    "BLINK",
+    "CV-Bench",
+    "MMStar",
+    "MMT-Bench",
+    "MMVP",
+    "VStarBench",
+    "RealWorldQA",
+    "Taskonomy tiny",
+    "ConceptEdit-12M",
+    "RefCOCOg",
+    "VisGym"
+   ]
+  }
+ }
 }

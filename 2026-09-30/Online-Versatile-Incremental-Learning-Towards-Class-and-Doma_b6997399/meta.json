@@ -4,5 +4,10 @@
  "title": "Online-Versatile-Incremental-Learning-Towards-Class-and-Doma",
  "token": "sk-L8fxiXWw6...",
  "created_at": "2026-09-30 08:12:32",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/61a3a2b8-25e8-4ba8-bf12-958a4dde7ac5.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/61a3a2b8-25e8-4ba8-bf12-958a4dde7ac5.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:47:26",
+  "chunks": 1
+ }
 }

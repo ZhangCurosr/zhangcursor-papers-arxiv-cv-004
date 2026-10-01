@@ -4,5 +4,34 @@
  "title": "REVISIT-TO-SEGMENT-WORKING-MEMORY-DISTILLA-TION-FOR-REASONIN",
  "token": "sk-uRWIgUMtb...",
  "created_at": "2026-09-29 19:07:29",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/16ee2f01-5c36-4b8c-bcfd-be6ba770400e.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/16ee2f01-5c36-4b8c-bcfd-be6ba770400e.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:44:09",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "推理分割",
+    "工作记忆蒸馏",
+    "在线策略自蒸馏",
+    "GRPO",
+    "多模态大模型",
+    "reasoning segmentation"
+   ],
+   "field": "视觉语言分割与多模态推理",
+   "innovations": [
+    "首次将自生成推理轨迹和定位提议形式化为工作记忆并用于推理分割",
+    "首次将在线策略自蒸馏(OPSD)引入推理分割，以质量选定的rollout为教师进行token级分布对齐",
+    "联合OPSD与GRPO的工作记忆蒸馏框架SWiM，在ReasonSeg系列基准上达到SOTA"
+   ],
+   "benchmarks": [
+    "ReasonSeg (RS)",
+    "ReasonSeg-R (RS-R)",
+    "ReasonSeg-X (RS-X)",
+    "MUSE",
+    "MMR",
+    "RefCOCO family"
+   ]
+  }
+ }
 }

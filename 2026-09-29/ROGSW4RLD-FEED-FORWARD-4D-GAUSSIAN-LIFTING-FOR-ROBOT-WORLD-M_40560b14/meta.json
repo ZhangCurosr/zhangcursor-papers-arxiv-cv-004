@@ -4,5 +4,30 @@
  "title": "ROGSW4RLD-FEED-FORWARD-4D-GAUSSIAN-LIFTING-FOR-ROBOT-WORLD-M",
  "token": "sk-JMLCbBCEj...",
  "created_at": "2026-09-29 19:08:34",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/767e1413-79c5-4bf7-97a8-9101a2df0916.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/767e1413-79c5-4bf7-97a8-9101a2df0916.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:44:21",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "4D Gaussian Splatting",
+    "Robot World Model",
+    "Feed-forward Reconstruction",
+    "Multi-view Lift",
+    "Robot Kinematics",
+    "Metric Scene Reconstruction"
+   ],
+   "field": "机器人视觉与4D场景重建",
+   "innovations": [
+    "将机器人铰接网格锚定与FK条件化形变融入前馈4D高斯联合提升",
+    "时间共享位移保持精炼机制严格保留相对时序位移",
+    "两阶段前馈框架在无clip级优化下显著提升度量几何与跨视图一致性"
+   ],
+   "benchmarks": [
+    "DROID (ILIAD/PennPAL held-out)",
+    "Cosmos 3 Rollouts"
+   ]
+  }
+ }
 }

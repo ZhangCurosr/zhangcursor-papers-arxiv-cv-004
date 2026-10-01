@@ -4,5 +4,32 @@
  "title": "OMNIROUTE-MAPPING-TEMPORAL-SEMANTIC-EVIDENCE-TO-AUDIO-VISUAL",
  "token": "sk-Kd7pZOTW3...",
  "created_at": "2026-09-30 18:50:51",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/60d51054-6915-46c6-bec6-77383f0abfa3.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/60d51054-6915-46c6-bec6-77383f0abfa3.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:45:45",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "Omni-LLMs",
+    "token compression",
+    "multimodal large language models",
+    "training-free",
+    "audio-visual understanding",
+    "temporal semantic evidence"
+   ],
+   "field": "多模态大模型高效推理",
+   "innovations": [
+    "提出无需训练的两阶段时序感知 token 压缩框架，首次显式建模音频-视觉语义相关性的时序波动性",
+    "设计跨模态预算动态校准机制，利用主导模态实际保留率反向调整跟随者目标",
+    "针对视频和音频设计差异化的语义压缩策略，结合时空分组、查询引导选择和上下文锚点合并"
+   ],
+   "benchmarks": [
+    "WorldSense",
+    "VideoMME",
+    "AVUTBench",
+    "DailyOmni"
+   ]
+  }
+ }
 }

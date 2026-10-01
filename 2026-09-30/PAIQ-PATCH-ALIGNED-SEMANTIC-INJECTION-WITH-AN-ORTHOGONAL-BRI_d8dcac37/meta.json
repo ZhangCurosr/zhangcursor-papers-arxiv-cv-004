@@ -4,5 +4,31 @@
  "title": "PAIQ-PATCH-ALIGNED-SEMANTIC-INJECTION-WITH-AN-ORTHOGONAL-BRI",
  "token": "sk-I70XXkbCl...",
  "created_at": "2026-09-30 08:02:49",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/8842b1a0-866f-4f2a-9bd5-c789e4d5e3f6.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/8842b1a0-866f-4f2a-9bd5-c789e4d5e3f6.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:47:30",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "多编码器融合",
+    "正交残差注入",
+    "视觉语言模型",
+    "跨编码器匹配",
+    "多模态大语言模型"
+   ],
+   "field": "多模态表示学习与融合",
+   "innovations": [
+    "提出 PAIQ：内容匹配+Sinkhorn 联合分配+正交残差旋转的逐 patch 融合接口，保持 196 token",
+    "在共享语义聚合下证明旋转对 patch 间距离贡献非负分离项并给出充分可分下界",
+    "跨 5 骨干 4 基准全面超越单编码器与最强融合/压缩基线，正交消融提升 31.81 分"
+   ],
+   "benchmarks": [
+    "FLUX-Reason",
+    "Caption (CC3M slice)",
+    "SEED-Bench",
+    "A-OKVQA"
+   ]
+  }
+ }
 }

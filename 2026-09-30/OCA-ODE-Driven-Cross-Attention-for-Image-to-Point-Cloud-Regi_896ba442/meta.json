@@ -4,5 +4,10 @@
  "title": "OCA-ODE-Driven-Cross-Attention-for-Image-to-Point-Cloud-Regi",
  "token": "sk-rJF0pjIu8...",
  "created_at": "2026-09-30 08:12:12",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/56f42875-680f-422c-b57a-cd90c3151f0c.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/56f42875-680f-422c-b57a-cd90c3151f0c.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:45:21",
+  "chunks": 1
+ }
 }

@@ -4,5 +4,39 @@
  "title": "On-Policy-Visual-Evidence-Distillation",
  "token": "sk-L0ZhgdlAv...",
  "created_at": "2026-09-30 08:07:00",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/85b828be-20b7-4d07-81f6-25b59e04edda.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/85b828be-20b7-4d07-81f6-25b59e04edda.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:46:47",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "on-policy distillation",
+    "visual evidence",
+    "multimodal",
+    "agent reasoning",
+    "token reweighting",
+    "reflection"
+   ],
+   "field": "多模态大模型训练与蒸馏",
+   "innovations": [
+    "通过同query轨迹比较生成视觉证据反思并诊断Acquire/Read/Ground首失败阶段",
+    "基于reflection引发的教师预测变化量计算token impact并分组重加权蒸馏损失",
+    "跨模型族验证在感知/数学/通用任务上超越所有OPD基线且提升效率"
+   ],
+   "benchmarks": [
+    "HRBench-4K",
+    "HRBench-8K",
+    "V*Bench",
+    "TreeBench",
+    "VisualProbe",
+    "MathVista",
+    "MathVerse",
+    "VisuLogic",
+    "HallusionBench",
+    "ChartQA-Pro",
+    "InfographicVQA"
+   ]
+  }
+ }
 }

@@ -4,5 +4,39 @@
  "title": "On-Policy-Visual-Evidence-Distillation",
  "token": "sk-L0ZhgdlAv...",
  "created_at": "2026-09-30 18:51:27",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/a61849f7-b606-494b-b37a-810a47438a75.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/a61849f7-b606-494b-b37a-810a47438a75.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:46:29",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "on-policy distillation",
+    "visual reasoning",
+    "agent",
+    "knowledge distillation",
+    "vision-language model",
+    "evidence chain"
+   ],
+   "field": "多模态大模型知识蒸馏",
+   "innovations": [
+    "跨轨迹视觉证据反思：通过critic对比同查询多轨迹提取最小充分证据并定位首处失败阶段(Acquire/Read/Ground)",
+    "反思感知的token分组重加权：按教师log-probability偏移幅度对token分级，对top-20%高影响位置施加2.5倍梯度权重",
+    "将阶段诊断信号转化为token级蒸馏监督，实现视觉交互行为的定向修正"
+   ],
+   "benchmarks": [
+    "HRBench-4K",
+    "HRBench-8K",
+    "V* Bench",
+    "TreeBench",
+    "VisualProbe",
+    "MathVista-Mini",
+    "MathVerse",
+    "VisuLogic",
+    "HallusionBench",
+    "ChartQA-Pro",
+    "InfographicVQA"
+   ]
+  }
+ }
 }

@@ -4,5 +4,30 @@
  "title": "PCaPaint-Prostate-Cancer-Inpainting-by-Mitigating-Shortcut-L",
  "token": "sk-rvQMAAO2D...",
  "created_at": "2026-09-30 18:50:19",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/ea68d741-2869-458e-9c86-8af219609ecf.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/ea68d741-2869-458e-9c86-8af219609ecf.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:47:21",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "前列腺癌",
+    "图像修复",
+    "扩散模型",
+    "捷径学习",
+    "医学图像合成"
+   ],
+   "field": "医学图像生成与分析",
+   "innovations": [
+    "噪声填充条件策略理论上缓解捷径学习",
+    "双序列分离潜在设计保留多模态频率特性",
+    "病灶加权损失函数聚焦病变区域合成"
+   ],
+   "benchmarks": [
+    "PI-CAI挑战数据集",
+    "SSIM/PSNR图像质量指标",
+    "Dice/AUC/AP下游任务评估"
+   ]
+  }
+ }
 }

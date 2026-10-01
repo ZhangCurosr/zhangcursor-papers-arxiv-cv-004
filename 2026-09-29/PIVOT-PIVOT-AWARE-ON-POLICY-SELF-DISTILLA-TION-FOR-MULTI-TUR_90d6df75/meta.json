@@ -4,5 +4,35 @@
  "title": "PIVOT-PIVOT-AWARE-ON-POLICY-SELF-DISTILLA-TION-FOR-MULTI-TUR",
  "token": "sk-sKVjU65N5...",
  "created_at": "2026-09-29 07:59:54",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/17e5776d-091f-477e-998d-4ba2fa49cac1.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/17e5776d-091f-477e-998d-4ba2fa49cac1.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:42:25",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "多轮VLM智能体",
+    "强化学习",
+    "On-Policy Distillation",
+    "信用分配",
+    "Pivot Step Localization",
+    "Self-Distillation",
+    "RLVR"
+   ],
+   "field": "多轮视觉语言智能体强化学习",
+   "innovations": [
+    "揭示OPSD性能增益主要源于pivot step物理状态回滚而非技能提示",
+    "提出三角色统一架构将状态恢复内部化为token级梯度",
+    "实现训练时免环境回滚、推理时零额外开销的PIVOT框架"
+   ],
+   "benchmarks": [
+    "VAGEN",
+    "Sokoban",
+    "FrozenLake",
+    "Navigation",
+    "PrimitiveSkill",
+    "SVG Reconstruction"
+   ]
+  }
+ }
 }

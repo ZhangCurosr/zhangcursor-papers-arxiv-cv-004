@@ -4,5 +4,31 @@
  "title": "NRF-GS-Neural-Residual-Fields-for-Expressive-and-Compact-Gau",
  "token": "sk-3HkWblKpl...",
  "created_at": "2026-09-30 08:07:50",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/9ce30818-5bc9-45ec-8d8b-a5b00d21f209.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/9ce30818-5bc9-45ec-8d8b-a5b00d21f209.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:45:04",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "3D Gaussian Splatting",
+    "Neural Residual Fields",
+    "View-dependent Appearance",
+    "Novel View Synthesis",
+    "Spherical Harmonics",
+    "Neural Radiance Fields"
+   ],
+   "field": "神经辐射场与显式场景表示",
+   "innovations": [
+    "用共享神经残差场替代每高斯低阶SH，实现解耦的外观与几何表示",
+    "频率分解+可学习调制权重，平衡高频细节与低频稳定性避免过拟合",
+    "证明更强的外观表达力可直接减少高斯数量约50%而不损失渲染质量"
+   ],
+   "benchmarks": [
+    "MipNeRF360",
+    "DL3DV",
+    "Tanks and Temples"
+   ]
+  }
+ }
 }

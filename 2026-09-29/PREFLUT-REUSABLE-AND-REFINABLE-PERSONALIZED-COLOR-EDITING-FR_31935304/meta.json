@@ -4,5 +4,30 @@
  "title": "PREFLUT-REUSABLE-AND-REFINABLE-PERSONALIZED-COLOR-EDITING-FR",
  "token": "sk-pbKDuH2mM...",
  "created_at": "2026-09-29 08:06:26",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/71829677-8c8e-4a48-88b4-b6c7272c3ea0.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/71829677-8c8e-4a48-88b4-b6c7272c3ea0.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:43:22",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "Personalized Image Enhancement",
+    "3D LUT",
+    "User Preference Modeling",
+    "Color Grading",
+    "Pairwise Preferences"
+   ],
+   "field": "个性化图像增强",
+   "innovations": [
+    "PrefLUT: 可重用精炼用户档案驱动的可部署3D LUT个性化颜色编辑框架",
+    "PCVP: 五项受控测试验证个性化编辑对用户偏好与查询图像的依赖",
+    "方向感知有序偏好token与无位置编码Set Transformer聚合"
+   ],
+   "benchmarks": [
+    "PPSD",
+    "MIT-Adobe FiveK",
+    "PPR10K"
+   ]
+  }
+ }
 }

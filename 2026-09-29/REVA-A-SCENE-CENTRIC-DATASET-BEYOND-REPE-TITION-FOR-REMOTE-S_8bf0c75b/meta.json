@@ -4,5 +4,27 @@
  "title": "REVA-A-SCENE-CENTRIC-DATASET-BEYOND-REPE-TITION-FOR-REMOTE-S",
  "token": "sk-hwXfRrBR3...",
  "created_at": "2026-09-29 19:06:39",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/30aa8f8a-2ca7-4b85-bc7c-a6fce0fc245b.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/30aa8f8a-2ca7-4b85-bc7c-a6fce0fc245b.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:43:28",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "Remote Sensing VideoQA",
+    "Multimodal LLM",
+    "Spatiotemporal Reasoning",
+    "UAV Video Understanding",
+    "Motion-Aware Alignment"
+   ],
+   "field": "遥感视频理解与多模态推理",
+   "innovations": [
+    "ReVA数据集：首个面向真实无人机视频的11任务场景中心遥感VideoQA基准；ReMoSense：显式解耦相机ego-motion与物体动态的双token运动感知对齐框架；五阶段半自动QA生成流水线：CoT引导+人工校验+答案位置Shuffle去偏"
+   ],
+   "benchmarks": [
+    "ReVA Test Set (4,000 QA)",
+    "ReVA Validation Set (2,000 QA)"
+   ]
+  }
+ }
 }

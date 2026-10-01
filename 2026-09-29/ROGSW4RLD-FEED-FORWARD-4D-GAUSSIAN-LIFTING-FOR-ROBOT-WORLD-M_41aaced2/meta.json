@@ -4,5 +4,33 @@
  "title": "ROGSW4RLD-FEED-FORWARD-4D-GAUSSIAN-LIFTING-FOR-ROBOT-WORLD-M",
  "token": "sk-JMLCbBCEj...",
  "created_at": "2026-09-29 07:58:31",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/767e1413-79c5-4bf7-97a8-9101a2df0916.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/767e1413-79c5-4bf7-97a8-9101a2df0916.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:44:28",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "4D Gaussian",
+    "robot world model",
+    "feed-forward reconstruction",
+    "multi-view lifting",
+    "metric depth",
+    "forward kinematics conditioning"
+   ],
+   "field": "机器人场景 4D 重建与空间世界模型",
+   "innovations": [
+    "将同步多相机机器人 rollout 联合提升为统一时间可查询度量 4D 高斯场",
+    "两阶段前馈架构：运动学条件提升 + 位移保持渲染反馈细化",
+    "集成铰接网格锚定与 FK 残差条件以实现跨视角一致的几何与运动估计"
+   ],
+   "benchmarks": [
+    "DROID / ILIAD / PennPAL (held-out 256 episodes)",
+    "Cosmos 3 action-conditioned rollouts",
+    "Novel-view PSNR / LPIPS",
+    "Depth AbsRel",
+    "Robot EPE (mm)"
+   ]
+  }
+ }
 }

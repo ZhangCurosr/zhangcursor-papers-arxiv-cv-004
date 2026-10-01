@@ -4,5 +4,34 @@
  "title": "REVISIT-TO-SEGMENT-WORKING-MEMORY-DISTILLA-TION-FOR-REASONIN",
  "token": "sk-uRWIgUMtb...",
  "created_at": "2026-09-29 08:00:23",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/16ee2f01-5c36-4b8c-bcfd-be6ba770400e.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/16ee2f01-5c36-4b8c-bcfd-be6ba770400e.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:44:07",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "reasoning segmentation",
+    "working memory distillation",
+    "on-policy self-distillation",
+    "GRPO",
+    "multimodal large language model",
+    "Jensen-Shannon divergence"
+   ],
+   "field": "多模态推理分段",
+   "innovations": [
+    "首次将自生成工作记忆作为 on-policy 自蒸馏信号引入推理分段，实现过程+结果双重监督",
+    "提出按分割质量筛选 Top-K rollout 构建工作记忆的 teacher context 构造策略",
+    "联合 GRPO 与 OPSD 的轻量两阶段训练框架，在无需额外标注的情况下把推理时增益固化进朴素预测"
+   ],
+   "benchmarks": [
+    "ReasonSeg",
+    "ReasonSeg-R",
+    "ReasonSeg-X",
+    "MUSE",
+    "MMR",
+    "RefCOCO"
+   ]
+  }
+ }
 }

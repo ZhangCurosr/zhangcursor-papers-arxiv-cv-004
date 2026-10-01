@@ -4,5 +4,30 @@
  "title": "ORMA-OPTIMIZATION-BASED-MONOCULAR4D-RECONSTRUCTION-OF-ARTICU",
  "token": "sk-hwXfRrBR3...",
  "created_at": "2026-09-30 08:06:28",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/bcbe6d9e-f354-49ef-83d0-1ae620250c18.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/bcbe6d9e-f354-49ef-83d0-1ae620250c18.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:46:32",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "动物4D重建",
+    "单目视频",
+    "参数化模型",
+    "生成式3D先验",
+    "语义对应",
+    "世界坐标运动"
+   ],
+   "field": "动物形态与运动重建",
+   "innovations": [
+    "形状-关节解耦的无需训练优化框架",
+    "基于DINO的鲁棒稀疏语义对应模块",
+    "多物种合成基准PAW4D"
+   ],
+   "benchmarks": [
+    "PAW4D",
+    "PFERD"
+   ]
+  }
+ }
 }

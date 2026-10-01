@@ -4,5 +4,31 @@
  "title": "PRECISE-EDITING-AND-FLEXIBLE-REFERENCING-FOR-INTERACTABLE-WO",
  "token": "sk-vo4GDqdWy...",
  "created_at": "2026-09-29 19:07:54",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/3886ba89-d2c0-40f6-a565-b23762f321e3.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/3886ba89-d2c0-40f6-a565-b23762f321e3.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:42:57",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "video world model",
+    "precise editing",
+    "flexible referencing",
+    "autoregressive generation",
+    "gated causal attention",
+    "sparse context",
+    "WBench-Editing"
+   ],
+   "field": "视频世界模型与可交互生成",
+   "innovations": [
+    "Gated Causal Attention 支持流式编辑指令和参考图像在自回归生成中的时序可控融入",
+    "Sparse Context 机制通过固定预算的历史上下文管理支持长程生成",
+    "联合 AR+BI 训练 + Annealed Self-Resampling 缓解编辑任务中的误差累积"
+   ],
+   "benchmarks": [
+    "WBench-Editing",
+    "WBench"
+   ]
+  }
+ }
 }

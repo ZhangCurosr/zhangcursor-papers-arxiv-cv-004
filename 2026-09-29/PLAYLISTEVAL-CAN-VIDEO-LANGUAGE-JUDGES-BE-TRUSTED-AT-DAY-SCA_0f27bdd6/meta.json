@@ -4,5 +4,31 @@
  "title": "PLAYLISTEVAL-CAN-VIDEO-LANGUAGE-JUDGES-BE-TRUSTED-AT-DAY-SCA",
  "token": "sk-aqqIvKJig...",
  "created_at": "2026-09-29 19:08:37",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/9e52ecb7-6602-42fc-b95c-3acf88ce603d.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-29/9e52ecb7-6602-42fc-b95c-3acf88ce603d.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:42:33",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "视频-语言裁判",
+    "超长视频评测",
+    "自动基准构建",
+    "多模态检索",
+    "因果退化",
+    "奖励模型评估"
+   ],
+   "field": "多模态大模型评测与检索增强理解",
+   "innovations": [
+    "以因果退化控制的自动生成流水线构建超长播放列表裁判基准",
+    "跨家族生成-校验与多重门控保障视觉必要性与文本不可见性",
+    "在100小时尺度系统揭示检索-判断瓶颈与短视频微调难迁移"
+   ],
+   "benchmarks": [
+    "PLAYLISTBENCH",
+    "LVBench (关联对比)",
+    "RewardBench / VideoRewardBench / VideoJudge (对比基线)"
+   ]
+  }
+ }
 }

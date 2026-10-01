@@ -4,5 +4,34 @@
  "title": "OMNITASKONOMY-WHEN-DOES-VISUAL-GENERATION-IMPROVE-VISUAL-UND",
  "token": "sk-jywkrqzJV...",
  "created_at": "2026-09-30 18:49:48",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/53bc944c-eefe-48ba-93da-e8793355a911.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/53bc944c-eefe-48ba-93da-e8793355a911.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:46:16",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "视觉生成",
+    "视觉理解",
+    "多模态模型",
+    "任务迁移",
+    "梯度对齐",
+    "OmniTaskonomy"
+   ],
+   "field": "多模态表示学习",
+   "innovations": [
+    "两阶段I2I→I2T训练策略验证了生成对理解的稳定增益",
+    "构建覆盖19个生成任务与25个理解能力的统一分类法OmniTaskonomy",
+    "提出梯度对齐作为跨模态迁移效果的预测信号"
+   ],
+   "benchmarks": [
+    "BLINK",
+    "CV-Bench",
+    "MMStar",
+    "MMT-Bench",
+    "Taskonomy",
+    "VisGym"
+   ]
+  }
+ }
 }

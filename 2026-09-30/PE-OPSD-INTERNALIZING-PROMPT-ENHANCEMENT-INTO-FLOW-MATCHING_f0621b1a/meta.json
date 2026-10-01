@@ -4,5 +4,34 @@
  "title": "PE-OPSD-INTERNALIZING-PROMPT-ENHANCEMENT-INTO-FLOW-MATCHING",
  "token": "sk-gFvvi8BZy...",
  "created_at": "2026-09-30 08:08:09",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/edab7d33-95e8-4834-afdb-40d6818d5a00.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/edab7d33-95e8-4834-afdb-40d6818d5a00.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:48:00",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "text-to-image",
+    "prompt enhancement",
+    "on-policy distillation",
+    "flow-matching",
+    "self-distillation",
+    "privileged information",
+    "prompt fidelity"
+   ],
+   "field": "文本到图像生成与提示优化",
+   "innovations": [
+    "将 Prompt Enhancer 的效果作为训练特权信息，通过 on-policy 自蒸馏内化到仅依赖原始提示词的 flow-matching 模型中",
+    "提出 PE-OPSD 统一损失，以 student-visited states 上的 teacher 向量场为目标，实现 prompt fidelity 与 visual appeal 双提升",
+    "在 SD3.5-M/Z-Image/Z-Image-Turbo/FLUX.2-klein/QwenImage-2512 等多模型验证，prompt fidelity 相对 Base 提升 13.35%-16.07%，推理延迟不变"
+   ],
+   "benchmarks": [
+    "GenEval",
+    "GenEval2",
+    "DPG-bench",
+    "T2I-CompBench++",
+    "EvalMuse"
+   ]
+  }
+ }
 }

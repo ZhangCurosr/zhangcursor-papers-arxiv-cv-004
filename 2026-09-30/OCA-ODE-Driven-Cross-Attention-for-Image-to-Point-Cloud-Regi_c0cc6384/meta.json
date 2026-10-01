@@ -4,5 +4,34 @@
  "title": "OCA-ODE-Driven-Cross-Attention-for-Image-to-Point-Cloud-Regi",
  "token": "sk-rJF0pjIu8...",
  "created_at": "2026-09-30 18:52:59",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/56f42875-680f-422c-b57a-cd90c3151f0c.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/56f42875-680f-422c-b57a-cd90c3151f0c.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-01 09:45:24",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "image-to-point-cloud registration",
+    "cross-attention",
+    "ordinary differential equations",
+    "attention ambiguity",
+    "feature interaction",
+    "vision localization",
+    "point cloud registration"
+   ],
+   "field": "多模态视觉定位与配准",
+   "innovations": [
+    "从ODE视角重构交叉注意力，建立分配ODE理论框架分析注意力歧义问题",
+    "提出轻量级非参数化OCA模块，通过稀疏化注意力+ODE传播双策略迭代精炼2D-3D特征对应",
+    "两阶段训练策略（tau=0预训练+微调）有效解决初始注意力质量不足的冷启动问题"
+   ],
+   "benchmarks": [
+    "7-Scenes",
+    "RGBD-v2",
+    "TUM",
+    "ScanNet",
+    "3DMatch"
+   ]
+  }
+ }
 }
