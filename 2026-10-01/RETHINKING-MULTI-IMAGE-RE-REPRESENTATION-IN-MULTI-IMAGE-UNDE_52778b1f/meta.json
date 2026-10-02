@@ -4,5 +4,34 @@
  "title": "RETHINKING-MULTI-IMAGE-RE-REPRESENTATION-IN-MULTI-IMAGE-UNDE",
  "token": "sk-aeujzMN4P...",
  "created_at": "2026-10-01 08:30:10",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/6f04483a-267d-4fb1-9d6f-7e3b42f5ebef.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/6f04483a-267d-4fb1-9d6f-7e3b42f5ebef.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-02 07:44:34",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "多图理解",
+    "多模态大语言模型",
+    "视觉工具",
+    "强化学习",
+    "图像重表征",
+    "Mosaic",
+    "MosaicBench"
+   ],
+   "field": "多模态推理与视觉智能体",
+   "innovations": [
+    "提出多图重表征统一框架与五类设置",
+    "引入Mosaic视觉工作台与10种可组合操作",
+    "仅用简单奖励的RL使智能体学会多步视觉工具组合"
+   ],
+   "benchmarks": [
+    "MosaicBench",
+    "BLINK",
+    "M4Bench",
+    "Mantis",
+    "MMIU"
+   ]
+  }
+ }
 }

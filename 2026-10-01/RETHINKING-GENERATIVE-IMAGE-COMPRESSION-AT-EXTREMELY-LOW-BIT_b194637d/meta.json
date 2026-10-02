@@ -4,5 +4,30 @@
  "title": "RETHINKING-GENERATIVE-IMAGE-COMPRESSION-AT-EXTREMELY-LOW-BIT",
  "token": "sk-Dw4PCoiSK...",
  "created_at": "2026-10-01 08:25:24",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/d362ba20-fb6a-4f1c-9216-9d79c83e0664.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/d362ba20-fb6a-4f1c-9216-9d79c83e0664.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-02 07:44:40",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "生成式图像压缩",
+    "极低码率",
+    "语义崩塌",
+    "表示自动编码器",
+    "扩散模型",
+    "视觉基础模型"
+   ],
+   "field": "低码率图像压缩",
+   "innovations": [
+    "揭示极低码率下生成式编解码器的语义崩塌现象及其原因",
+    "提出RAE-CoD在表示空间构建压缩导向扩散模型实现16比特语义保留",
+    "设计VFM+盲测VLM双层评估协议解耦语义可识别性与源一致性"
+   ],
+   "benchmarks": [
+    "MSCOCO-30K",
+    "Kodak"
+   ]
+  }
+ }
 }

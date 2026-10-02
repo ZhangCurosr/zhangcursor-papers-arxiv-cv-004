@@ -4,5 +4,33 @@
  "title": "Recognition-of-Urbanized-Areas-in-UAV-Derived-Very-High-Reso",
  "token": "sk-CZoysi7P5...",
  "created_at": "2026-10-01 08:25:05",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/8449ebd4-1655-4feb-9f7a-3c1006aadfb0.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/8449ebd4-1655-4feb-9f7a-3c1006aadfb0.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-02 07:44:31",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "UAV影像分类",
+    "植被指数",
+    "神经网络",
+    "土地利用覆盖分类",
+    "高分辨率RGB图像",
+    "Matthews相关系数",
+    "二分类"
+   ],
+   "field": "无人机遥感图像分类",
+   "innovations": [
+    "跨平台跨季节独立测试集验证泛化性",
+    "简单神经网络在小样本高不平衡数据上显著优于VI阈值法",
+    "系统量化季节对VI阈值的影响并证明其稳定性"
+   ],
+   "benchmarks": [
+    "JERZ数据集",
+    "WIEL数据集",
+    "ExB植被指数阈值基线",
+    "线性网络/MLP/CNN"
+   ]
+  }
+ }
 }
