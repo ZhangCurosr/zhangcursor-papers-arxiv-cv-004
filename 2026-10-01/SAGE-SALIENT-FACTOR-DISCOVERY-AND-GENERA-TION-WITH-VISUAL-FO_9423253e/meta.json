@@ -4,5 +4,32 @@
  "title": "SAGE-SALIENT-FACTOR-DISCOVERY-AND-GENERA-TION-WITH-VISUAL-FO",
  "token": "sk-JiEKTe0tT...",
  "created_at": "2026-10-01 08:26:10",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/94bc996b-ba7f-484f-b9ff-3c6d675d5b66.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/94bc996b-ba7f-484f-b9ff-3c6d675d5b66.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-02 01:50:55",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "对比分析",
+    "显著因子分解",
+    "表示自编码器",
+    "无监督子类型发现",
+    "条件生成",
+    "flow matching",
+    "Cycle NCE"
+   ],
+   "field": "视觉表征学习与生成",
+   "innovations": [
+    "在冻结RAE高维空间latent中直接做公共/显著因子分解，保留实例级空间细节",
+    "Cycle NCE结合双重一致性损失抑制公共内容泄漏",
+    "显著条件扩散生成支持无标签子类型的保留与多样化"
+   ],
+   "benchmarks": [
+    "Digits-ImageNet",
+    "FFHQ eyewear",
+    "OCT-Kermany"
+   ]
+  }
+ }
 }

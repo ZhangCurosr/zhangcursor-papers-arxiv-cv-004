@@ -4,5 +4,34 @@
  "title": "Pixel-Level-Transformers-in-Remote-Sensing-A-Canopy-Height-C",
  "token": "sk-JMLCbBCEj...",
  "created_at": "2026-09-30 18:50:01",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/e4df1a98-1128-47f6-bc74-b7ac92b81dab.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/e4df1a98-1128-47f6-bc74-b7ac92b81dab.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-02 01:49:31",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "Vision Transformer",
+    "Efficient Attention",
+    "Canopy Height Prediction",
+    "Remote Sensing",
+    "Dense Regression",
+    "Patch Size",
+    "GEDI",
+    "ALS"
+   ],
+   "field": "遥感密集回归与视觉Transformer",
+   "innovations": [
+    "系统验证像素级ViT(P=1)在冠高预测上的优越性并揭示patchification scaling laws",
+    "发现GEDI噪声标签对评估的误导性，提出结合ALS高保真标签验证的重要性",
+    "给出efficient/flash/swin三种注意力机制在encoder-decoder中的性能-效率权衡指南"
+   ],
+   "benchmarks": [
+    "Europe dataset (GEDI labels)",
+    "France dataset (ALS labels)",
+    "MAE_{>5m}",
+    "R^2"
+   ]
+  }
+ }
 }

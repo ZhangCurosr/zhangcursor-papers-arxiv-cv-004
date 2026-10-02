@@ -4,5 +4,34 @@
  "title": "Reconstructing-the-Dynamic-World-A-Representation-Centric-Vi",
  "token": "sk-hwXfRrBR3...",
  "created_at": "2026-10-01 08:25:35",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/9693166a-77e3-400c-a37a-78586ef822d8.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/9693166a-77e3-400c-a37a-78586ef822d8.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-02 01:50:25",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "4D Scene Reconstruction",
+    "Neural Radiance Field",
+    "3D Gaussian Splatting",
+    "Dynamic Scene",
+    "Novel View Synthesis",
+    "Survey"
+   ],
+   "field": "动态3D/4D场景重建",
+   "innovations": [
+    "以场景表征为中心的统一分类框架，系统性覆盖NeRF与3DGS两大范式的102种方法",
+    "在多基准上提供跨方法的量化性能对比，揭示4D特征体素化和外部先验的有效性",
+    "识别当前评测协议在时间一致性和拓扑变化评估方面的不足并提出未来方向"
+   ],
+   "benchmarks": [
+    "Neu3D",
+    "D-NeRF",
+    "NeRF-DS",
+    "NuScenes",
+    "Waymo Open Dataset",
+    "NVIDIA Dynamic Scene"
+   ]
+  }
+ }
 }

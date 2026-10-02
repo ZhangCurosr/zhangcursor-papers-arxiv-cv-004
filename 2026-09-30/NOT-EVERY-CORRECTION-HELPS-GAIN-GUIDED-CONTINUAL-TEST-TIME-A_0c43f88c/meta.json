@@ -4,5 +4,10 @@
  "title": "NOT-EVERY-CORRECTION-HELPS-GAIN-GUIDED-CONTINUAL-TEST-TIME-A",
  "token": "sk-9GUbCO4kb...",
  "created_at": "2026-09-30 08:11:20",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/275f2fa0-74be-47ef-b041-e6dfeb60f685.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/275f2fa0-74be-47ef-b041-e6dfeb60f685.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-02 01:50:43",
+  "chunks": 3
+ }
 }

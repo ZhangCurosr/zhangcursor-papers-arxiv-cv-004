@@ -4,5 +4,39 @@
  "title": "RESUME-RECURRENT-STATE-UPDATES-FROM-MO-TION-AND-RESIDUAL-SIG",
  "token": "sk-0a1o6nr9t...",
  "created_at": "2026-10-01 08:25:18",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/e0399865-1c48-4eac-a4f1-ccb6aa69acb9.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/e0399865-1c48-4eac-a4f1-ccb6aa69acb9.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-02 01:50:16",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "video language model",
+    "codec representation",
+    "temporal reasoning",
+    "state transition",
+    "motion vectors",
+    "residuals",
+    "multimodal"
+   ],
+   "field": "视频语言模型与压缩域表征",
+   "innovations": [
+    "将编解码递推关系实例化为因果潜状态转移，构造性地保留参考依赖、构成性与路径依赖性",
+    "运动向量与残差早期融合为单观测并跨步累积，共享读出头输出时序轨迹而非独立帧token",
+    "通过时间反转探针与冻结转移实验建立表征-性能的因果链路，并在时间基准上同时超越RGB基线与编解码基线"
+   ],
+   "benchmarks": [
+    "TempCompass",
+    "TOMATO",
+    "MVBench",
+    "Video-MME",
+    "PerceptionTest",
+    "NExT-QA",
+    "ActivityNet-QA",
+    "LVBench",
+    "Video-TT",
+    "Video-MMMU"
+   ]
+  }
+ }
 }

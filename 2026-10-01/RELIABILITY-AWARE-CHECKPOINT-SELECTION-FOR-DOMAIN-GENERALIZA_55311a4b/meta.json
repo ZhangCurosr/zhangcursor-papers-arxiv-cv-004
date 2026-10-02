@@ -4,5 +4,33 @@
  "title": "RELIABILITY-AWARE-CHECKPOINT-SELECTION-FOR-DOMAIN-GENERALIZA",
  "token": "sk-n7iJ0Z1Ol...",
  "created_at": "2026-10-01 08:29:24",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/51eae146-96e7-4dd6-84fe-041feca8e8fd.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-01/51eae146-96e7-4dd6-84fe-041feca8e8fd.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-02 01:49:34",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "域泛化",
+    "checkpoint选择",
+    "模型校准",
+    "可靠性评估",
+    "域外泛化",
+    "准确率约束",
+    "NLL",
+    "CwECE"
+   ],
+   "field": "域泛化与模型选择",
+   "innovations": [
+    "提出精度约束可靠性选择（AC）框架，在固定训练轨迹内将源准确率过滤与可靠性排序两阶段解耦",
+    "在近最优准确率集合内用 min-max 归一化 NLL+CwECE 的 D∞聚合重排 checkpoint，无需目标数据或额外训练",
+    "系统揭示纯校准选择退化现象并提供有限样本源准确率理论保证"
+   ],
+   "benchmarks": [
+    "PACS",
+    "OfficeHome",
+    "TerraIncognita"
+   ]
+  }
+ }
 }

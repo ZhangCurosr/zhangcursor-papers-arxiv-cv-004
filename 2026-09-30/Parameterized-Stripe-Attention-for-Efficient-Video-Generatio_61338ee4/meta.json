@@ -4,5 +4,10 @@
  "title": "Parameterized-Stripe-Attention-for-Efficient-Video-Generatio",
  "token": "sk-t5rU5DeOT...",
  "created_at": "2026-09-30 18:51:52",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/c0eb3c5f-a4e3-4853-9672-75528aea35ad.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-09-30/c0eb3c5f-a4e3-4853-9672-75528aea35ad.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-02 01:49:52",
+  "chunks": 1
+ }
 }
