@@ -4,5 +4,31 @@
  "title": "ULTRAWORLD-LEARNING-INTERACTIVE-ULTRA-SOUND-WORLD-MODELS-FRO",
  "token": "sk-WcZzSI744...",
  "created_at": "2026-10-08 19:45:18",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/3fd79348-71ea-4c7d-ada7-5bd7c7485d77.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/3fd79348-71ea-4c7d-ada7-5bd7c7485d77.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-08 22:45:38",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "超声世界模型",
+    "声学采样地图",
+    "自蒸馏",
+    "无跟踪临床视频",
+    "机器人超声规划",
+    "像素级几何条件"
+   ],
+   "field": "医疗机器人超声扫描",
+   "innovations": [
+    "从无声学动作标注的临床视频经自蒸馏学习交互式超声世界模型",
+    "引入 AsMap 以像素级 3D 采样几何显式编码探头位姿与成像参数以实现可靠动作控制"
+   ],
+   "benchmarks": [
+    "BUV",
+    "CAMUS",
+    "BUSI",
+    "I-SPY1"
+   ]
+  }
+ }
 }

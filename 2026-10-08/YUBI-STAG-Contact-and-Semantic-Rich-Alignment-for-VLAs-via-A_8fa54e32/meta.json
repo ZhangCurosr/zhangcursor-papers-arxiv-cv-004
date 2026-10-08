@@ -4,5 +4,29 @@
  "title": "YUBI-STAG-Contact-and-Semantic-Rich-Alignment-for-VLAs-via-A",
  "token": "sk-vCwdEIcnG...",
  "created_at": "2026-10-08 19:42:42",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/9edb7a1f-60cf-42b3-9d39-d8cc6f9ae50d.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/9edb7a1f-60cf-42b3-9d39-d8cc6f9ae50d.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-08 22:46:59",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "VLA",
+    "robot manipulation",
+    "video-language grounding",
+    "spatiotemporal annotation",
+    "contact detection",
+    "post-training alignment"
+   ],
+   "field": "视觉-语言-行动模型",
+   "innovations": [
+    "接触锚定的多阶段时空标注框架 YUBI-STAG，将粗粒度演示 enrich 为细粒度接触-语义标注",
+    "蒸馏为端到端 YUBI-VLM 直接从原始手腕视频生成标注，无需预定义动作边界",
+    "接触-语义丰富的 VLA 后训练配方，提升细粒度语言遵循和组合泛化能力"
+   ],
+   "benchmarks": [
+    "YUBI-STAG-Bench"
+   ]
+  }
+ }
 }

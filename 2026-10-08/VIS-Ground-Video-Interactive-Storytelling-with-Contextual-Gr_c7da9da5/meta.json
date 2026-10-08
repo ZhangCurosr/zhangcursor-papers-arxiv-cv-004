@@ -4,5 +4,28 @@
  "title": "VIS-Ground-Video-Interactive-Storytelling-with-Contextual-Gr",
  "token": "sk-8dCw3hSU3...",
  "created_at": "2026-10-08 19:46:56",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/1a04a7ec-0c97-4328-81e1-1bbfe5c146f2.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/1a04a7ec-0c97-4328-81e1-1bbfe5c146f2.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-08 22:46:18",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "video interactive storytelling",
+    "contextual grounding",
+    "constrained video generation",
+    "agentic planning",
+    "VIS-Bench"
+   ],
+   "field": "多模态生成与交互",
+   "innovations": [
+    "结构化上下文抽象将异构输入转化为对齐的状态模型与交叉依赖",
+    "候选条件约束诱导动态激活相关依赖为生成约束",
+    "规划-验证-修订-渲染迭代流程统一跨推理与生成的约束保障"
+   ],
+   "benchmarks": [
+    "VIS-Bench"
+   ]
+  }
+ }
 }

@@ -4,5 +4,10 @@
  "title": "VISUAL-EVIDENCE-UNDER-CROSS-EXAMINATION-EVALUATING-AND-CONTR",
  "token": "sk-1TedD2e6f...",
  "created_at": "2026-10-08 19:47:58",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/f32a8909-1c3e-4027-aff8-3c3096069ed5.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/f32a8909-1c3e-4027-aff8-3c3096069ed5.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-08 22:46:34",
+  "chunks": 1
+ }
 }

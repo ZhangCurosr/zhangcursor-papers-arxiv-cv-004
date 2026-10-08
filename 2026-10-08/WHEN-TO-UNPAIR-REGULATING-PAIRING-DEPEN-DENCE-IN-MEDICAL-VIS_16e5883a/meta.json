@@ -4,5 +4,30 @@
  "title": "WHEN-TO-UNPAIR-REGULATING-PAIRING-DEPEN-DENCE-IN-MEDICAL-VIS",
  "token": "sk-9ieZJEGxv...",
  "created_at": "2026-10-08 19:49:13",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/6cebb549-0115-4a0f-beb0-18440f9ecb8c.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/6cebb549-0115-4a0f-beb0-18440f9ecb8c.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-08 22:46:23",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "视觉上下文学习",
+    "医学图像分割",
+    "配对依赖性",
+    "课程学习",
+    "鲁棒性诊断"
+   ],
+   "field": "医学影像AI",
+   "innovations": [
+    "测试时错排诊断方法量化ICL模型配对依赖",
+    "晚期解配课程（LUC）在不牺牲性能下减少配对依赖"
+   ],
+   "benchmarks": [
+    "BraTS 2021",
+    "ABCD",
+    "ADNI",
+    "OASIS-3"
+   ]
+  }
+ }
 }

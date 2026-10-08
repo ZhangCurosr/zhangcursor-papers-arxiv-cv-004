@@ -4,5 +4,29 @@
  "title": "ULTRATEXT-BENCH-A-COMPREHENSIVE-BILINGUAL-BENCHMARK-FOR-EVAL",
  "token": "sk-xfpcKPjW4...",
  "created_at": "2026-10-08 19:54:50",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/170e826b-4331-4d5f-abb0-855c5e2f231a.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/170e826b-4331-4d5f-abb0-855c5e2f231a.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-08 22:45:30",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "视觉文字渲染",
+    "图像生成评估",
+    "双语基准",
+    "VLM判官",
+    "密集文字",
+    "纯提示词生成"
+   ],
+   "field": "视觉生成评估基准",
+   "innovations": [
+    "提出UltraText Bench基准，覆盖24场景类别、3难度级别、中英双语的密集视觉文字渲染评估",
+    "构建结构化逐区域参考（6属性）并与Q-Judger六维评分协议结合实现全场景评估",
+    "设计四维度评分体系（保真度/清晰度/空间质量/场景质量）显式分离内容正确性与视觉质量"
+   ],
+   "benchmarks": [
+    "UltraText Bench"
+   ]
+  }
+ }
 }

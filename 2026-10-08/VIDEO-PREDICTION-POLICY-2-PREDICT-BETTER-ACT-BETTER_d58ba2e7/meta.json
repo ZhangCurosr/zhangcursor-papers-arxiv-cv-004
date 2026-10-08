@@ -4,5 +4,33 @@
  "title": "VIDEO-PREDICTION-POLICY-2-PREDICT-BETTER-ACT-BETTER",
  "token": "sk-n7iJ0Z1Ol...",
  "created_at": "2026-10-08 19:50:45",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/f52b3814-e90e-4044-8050-d5133e4c02a1.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/f52b3814-e90e-4044-8050-d5133e4c02a1.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-08 22:45:56",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "世界动作模型",
+    "视频预测",
+    "机器人操作",
+    "零样本泛化",
+    "一致性蒸馏",
+    "混合Transformer",
+    "LIBERO",
+    "RoboDojo"
+   ],
+   "field": "机器人操作策略学习",
+   "innovations": [
+    "事件级视频预训练结合详细字幕提升指令跟随与泛化",
+    "分阶段视频模型训练与一致性蒸馏实现实时单步生成",
+    "坐标系显式对齐与冻结+LoRA策略保护预训练知识"
+   ],
+   "benchmarks": [
+    "ALOHA零样本操作",
+    "LIBERO-ID/Pro/OOD",
+    "RoboDojo"
+   ]
+  }
+ }
 }

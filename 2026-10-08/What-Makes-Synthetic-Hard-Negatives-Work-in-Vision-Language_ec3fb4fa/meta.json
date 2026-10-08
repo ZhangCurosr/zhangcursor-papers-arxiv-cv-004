@@ -4,5 +4,32 @@
  "title": "What-Makes-Synthetic-Hard-Negatives-Work-in-Vision-Language",
  "token": "sk-4qwN7yoJ8...",
  "created_at": "2026-10-08 19:46:48",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/358a2467-7104-4fe7-bac4-65a22ab35985.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/358a2467-7104-4fe7-bac4-65a22ab35985.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-08 22:46:23",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "vision-language pretraining",
+    "contrastive learning",
+    "hard negatives",
+    "synthetic negatives",
+    "CLIP",
+    "representation space"
+   ],
+   "field": "多模态对比表示学习",
+   "innovations": [
+    "识别并定量刻画表示空间合成负样本在视觉语言预训练中的模态间隙塌陷与正信号泄漏两种失败模式",
+    "提出SNAP方法，仅使用不涉及正样本的同模态混合与噪声注入策略，结合固定温度实现高效增强"
+   ],
+   "benchmarks": [
+    "CC3M",
+    "CC12M",
+    "Flickr30k",
+    "MSCOCO",
+    "ImageNet"
+   ]
+  }
+ }
 }

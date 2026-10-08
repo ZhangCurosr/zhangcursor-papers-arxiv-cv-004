@@ -4,5 +4,32 @@
  "title": "VIDEO-CONDITIONED-GENERATIVE-JOINT-2D-3DHAND-MOTION-RECOVERY",
  "token": "sk-DXHHyylpH...",
  "created_at": "2026-10-08 19:44:58",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/76777e8c-20c8-4aed-80b6-26b1ca82a00b.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/76777e8c-20c8-4aed-80b6-26b1ca82a00b.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-08 22:45:59",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "hand motion recovery",
+    "generative model",
+    "2D-3D joint generation",
+    "flow matching",
+    "monocular video",
+    "HO3D",
+    "HOT3D"
+   ],
+   "field": "手动作恢复与生成",
+   "innovations": [
+    "联合流匹配直接生成对齐的2D与3D局部手运动，无需预训练单帧估计器",
+    "2D引导的融合机制在每步生成中实时用2D预测指导3D速度场",
+    "通过重投影损失与局部归一化表示实现跨模态几何一致性"
+   ],
+   "benchmarks": [
+    "HO3Dv2",
+    "HO3Dv3",
+    "HOT3D-Clips"
+   ]
+  }
+ }
 }
