@@ -4,5 +4,35 @@
  "title": "emg2face-Expressive-Facial-Animation-with-High-Density-Surfa",
  "token": "sk-AURmMVi2z...",
  "created_at": "2026-10-08 08:32:20",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-08/1b0028ef-cfea-4321-8314-d73d46b46f27.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-08/1b0028ef-cfea-4321-8314-d73d46b46f27.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-08 09:43:39",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "HD-sEMG",
+    "facial animation",
+    "blendshape decoding",
+    "expressive head model",
+    "multimodal synchronization",
+    "GNM",
+    "EMG-to-face",
+    "occluded face capture"
+   ],
+   "field": "参数化人脸驱动与非光学表情捕捉",
+   "innovations": [
+    "音频音调亚毫秒级多模态同步方法（0.15 ms RMS）",
+    "GNM 参数化头部模型的分阶段姿态-眼-表达拟合策略",
+    "空间编码器+扩张TCN从64通道HD-sEMG直接预测383维表达权重（中位顶点误差0.43 mm）"
+   ],
+   "benchmarks": [
+    "GNM 顶点误差（mm）",
+    "Blendshape 权重 Pearson 相关系数 r",
+    "方差解释率 R²",
+    "Eye-region 与全脸顶点误差对比",
+    "平均表情基线误差 0.87 mm vs 预测 0.43 mm"
+   ]
+  }
+ }
 }

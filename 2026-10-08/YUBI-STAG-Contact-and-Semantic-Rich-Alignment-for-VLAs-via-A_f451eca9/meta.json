@@ -4,5 +4,34 @@
  "title": "YUBI-STAG-Contact-and-Semantic-Rich-Alignment-for-VLAs-via-A",
  "token": "sk-vCwdEIcnG...",
  "created_at": "2026-10-08 08:31:04",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-08/06c5557f-5b8e-4de2-a031-e5dc637100ee.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-08/06c5557f-5b8e-4de2-a031-e5dc637100ee.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-08 09:43:39",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "Vision-Language-Action",
+    "机器人操作",
+    "视频-语言接地",
+    "接触检测",
+    "数据增强",
+    "后训练对齐",
+    "双手指操作"
+   ],
+   "field": "具身智能与机器人学习",
+   "innovations": [
+    "接触锚定的多阶段时空标注管道YUBI-STAG，自动从双手指示范恢复细粒度交互语义",
+    "将多阶段标注管道蒸馏为单VLM YUBI-VLM，直接从原始腕部视频推断动作结构",
+    "接触优先采样+手性/接触阶段标签的数据-centric VLA后训练方案"
+   ],
+   "benchmarks": [
+    "YUBI-STAG-Bench",
+    "YUBI零件分拣",
+    "燃料支架分拣",
+    "socks排序任务",
+    "字母块组合任务"
+   ]
+  }
+ }
 }

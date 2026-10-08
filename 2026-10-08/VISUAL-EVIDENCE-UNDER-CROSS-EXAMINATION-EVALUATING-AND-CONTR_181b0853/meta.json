@@ -4,5 +4,33 @@
  "title": "VISUAL-EVIDENCE-UNDER-CROSS-EXAMINATION-EVALUATING-AND-CONTR",
  "token": "sk-1TedD2e6f...",
  "created_at": "2026-10-08 08:33:05",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-08/ac8f6798-cfe9-4ded-9784-aeed31d96725.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-08/ac8f6798-cfe9-4ded-9784-aeed31d96725.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-08 09:43:13",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "vision-language model",
+    "evidence grounding",
+    "candidate-bound reasoning",
+    "counterfactual evaluation",
+    "multimodal decision-making",
+    "visual evidence attribution"
+   ],
+   "field": "多模态视觉语言推理与可解释性",
+   "innovations": [
+    "提出候选绑定视觉贡献的形式化标准与决策所有权概念",
+    "设计RIVET四阶段接口实现证据-候选对齐与强度解耦控制",
+    "构建CROSS-Bench基准并揭示准确率与证据所有权可分离现象"
+   ],
+   "benchmarks": [
+    "CROSS-Bench",
+    "V⋆Bench",
+    "MMStar",
+    "CV-Bench",
+    "MME-RealWorld-Lite"
+   ]
+  }
+ }
 }

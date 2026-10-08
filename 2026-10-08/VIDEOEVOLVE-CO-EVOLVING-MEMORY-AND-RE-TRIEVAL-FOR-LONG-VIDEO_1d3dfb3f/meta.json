@@ -4,5 +4,34 @@
  "title": "VIDEOEVOLVE-CO-EVOLVING-MEMORY-AND-RE-TRIEVAL-FOR-LONG-VIDEO",
  "token": "sk-owp49a3rO...",
  "created_at": "2026-10-08 08:34:53",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-08/73efb461-fd08-4c38-b70a-f00b8649a258.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-08/73efb461-fd08-4c38-b70a-f00b8649a258.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-08 09:41:55",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "长视频理解",
+    "记忆机制",
+    "检索增强",
+    "强化学习",
+    "多模态大语言模型",
+    "自我演化",
+    "交替优化"
+   ],
+   "field": "长视频多模态理解",
+   "innovations": [
+    "交替式 Agentic RL 联合演化记忆构建与检索策略，打破构建-检索单向优化范式",
+    "BEF 瓶颈感知反馈通过配对诊断动态分配记忆/检索训练资源",
+    "CEF 能力感知反馈基于九类能力标签和前沿/探索/保留采样引导训练课程"
+   ],
+   "benchmarks": [
+    "Video-MME",
+    "LongVideoBench",
+    "LVBench",
+    "MLVU",
+    "MMVU"
+   ]
+  }
+ }
 }

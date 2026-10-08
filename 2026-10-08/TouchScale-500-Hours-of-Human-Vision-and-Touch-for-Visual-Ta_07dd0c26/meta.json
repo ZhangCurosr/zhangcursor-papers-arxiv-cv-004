@@ -4,5 +4,31 @@
  "title": "TouchScale-500-Hours-of-Human-Vision-and-Touch-for-Visual-Ta",
  "token": "sk-hwXfRrBR3...",
  "created_at": "2026-10-08 08:32:54",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-08/4fa760d7-ed38-4447-b68f-393f667e1b0e.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-08/4fa760d7-ed38-4447-b68f-393f667e1b0e.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-08 09:41:13",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "Visual-Tactile Learning",
+    "Egocentric Dataset",
+    "Robotic Manipulation",
+    "Tactile Prediction",
+    "Scaling Law"
+   ],
+   "field": "具身视觉-触觉学习与操作",
+   "innovations": [
+    "提出500小时统一传感管线的人类视觉-触觉数据集TouchScale并公开",
+    "在固定传感器条件下验证触觉预测与机器人成功率的数据缩放效应",
+    "无动作标签的视觉-触觉中期训练使接触丰富型操作成功率从22.5%提升至57.5%"
+   ],
+   "benchmarks": [
+    "EgoTactile",
+    "MECCANO",
+    "Something-Something V2",
+    "Ego-Exo4D"
+   ]
+  }
+ }
 }

@@ -4,5 +4,31 @@
  "title": "WHEN-TO-UNPAIR-REGULATING-PAIRING-DEPEN-DENCE-IN-MEDICAL-VIS",
  "token": "sk-9ieZJEGxv...",
  "created_at": "2026-10-08 08:34:34",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-08/8efef030-e82d-4919-b6db-a4b3028ca0f7.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-08/8efef030-e82d-4919-b6db-a4b3028ca0f7.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-08 09:42:45",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "visual in-context learning",
+    "medical image segmentation",
+    "pairing dependence",
+    "curriculum learning",
+    "test-time diagnostic",
+    "robustness"
+   ],
+   "field": "医学视觉上下文学习",
+   "innovations": [
+    "提出测试时重排操作定义配对差距，首次系统诊断视觉ICL模型的配对依赖",
+    "晚期解耦课程LUC在缩小配对依赖的同时维持或提升匹配支持性能",
+    "证明训练末尾阶段而非解耦总量决定配对依赖程度"
+   ],
+   "benchmarks": [
+    "BraTS 2021 whole-tumor segmentation",
+    "ABCD/ADNI/OASIS-3 anatomical segmentation",
+    "T1 cohorts cross-dataset evaluation"
+   ]
+  }
+ }
 }

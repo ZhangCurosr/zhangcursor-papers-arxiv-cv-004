@@ -4,5 +4,30 @@
  "title": "Unified-Multi-plane-Autoregressive-Difusion-for-3D-Multi-Con",
  "token": "sk-41l0wHhLH...",
  "created_at": "2026-10-08 08:32:16",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-08/496d8b3a-47d3-46b6-ac14-35f73b32b754.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-08/496d8b3a-47d3-46b6-ac14-35f73b32b754.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-08 09:41:20",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "multi-contrast MRI synthesis",
+    "latent diffusion",
+    "autoregressive generation",
+    "3D medical imaging",
+    "plane-wise diffusion",
+    "one-to-many translation"
+   ],
+   "field": "3D医学图像生成与合成",
+   "innovations": [
+    "将3D多对比度MRI合成重构为2D潜空间掩码切片预测任务，避免3D扩散的立方计算缩放",
+    "提出平面内自回归(IAS)+跨平面先验(IPI)的双层自回归推理机制，以2D操作保证全局3D一致性",
+    "在统一模型中通过文本条件实现one-to-many多对比度合成，训练FLOPs降低7×、推理FLOPs降低3×"
+   ],
+   "benchmarks": [
+    "ADNI",
+    "IXI"
+   ]
+  }
+ }
 }
