@@ -4,5 +4,30 @@
  "title": "WAPR-A-Foundation-Model-for-Wide-Angle-Refinement-in-Unseen",
  "token": "sk-aeujzMN4P...",
  "created_at": "2026-10-08 08:36:53",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-08/7aa022e3-c6b2-470e-810c-588056452a56.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-08/7aa022e3-c6b2-470e-810c-588056452a56.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-08 17:22:56",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "6D姿态估计",
+    "未见物体",
+    "广角姿态精修",
+    "旋转对称先验",
+    "零样本",
+    "BOP基准",
+    "合成RGB-D数据集"
+   ],
+   "field": "未见物体6D姿态估计",
+   "innovations": [
+    "广角零样本姿态精修模型WAPR，支持±90°旋转偏差修正",
+    "对称等价姿态离线规范化策略（Min-over-Symmetry Canonicalization）解决旋转对称歧义",
+    "角度平衡损失（Angle-Balanced Loss）稳定广角训练并抑制低对应大误差样本"
+   ],
+   "benchmarks": [
+    "BOP-Classic-Core (LM-O, T-LESS, TUD-L, IC-BIN, ITODD, HB, YCB-V)"
+   ]
+  }
+ }
 }

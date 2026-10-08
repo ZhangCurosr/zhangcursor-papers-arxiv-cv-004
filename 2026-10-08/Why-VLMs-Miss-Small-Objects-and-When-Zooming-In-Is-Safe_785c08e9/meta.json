@@ -4,5 +4,33 @@
  "title": "Why-VLMs-Miss-Small-Objects-and-When-Zooming-In-Is-Safe",
  "token": "sk-ckT2EzSkF...",
  "created_at": "2026-10-08 08:32:18",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-08/1b16d1c8-cdd0-4716-a29a-fdb101286b04.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-08/1b16d1c8-cdd0-4716-a29a-fdb101286b04.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-08 17:24:48",
+  "chunks": 4,
+  "meta": {
+   "keywords": [
+    "VLM 小目标检测",
+    "视觉 token 接口",
+    "安全分解",
+    "Propose & Verify",
+    "建筑图纸理解",
+    "召回-代价前沿",
+    "信息论下界"
+   ],
+   "field": "多模态小目标检测与 VLM 接口理论",
+   "innovations": [
+    "提出 S 与 L 两个接口量刻画 VLM 小目标召回的根本约束，给出 Ω(S²) 覆盖代价下界",
+    "证明安全分解定理：单调性+重叠≥1 条件下平铺分解不降低召回",
+    "Propose & Verify 框架将 11 模型差距从 0.34 压缩至 0.08，逼近模板匹配上限"
+   ],
+   "benchmarks": [
+    "REDP-X40",
+    "FPC-300",
+    "FSC-147",
+    "Controlled images"
+   ]
+  }
+ }
 }
