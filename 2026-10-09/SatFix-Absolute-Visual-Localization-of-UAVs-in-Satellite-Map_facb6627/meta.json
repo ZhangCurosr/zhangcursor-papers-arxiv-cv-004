@@ -4,5 +4,34 @@
  "title": "SatFix-Absolute-Visual-Localization-of-UAVs-in-Satellite-Map",
  "token": "sk-yoA5lsrHK...",
  "created_at": "2026-10-09 08:43:24",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/26c5d45c-823b-4591-85f5-b96a68aa473c.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/26c5d45c-823b-4591-85f5-b96a68aa473c.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 09:56:14",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "UAV视觉定位",
+    "跨视角地理定位",
+    "卫星地图",
+    "VGGT-Ω",
+    "University-Metric",
+    "连续姿态回归",
+    "多视图定位"
+   ],
+   "field": "UAV视觉定位与跨视角匹配",
+   "innovations": [
+    "基于cross-attention的卫星网格特征query机制，直接回归连续位置与航向",
+    "构建区域尺度倾斜UAV基准University-Metric，提供连续坐标标注",
+    "单模型统一单/多视图输入，施加轨迹约束提升多帧定位精度"
+   ],
+   "benchmarks": [
+    "University-Metric",
+    "University-1652",
+    "UAV-VisLoc",
+    "GeoVINS",
+    "AerialVL"
+   ]
+  }
+ }
 }

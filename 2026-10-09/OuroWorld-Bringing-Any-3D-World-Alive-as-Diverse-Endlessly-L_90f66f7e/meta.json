@@ -4,5 +4,32 @@
  "title": "OuroWorld-Bringing-Any-3D-World-Alive-as-Diverse-Endlessly-L",
  "token": "sk-DXHHyylpH...",
  "created_at": "2026-10-09 08:30:32",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/7fd84155-1988-44b4-90d0-ea1fd7e9052f.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/7fd84155-1988-44b4-90d0-ea1fd7e9052f.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 09:52:02",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "3D cinemagraph",
+    "Gaussian Splatting",
+    "looping video",
+    "inconsistent supervision",
+    "periodic deformation",
+    "video generation"
+   ],
+   "field": "3D场景动态生成",
+   "innovations": [
+    "首个无掩码3D cinemagraph框架，VLM引导视频生成替代手工掩码",
+    "傅里叶级数变形场从数学上保证循环，支持通用运动和光照变化",
+    "Grounded Drift Field吸收跨视图不一致性，参考视图锚定动态"
+   ],
+   "benchmarks": [
+    "Mip-NeRF 360",
+    "HY-World 2.0",
+    "Marble",
+    "Lyra 2.0"
+   ]
+  }
+ }
 }

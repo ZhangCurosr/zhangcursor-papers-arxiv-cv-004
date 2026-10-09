@@ -4,5 +4,35 @@
  "title": "SPACECAST-BENCH-EVALUATING-PREDICTIVE-SPA-TIAL-REASONING-IN",
  "token": "sk-4GZLsbGFG...",
  "created_at": "2026-10-09 08:37:29",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/6a2711a3-e55d-4b6c-b495-212d755bbbdd.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/6a2711a3-e55d-4b6c-b495-212d755bbbdd.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 09:55:50",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "predictive spatial reasoning",
+    "vision-language models",
+    "spatial reasoning benchmark",
+    "multi-view integration",
+    "spatial state updating",
+    "observe-transform-infer"
+   ],
+   "field": "视觉-语言模型空间推理",
+   "innovations": [
+    "首个直接评估预测性空间推理的诊断性基准 SpaceCast-Bench，覆盖3,862题/182场景/16任务类型/3能力层级",
+    "几何接地程序化生成流水线，从RGB-D扫描构建深度验证视角链并推导未观测结果标签",
+    "发现空间专用模型在预测推理上近乎随机，显式3D证据优于生成式世界模型证据"
+   ],
+   "benchmarks": [
+    "SpaceCast-Bench",
+    "MMSI-Bench",
+    "SPARTQA",
+    "MindCube",
+    "CLEVRER",
+    "VSI-Bench",
+    "DSI-Bench"
+   ]
+  }
+ }
 }

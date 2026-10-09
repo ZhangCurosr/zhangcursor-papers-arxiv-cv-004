@@ -4,5 +4,31 @@
  "title": "PAM-ToD-Plug-and-Play-Appearance-Modeling-for-Cross-Time-of",
  "token": "sk-UIdHTd8L7...",
  "created_at": "2026-10-09 08:44:13",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/4ac616f9-3274-44bf-b84f-4f0a4f07a328.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/4ac616f9-3274-44bf-b84f-4f0a4f07a328.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 09:52:07",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "3D Gaussian Splatting",
+    "跨时段外观适配",
+    "逆渲染",
+    "自动驾驶仿真",
+    "CARLA-ToD",
+    "少样本重光照"
+   ],
+   "field": "3D 视觉与神经渲染",
+   "innovations": [
+    "基于消去反照率的乘性-加性外观传输，直接适配冻结 3DGS",
+    "层次化全局-空间场-残差参数配合容量匹配正则实现少锚定稳健优化",
+    "构建几何/位姿/动态轨迹一致的 CARLA-ToD 跨时段评测基准"
+   ],
+   "benchmarks": [
+    "CARLA-ToD Static",
+    "CARLA-ToD Dynamic",
+    "Waymo Open Dataset"
+   ]
+  }
+ }
 }

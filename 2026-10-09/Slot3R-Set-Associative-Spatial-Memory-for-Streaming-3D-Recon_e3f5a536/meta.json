@@ -4,5 +4,35 @@
  "title": "Slot3R-Set-Associative-Spatial-Memory-for-Streaming-3D-Recon",
  "token": "sk-9BdnpHblK...",
  "created_at": "2026-10-09 08:29:21",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/c87d0bdc-3681-4641-9823-566bc48c62db.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/c87d0bdc-3681-4641-9823-566bc48c62db.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 09:56:52",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "streaming 3D reconstruction",
+    "spatial pointer memory",
+    "set-associative memory",
+    "training-free",
+    "visual geometry transformer",
+    "camera pose estimation"
+   ],
+   "field": "流式 3D 重建与视觉几何",
+   "innovations": [
+    "提出 set-associative 空间记忆，在同一 3D 地址保留多个独立状态以避免证据过早坍塌",
+    "设计有界稀疏读出（局部邻域+全局锚点）实现存储规模与每帧 decoder 输入解耦",
+    "引入辅助 viewpoint bank 与 agreement gate 在零训练前提下显著提升相机位姿估计"
+   ],
+   "benchmarks": [
+    "7Scenes",
+    "NeuralRGBD",
+    "ScanNet",
+    "Sintel",
+    "TUM-Dynamic",
+    "Bonn",
+    "KITTI"
+   ]
+  }
+ }
 }

@@ -4,5 +4,36 @@
  "title": "SP-DocReader-Diference-Aware-Self-Play-for-Precise-Document",
  "token": "sk-jqdHJ0gJC...",
  "created_at": "2026-10-09 08:58:08",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/8f2d09ba-919e-40bc-89c3-2dae62105ebc.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/8f2d09ba-919e-40bc-89c3-2dae62105ebc.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 09:55:38",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "document OCR",
+    "self-play fine-tuning",
+    "vision-language model",
+    "discrepancy-aware training",
+    "modular tuning",
+    "character error rate reduction"
+   ],
+   "field": "文档理解与光学字符识别",
+   "innovations": [
+    "提出基于LCS对齐的Reading Discrepancy Masking定位残差错误位置并施加对比学习",
+    "设计Focused Fidelity Loss在unmatched ground-truth位置提供直接NLL监督防止病态优化",
+    "仅训练0.5B参数的OCR模块实现接近full-tuning的零样本泛化性能"
+   ],
+   "benchmarks": [
+    "Vary-600K",
+    "DocBank",
+    "IIT-CDIP",
+    "DocVQA",
+    "InfographicVQA",
+    "OmniDocBench",
+    "OCRBench v2",
+    "CC-OCR"
+   ]
+  }
+ }
 }

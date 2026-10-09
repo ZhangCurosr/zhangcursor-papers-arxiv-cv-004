@@ -4,5 +4,32 @@
  "title": "SEPGEN-MULTI-STEM-AUDIO-VIDEOSEPARATION-AND-GENERATION-IN-A",
  "token": "sk-o7hgvdkWW...",
  "created_at": "2026-10-09 08:34:50",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/b07225ce-8f05-4bb7-bedf-7d7a5b269a85.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/b07225ce-8f05-4bb7-bedf-7d7a5b269a85.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 09:55:00",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "多音轨生成",
+    "音视频联合生成",
+    "语言查询源分离",
+    "扩散模型适配",
+    "跨音轨注意引导",
+    "4D场景重建"
+   ],
+   "field": "多模态音视频生成与分离",
+   "innovations": [
+    "受保护audio-mix通道+LoRA门控实现骨干无损扩展",
+    "统一双模式权重通过噪声调度在生成与分离间切换",
+    "Cross-Stem Attention Guidance解决同类多源泄漏问题"
+   ],
+   "benchmarks": [
+    "Veo 3.1 Lite Rendered Benchmark",
+    "LTX-2.3 Benchmark",
+    "SAM-Audio-bench",
+    "自建双源生成基准（194条prompt）"
+   ]
+  }
+ }
 }

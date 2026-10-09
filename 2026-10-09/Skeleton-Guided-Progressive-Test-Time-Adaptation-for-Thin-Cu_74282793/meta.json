@@ -4,5 +4,38 @@
  "title": "Skeleton-Guided-Progressive-Test-Time-Adaptation-for-Thin-Cu",
  "token": "sk-qcw8nHe5i...",
  "created_at": "2026-10-09 08:39:04",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/7d696626-539e-4673-9bd0-b1b02de2e0fb.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/7d696626-539e-4673-9bd0-b1b02de2e0fb.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 09:56:23",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "test-time adaptation",
+    "curvilinear segmentation",
+    "batch normalization",
+    "skeleton recall",
+    "cross-modality domain shift",
+    "topology preservation"
+   ],
+   "field": "医学影像/遥感细结构分割与测试时自适应",
+   "innovations": [
+    "ProgBN: 基于样本数的渐进BN统计融合调度，解决BN统计-仿射参数阶段依赖问题",
+    "CSR: 多视图共识膨胀骨架自监督召回损失，仅更新BN仿射参数以保留连通性",
+    "统一框架分离适配BN统计（无梯度）与仿射参数（有梯度），跨模态场景提升最显著"
+   ],
+   "benchmarks": [
+    "DRIVE",
+    "STARE",
+    "CHASEDB",
+    "ROSE1",
+    "OCTA3mm",
+    "OCTA6mm",
+    "RECOVERY-FA19",
+    "DeepGlobe",
+    "Massachusetts Roads (MR)",
+    "CNDS"
+   ]
+  }
+ }
 }

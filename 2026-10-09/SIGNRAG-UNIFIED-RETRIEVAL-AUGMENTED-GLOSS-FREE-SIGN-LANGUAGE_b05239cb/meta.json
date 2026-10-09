@@ -4,5 +4,31 @@
  "title": "SIGNRAG-UNIFIED-RETRIEVAL-AUGMENTED-GLOSS-FREE-SIGN-LANGUAGE",
  "token": "sk-ZWbnnHdTr...",
  "created_at": "2026-10-09 08:42:54",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/b0ce5003-0de5-4e09-8a84-8d392371dddd.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/b0ce5003-0de5-4e09-8a84-8d392371dddd.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 09:55:02",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "sign language translation",
+    "retrieval-augmented generation",
+    "large language model",
+    "multimodal pretraining",
+    "reinforcement fine-tuning"
+   ],
+   "field": "手语翻译与多模态大模型",
+   "innovations": [
+    "分层预训练解决跨模态优化失衡",
+    "目标域检索增强+检索dropout适应机制",
+    "RUG-RFT联合翻译质量与检索效用奖励"
+   ],
+   "benchmarks": [
+    "CSL-Daily",
+    "PHOENIX-2014T",
+    "How2Sign",
+    "OpenASL"
+   ]
+  }
+ }
 }

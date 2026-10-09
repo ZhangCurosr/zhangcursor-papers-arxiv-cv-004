@@ -4,5 +4,31 @@
  "title": "POINT-FOCUSED-ATTENTION-MEETS-CONTEXT-SCAN-STATE-SPACE-ROBUS",
  "token": "sk-5jLHcS0AE...",
  "created_at": "2026-10-09 08:34:24",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/596d2744-1d4c-4b82-a442-47a8ba41089f.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/596d2744-1d4c-4b82-a442-47a8ba41089f.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 09:52:45",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "point cloud",
+    "state space model",
+    "biomimetic vision",
+    "attention mechanism",
+    "3D perception",
+    "Mamba"
+   ],
+   "field": "3D点云表征学习",
+   "innovations": [
+    "Point-Focused Attention: 模拟中心凹视觉的双分支竞争性归一化注意力机制",
+    "Context-Scan State Space: Hilbert曲线引导的双向S6扫视推理模块"
+   ],
+   "benchmarks": [
+    "ModelNet40",
+    "ShapeNet",
+    "S3DIS",
+    "ScanObjectNN"
+   ]
+  }
+ }
 }

@@ -4,5 +4,33 @@
  "title": "PARAMETRIC-TRAJECTORY-DISTILLATION-FOR-FEW-STEP-VIDEO-GENERA",
  "token": "sk-iaeYeK7Vr...",
  "created_at": "2026-10-09 08:36:26",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/a7ac25cc-b0bf-455a-ad5a-23b8ff114c77.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/a7ac25cc-b0bf-455a-ad5a-23b8ff114c77.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 09:52:25",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "video distillation",
+    "few-step generation",
+    "trajectory distillation",
+    "flow matching",
+    "consistency models",
+    "parametric trajectory"
+   ],
+   "field": "视频生成加速与蒸馏",
+   "innovations": [
+    "用多项式曲线参数化轨迹段并在学生自身路径上查询教师速度进行监督，推理时丢弃曲率头",
+    "提出学生曲线查询与教师marching的分层跳步策略以匹配学生预测容量",
+    "仅用轨迹监督在33B和14B模型上均达到少步视频蒸馏SOTA"
+   ],
+   "benchmarks": [
+    "MiniMax-H3 33B",
+    "Wan2.1-14B",
+    "VBench",
+    "GPT-6 Astra",
+    "H3 Acceleration Arena"
+   ]
+  }
+ }
 }

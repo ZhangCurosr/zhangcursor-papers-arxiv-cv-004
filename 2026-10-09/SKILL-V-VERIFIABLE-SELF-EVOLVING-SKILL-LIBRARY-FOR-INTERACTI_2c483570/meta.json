@@ -4,5 +4,31 @@
  "title": "SKILL-V-VERIFIABLE-SELF-EVOLVING-SKILL-LIBRARY-FOR-INTERACTI",
  "token": "sk-0a1o6nr9t...",
  "created_at": "2026-10-09 08:34:15",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/2f26359d-7f35-4b59-895d-2c74c6b6b309.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/2f26359d-7f35-4b59-895d-2c74c6b6b309.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 09:55:21",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "self-evolving skill library",
+    "verifiable contract",
+    "interactive agent",
+    "catastrophic forgetting",
+    "knowledge maintenance",
+    "reinforcement learning",
+    "skill revision"
+   ],
+   "field": "交互式代理的可验证技能演化",
+   "innovations": [
+    "将技能建模为版本化可证伪合同，实现可测试的知识维护",
+    "双路径结果驱动演化：失败新增 + 评分器-结果分歧修订",
+    "证据门控非退化验证防止知识库退化"
+   ],
+   "benchmarks": [
+    "ALFWorld",
+    "WebShop"
+   ]
+  }
+ }
 }
