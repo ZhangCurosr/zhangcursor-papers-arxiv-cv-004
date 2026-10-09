@@ -4,5 +4,31 @@
  "title": "RICO-NEURAL-SIMULATION-OF-RIGID-BODY-INTER-ACTIONS-VIA-LOCAL",
  "token": "sk-hwXfRrBR3...",
  "created_at": "2026-10-09 08:34:32",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/949a434f-7627-4d73-85a9-3243bccd8001.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/949a434f-7627-4d73-85a9-3243bccd8001.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 17:24:40",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "rigid-body dynamics",
+    "contact reasoning",
+    "point cloud",
+    "world model",
+    "neural simulation",
+    "MOVi benchmark"
+   ],
+   "field": "物理动力学建模",
+   "innovations": [
+    "基于稀疏局部接触邻域的刚性体接触建模，避免全局密集交互",
+    "物体内部点 Transformer 传播接触信息链接细粒度接触与整体运动",
+    "Ground-truth 相对穿透度量评估物理一致性"
+   ],
+   "benchmarks": [
+    "MOVi-Sphere",
+    "MOVi-A",
+    "MOVi-B"
+   ]
+  }
+ }
 }

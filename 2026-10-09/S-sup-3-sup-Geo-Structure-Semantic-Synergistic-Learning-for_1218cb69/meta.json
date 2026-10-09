@@ -4,5 +4,30 @@
  "title": "S-sup-3-sup-Geo-Structure-Semantic-Synergistic-Learning-for",
  "token": "sk-1TedD2e6f...",
  "created_at": "2026-10-09 08:32:11",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/b6f321e3-ba0d-4e11-8c75-d243e6561ae0.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/b6f321e3-ba0d-4e11-8c75-d243e6561ae0.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 17:25:56",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "cross-view geo-localization",
+    "optimal transport",
+    "semantic knowledge distillation",
+    "DINOv3",
+    "CLIP",
+    "image retrieval"
+   ],
+   "field": "跨视角地理定位",
+   "innovations": [
+    "提出DQP+OT软匹配的区域级结构对齐机制",
+    "提出SKD策略从冻结CLIP教师蒸馏特征与关系级语义先验",
+    "训练-推理分离设计在零额外推理开销下实现SOTA"
+   ],
+   "benchmarks": [
+    "University-1652",
+    "SUES-200"
+   ]
+  }
+ }
 }

@@ -4,5 +4,33 @@
  "title": "PointVGGT-Zero-Shot-Multiview-RGB-D-Point-Cloud-Registration",
  "token": "sk-hN9qFiLuN...",
  "created_at": "2026-10-09 08:40:00",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/b7866680-d643-4eda-adf9-bf83269bc360.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/b7866680-d643-4eda-adf9-bf83269bc360.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 17:24:47",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "Multiview RGB-D Registration",
+    "Visual Geometry Foundation Model",
+    "Zero-Shot Registration",
+    "Bundle Adjustment",
+    "Point Cloud Alignment"
+   ],
+   "field": "多视图点云配准与三维重建",
+   "innovations": [
+    "首次将视觉几何基础模型的全局pose/3D先验直接用于无训练多视图RGB-D配准，提出foundation-then-refinement新范式",
+    "基于体素化空间哈希的O(SN)密集跨视图对应构建，以全局点图作为无额外开销的3D描述子",
+    "深度驱动的尺度对齐初始化结合Geman-McClure鲁棒核motion-only BA的完整零样本配准流水线"
+   ],
+   "benchmarks": [
+    "ScanNet",
+    "ScanNet++",
+    "ARKitScenes",
+    "WildRGB-D",
+    "KITTI",
+    "Waymo"
+   ]
+  }
+ }
 }

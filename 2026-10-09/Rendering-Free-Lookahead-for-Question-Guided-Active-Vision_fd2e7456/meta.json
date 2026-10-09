@@ -4,5 +4,31 @@
  "title": "Rendering-Free-Lookahead-for-Question-Guided-Active-Vision",
  "token": "sk-y9PdQWlPV...",
  "created_at": "2026-10-09 08:42:41",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/3fa23f3b-589d-4000-bfb6-0b7a570a4c8a.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/3fa23f3b-589d-4000-bfb6-0b7a570a4c8a.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 17:25:49",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "Active Vision",
+    "Embodied QA",
+    "3D Gaussian Splatting",
+    "Value Distillation",
+    "Answerability",
+    "Privileged Supervision",
+    "Vision-Language Model"
+   ],
+   "field": "具身主动视觉与视角规划",
+   "innovations": [
+    "将VLM answerability校准为候选相机动作的价值函数，通过两阶段蒸馏实现部署时零渲染前瞻",
+    "证明answerability-based动作评分在相同VLM骨干下显著优于直接动作克隆（+24% on single-view variant）",
+    "首次实现仿真到真机6-DoF臂的零渲染视角选择迁移，超GPT-5.1专有基线"
+   ],
+   "benchmarks": [
+    "E3VS-Bench",
+    "SceneSplat++"
+   ]
+  }
+ }
 }

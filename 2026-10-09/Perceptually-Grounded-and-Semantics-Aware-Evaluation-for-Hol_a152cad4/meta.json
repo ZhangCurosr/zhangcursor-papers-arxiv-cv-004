@@ -4,5 +4,28 @@
  "title": "Perceptually-Grounded-and-Semantics-Aware-Evaluation-for-Hol",
  "token": "sk-NVka6yfS0...",
  "created_at": "2026-10-09 08:29:34",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/25a4c806-3be5-406e-b15d-464cf008b911.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/25a4c806-3be5-406e-b15d-464cf008b911.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 17:24:44",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "共 speech 手势生成",
+    "语义评估",
+    "感知验证",
+    "复合指标",
+    "多模态大模型标注"
+   ],
+   "field": "多模态生成评估",
+   "innovations": [
+    "提出 SGP 语义手势保真度指标，弥补 SC 与人类感知脱节的缺陷",
+    "构建目标特定复合指标，在所有 5 个感知维度上超越单一最佳客观指标"
+   ],
+   "benchmarks": [
+    "BEAT2",
+    "GENEA-style perceptual study"
+   ]
+  }
+ }
 }

@@ -4,5 +4,35 @@
  "title": "Rethinking-Contrastive-Loss-in-CLIP-Post-training-A-Compleme",
  "token": "sk-buEDzpHKC...",
  "created_at": "2026-10-09 08:33:59",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/d137dfa4-80d8-4982-a65c-6dd30a970ebc.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/d137dfa4-80d8-4982-a65c-6dd30a970ebc.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 17:26:01",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "CLIP后训练",
+    "对比学习",
+    "InfoNCE温度",
+    "关系蒸馏",
+    "视觉编码器精炼",
+    "VLM兼容性",
+    "线性探测可迁移性"
+   ],
+   "field": "视觉-语言表征学习",
+   "innovations": [
+    "证明InfoNCE后训练遗忘主要由温度τ不当而非批次小驱动，提出τ=0.01的适度温度方案",
+    "ComCLIP三损失框架：适度温度对比损失+MSE锚定+DINOv2关系蒸馏，实现零样本持平且线性探测显著提升",
+    "冻结文本编码器的drop-in替换设计，在LLaVA-1.5-7B中验证下游兼容性无损"
+   ],
+   "benchmarks": [
+    "12-dataset Zero-shot Classification",
+    "MS COCO Retrieval R@1",
+    "Flickr30K Retrieval R@1",
+    "5-dataset Linear Probing",
+    "MMVP",
+    "LLaVA-1.5-7B 8 VLM Benchmarks"
+   ]
+  }
+ }
 }

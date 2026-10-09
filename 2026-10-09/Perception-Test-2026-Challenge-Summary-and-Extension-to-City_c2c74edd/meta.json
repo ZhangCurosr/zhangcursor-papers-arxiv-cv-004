@@ -4,5 +4,32 @@
  "title": "Perception-Test-2026-Challenge-Summary-and-Extension-to-City",
  "token": "sk-JMLCbBCEj...",
  "created_at": "2026-10-09 08:29:52",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/8274a4cc-80d1-4088-84c9-daefeac2434e.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/8274a4cc-80d1-4088-84c9-daefeac2434e.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 17:24:40",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "spatial reasoning",
+    "multimodal models",
+    "long video understanding",
+    "audio-visual reasoning",
+    "benchmark",
+    "agentic pipeline"
+   ],
+   "field": "多模态空间智能",
+   "innovations": [
+    "提出 KilometerVision 城市尺度空间智能 benchmark，覆盖地图追踪、距离估计等7类任务",
+    "首次发布 KilometerAudio 基准，针对数小时长视频的音频导向多模态推理进行系统评估",
+    "揭示零样本智能体管道与单一多模态模型在城市尺度推理上的性能鸿沟"
+   ],
+   "benchmarks": [
+    "KilometerVision",
+    "KilometerAudio",
+    "Perception Test",
+    "Video-MME"
+   ]
+  }
+ }
 }

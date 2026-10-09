@@ -4,5 +4,31 @@
  "title": "RIGHT-SCREEN-WRONG-TRANSITION-WORLD-MODELS-AS-VERIFIERS-FOR",
  "token": "sk-qf4fjeNDd...",
  "created_at": "2026-10-09 08:37:10",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/3f23f256-505f-41da-a078-e869faaf648a.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/3f23f256-505f-41da-a078-e869faaf648a.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 17:25:26",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "GUI Agent",
+    "World Model",
+    "Safety Verification",
+    "Latent Prediction",
+    "Transition Integrity",
+    "Self-supervised Learning"
+   ],
+   "field": "GUI Agent 安全性与验证",
+   "innovations": [
+    "将 GUI 世界模型用作验证器：预测表示直接落在观察编码空间，以余弦残差完成无监督转移动机验证",
+    "残差双读法：幅度检测违反、方向经线性头解释危害，二者为可分离能力",
+    "RSWT-BENCH：donor-paired 设计证明结果屏幕检测的理论上限为 AUC=0.5"
+   ],
+   "benchmarks": [
+    "RSWT-BENCH",
+    "Swap",
+    "Cred"
+   ]
+  }
+ }
 }
