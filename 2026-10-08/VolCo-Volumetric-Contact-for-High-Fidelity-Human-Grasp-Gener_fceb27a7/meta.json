@@ -4,5 +4,30 @@
  "title": "VolCo-Volumetric-Contact-for-High-Fidelity-Human-Grasp-Gener",
  "token": "sk-ovHaiDbC4...",
  "created_at": "2026-10-08 19:50:59",
- "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/18548db9-4e89-462c-8ed4-f1c7a4985597.zip"
+ "result_url": "https://cdn-mineru.openxlab.org.cn/pdf/2026-10-09/18548db9-4e89-462c-8ed4-f1c7a4985597.zip",
+ "summarized": {
+  "model": "agnes-2.5-flash",
+  "at": "2026-10-09 03:20:02",
+  "chunks": 1,
+  "meta": {
+   "keywords": [
+    "Hand-Object Interaction",
+    "Contact Representation",
+    "Diffusion Model",
+    "Grasp Generation",
+    "3D Volumetric",
+    "VAE"
+   ],
+   "field": "手-物交互与抓取生成",
+   "innovations": [
+    "提出Volumetric Contact（VolCo）体积接触表示，将接触建模从2D表面扩展到3D局部体素网格",
+    "设计VolCoDiff分层生成框架，VolumeVAE建模局部接触先验、潜在扩散模型学习全局组合分布",
+    "引入手部先验辅助分支与带松弛变量的力感知稳定性损失，显著提升抓握稳定性和降低穿透深度"
+   ],
+   "benchmarks": [
+    "GRAB",
+    "HO3D"
+   ]
+  }
+ }
 }
