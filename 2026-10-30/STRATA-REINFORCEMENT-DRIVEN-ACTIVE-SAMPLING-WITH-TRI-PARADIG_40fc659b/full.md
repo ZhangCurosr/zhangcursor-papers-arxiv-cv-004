@@ -1,0 +1,146 @@
+# STRATA: REINFORCEMENT-DRIVEN ACTIVE SAMPLING WITH TRI-PARADIGM ADAPTATION FOR EFFICIENT 3D SPATIAL TRANSCRIPTOMICS
+
+Junchao Zhu<sup>1</sup> Ruining Deng<sup>2</sup> Chongyu Qu<sup>1</sup> Zhengyi Lu<sup>1</sup> Yanfan Zhu<sup>1</sup> Yuechen Yang<sup>1</sup> Yu Wang<sup>3</sup> Shilin Zhao<sup>3</sup> Haichun Yang<sup>3</sup> Yuankai Huo<sup>1,⋆</sup>
+
+<sup>1</sup> Vanderbilt University, Tennessee, USA <sup>2</sup> Weill Cornell Medicine, New York, USA <sup>3</sup> Vanderbilt University Medical Center, Tennessee, USA
+
+## ABSTRACT
+
+Spatial transcriptomics (ST) enables joint characterization of tissue morphology and gene expression. However, 3D volumetric ST acquisition remains expensive. AI-driven methods offer a low-cost alternative but remain limited in accuracy, while recent 2D section-wise ST acquisition still rely on dense grid sampling, resulting in redundant measurements and undersampling of biologically informative regions. To bridge the gap, we propose STRATA, a reinforcement-driven active sampling framework with tri-paradigm adaptation for reconstructing dense 3D transcriptomic maps from sparse voxel-wise ST acquisition. STRATA constructs a 3D graph integrating H&E morphology with single-cell priors and employs a reinforcement learning agent to estimate morphological sparsity and transcriptomic informativeness, enabling budget-aware selection of informative spots. Given these sparse measurements, an adaptive tri-paradigm predictor combines retrieval, regression, and cross-layer imputation through lightweight fusion, dynamically weighting their contributions. Experiments across datasets demonstrate improved sampling efficiency and accuracy, particularly under low-budget settings. Code is available at STRATA.
+
+Index Terms— Spatial Transcriptomics; Active Learning; Computational Pathology
+
+## 1. INTRODUCTION
+
+Spatial transcriptomics (ST) enables in situ profiling of tissue morphology and gene expression [1, 2]. However, ST remains expensive, with sequencing a single section costing thousands of dollars, making large-scale 3D tissue modeling financially impractical. Although current methods can infer gene expression directly from histology, their performance still depends heavily on sufficient ST supervision. Yet conventional ST acquisition relies on fixed-grid sampling [2, 3], despite strong spatial continuity in H&E morphology and gene expression [4, 5], resulting in redundant measurements and inefficient use of limited sequencing budgets. This redundancy becomes more pronounced in 3D tissues, where biologically informative patterns are often concentrated in limited regions, motivating adaptive selection of spots with high morphological and transcriptomic informativeness. Meanwhile, existing predictors are predominantly 2D and single-paradigm [6, 7], overlooking cross-layer morphology–expression continuity and inheriting limitations of regression or retrieval alone. These motivate a unified framework that jointly optimizes 3D ST acquisition and adaptive prediction by exploiting crosslayer continuity and complementary inference paradigms.
+
+To bridge these gaps, we propose STRATA, a unified reinforcement-driven active sampling framework with triparadigm adaptation that reformulates ST modeling as a joint sampling-and-prediction problem over 3D tissue volumes under constrained sequencing budgets. STRATA constructs a volumetric graph through histological alignment and incorporates single-cell references as biological priors to guide spatial modeling. Based on this representation, a reinforcement learning agent adaptively selects informative spots according to morphological sparsity and transcriptomic informativeness, prioritizing regions with higher biological value, and iteratively updates its sampling policy as new measurements become available. Meanwhile, a tri-paradigm predictor integrates retrieval, regression, and 3D cross-layer imputation through lightweight soft routing to exploit their complementary inductive biases. Our contributions are threefold:
+
+• We propose STRATA that reformulates isolated 2D ST acquisition and prediction as budget-aware 3D cooptimization, enabling dense sparse voxel-wise measurements under limited sequencing budgets.
+
+• We develop a reinforcement-driven active sampling strategy on a 3D voxel graph integrating H&E morphology and single-cell priors, enabling iterative selection of spots with high morphological sparsity and informativeness.
+
+• We introduce an adaptive tri-paradigm predictor that softroutes across retrieval, regression, and 3D cross-layer imputation to improve prediction under limited budgets.
+
+![](images/650d42bdb30fb8da469a841a375c21c869a219215eb7a005e36ceaffc9232cee.jpg)  
+Fig. 1. Overview of STRATA. We first align serial H&E sections into a 3D voxel space and construct a cellular prototype dictionary from single-cell reference to introduce biological priors. We then develop a cell-aware RL sampling agent that evaluates candidate spots by morphological sparsity and bio-informativeness, and optimizes selection with validation loss reduction, 3D redundancy penalty, and prototype coverage bonus. Finally, an adaptive tri-paradigm predictor integrates visual retrieval, regression, and 3D cross-layer imputation via a lightweight head to generate high-fidelity expression predictions.
+
+## 2. METHOD
+
+## 2.1. 3D Graph and Cellular Prior Construction
+
+3D graph construction. We first register sections into a 3D system using the middle as the reference with affine registration and refinement. For each spot i, a pretrained vision encoder encodes its H&E patch into morphological $f _ { i }$ . All spots form a 3D graph G. Within each section, each spot is connected to its $k _ { \mathrm { i n t r a } }$ nearest neighbors based on Euclidean distance. For cross-section connections, we identify overlapping candidates and rank them by cos $( f _ { i } , f _ { j } )$ . If fewer than $k _ { \mathrm { c r o s s } }$ candidates, additional non-overlapping neighbors are selected using $( 1 - \alpha ) \cos ( f _ { i } , f _ { j } ) + \alpha ( 1 - d _ { i j } / d _ { \operatorname* { m a x } } )$ , where $d _ { i j }$ denotes spatial distance, $d _ { \mathrm { m a x } }$ is for normalization, and α balances similarity and spatial proximity. Cross-section edge weights are then defined as $w _ { i j } ^ { \mathrm { c r o s s } } = \cos ( f _ { i } , f _ { j } )$ , reducing effect of registration errors.
+
+Cellular state prototypes. Using a large-scale single-cell reference, pretrained foundation model embeds reference cell $j$ and sequenced spot i into a shared space as $q _ { j }$ and $z _ { i } ,$ respectively. MiniBatchKMeans clusters $N$ reference embeddings into C prototypes by solving min $\{ \mu _ { c } \} _ { c = 1 } ^ { C } \sum _ { j = 1 } ^ { N }$ min<sub>c</sub> $\parallel q _ { j } -$ $\mu _ { c } \| _ { 2 } ^ { 2 }$ , where $\mu _ { c }$ denotes a prototype centroid. Let $\mathcal { C } _ { c }$ denote the reference cells assigned to prototype c. The resulting dictionary $\mathcal D = \{ ( \mu _ { c } , \pi _ { c } ) \} _ { c = 1 } ^ { C }$ records prototype prevalence $\pi _ { c } ~ = ~ | \mathcal { C } _ { c } | / N$ , thereby encouraging the policy to explore biologically underrepresented regions.
+
+## 2.2. Cell-Aware Active Sampling Agent on 3D Graph
+
+Sampling policy with cellular priors and trajectory memory. We formulate sampling on $\mathcal { G }$ as a finite-horizon decision process with state $s _ { t } = ( \mathcal { G } , m _ { t } , S _ { t } , b _ { t } )$ , where U is the full candidate set, $m _ { t } \in \{ 0 , 1 \} ^ { | \mathcal { U } | }$ marks unsampled spots with 1, $s _ { t } \subset \mathcal { U }$ is the set selected by step $t ,$ and $b _ { t } = ( B - | S _ { t } | ) / B$ is the remaining budget ratio. The action $a _ { t } \ \in \mathcal { U } \setminus \mathcal { S } _ { t }$ is drawn from a masked softmax policy. Static features $\phi _ { i } ^ { \mathrm { f r z } }$ depend only on H&E and graph geometry, including $f _ { i }$ and mean within- and cross-section neighbor embeddings $\bar { f } _ { i } ^ { \mathrm { i l } }$ ntra and $\bar { f } _ { i } ^ { \mathrm { c r o s s } }$ . Dynamic features $\phi _ { i } ^ { \mathrm { d y n } } ( t )$ incorporate cellular soft assignment $c _ { i } , b _ { t }$ , and mean cross-section similarity $\overline { { w } } _ { i , S _ { t } } ^ { \mathrm { c r o s s } }$ to selected spots; $z _ { i }$ is included only after sequencing.
+
+The policy $\pi _ { \theta }$ scores unsampled candidates. A lightweight cellular state prediction head $g _ { \phi } : f _ { i } \mapsto \Delta ^ { C - 1 }$ predicts prototype soft assignments $c _ { i }$ , where $\Delta ^ { C - 1 }$ is the probability simplex. After sequencing, the nearest prototype to $z _ { i }$ provides a hard label for cross-entropy updates on accumulated samples, progressively distilling single-cell knowledge. A frozen projection produces $h _ { i } ^ { \mathrm { s t a t i c } }$ , keeping reinforcement learning gradients focused on the scoring head. Trajectory context $h _ { t } ^ { \mathrm { c t x } }$ averages selected static embeddings. The policy combines these representations as:
+
+$$
+\begin{array} { r l } & { \ell _ { t , i } = \mathrm { M L P } _ { \theta } \big ( [ h _ { i } ^ { \mathrm { s t a t i c } } \| c _ { i } \| \phi _ { i } ^ { \mathrm { d y n } } ( t ) \| h _ { t } ^ { \mathrm { c t x } } ] \big ) , } \\ & { \pi _ { \theta } ( a _ { t } = i \mid s _ { t } ) = \frac { m _ { t , i } \exp ( \ell _ { t , i } ) } { \sum _ { j } m _ { t , j } \exp ( \ell _ { t , j } ) } . } \end{array}\tag{1}
+$$
+
+∥ denotes concatenation and θ denotes policy parameters. The mask excludes previously selected spots, while trajectory context and cross-section similarity reduce redundancy.
+
+Multi-objective reward and policy optimization. We train $\pi _ { \theta }$ by reinforcement learning with a per-step reward combining validation-loss reduction, a 3D redundancy penalty, and a
+
+coverage bonus for underrepresented prototypes:
+
+$$
+r _ { t } = R ^ { \mathrm { r o u n d } } - \gamma \overline { { w } } _ { a _ { t } , S _ { t } } ^ { \mathrm { c r o s s } } + \eta _ { \mathrm { s c } } \log \frac { B } { 1 + n _ { k ^ { \star } ( a _ { t } ) } ^ { \mathrm { s c } } } .\tag{2}
+$$
+
+After sequencing the chosen spot, its nearest prototype is $\begin{array} { r } { k ^ { \star } ( a _ { t } ) \ = \ \arg \operatorname* { m i n } _ { c } \| z _ { a _ { t } } \ - - \mu _ { c } \| _ { 2 } } \end{array}$ . Here, $n _ { k } ^ { \mathrm { s c } } = | \{ i \in S _ { t } \ :$ $k ^ { \star } ( i ) = k \} |$ counts spots assigned to prototype k before the current selection; $\gamma$ and $\eta _ { \mathrm { s c } }$ weight redundancy and coverage, respectively. Sampling proceeds over R rounds. Each round commits a batch and updates the predictor from $\theta ^ { - } ~ \mathrm { \mathfrak { t o } } ~ \theta ^ { + }$ on $S _ { t }$ . On a deterministically hashed validation subset $\mathcal { V } ^ { \mathrm { p s } } \subset \mathcal { S } .$ the primary reward is $R ^ { \mathrm { r o u n d } } = { \mathcal { L } } _ { \mathcal { V } ^ { \mathrm { p s } } } ( \theta ^ { - } ) - { \mathcal { L } } _ { \mathcal { V } ^ { \mathrm { p s } } } ( \theta ^ { + } )$ , so a reduction in validation loss yields a positive reward. All actions in the round share this reward. Exponential-moving-average normalization of $r _ { t }$ yields advantage $A _ { t } .$ . To alleviate gradient sparsity, we replay actions under updated policy parameters, recomputing log-probabilities to accumulate gradients. The policy objective, where H is entropy and $\beta$ decreases during training to transition from exploration to convergence, as:
+
+$$
+\mathcal { L } _ { \pi } = - \mathbb { E } _ { t } \left[ A _ { t } \log \pi _ { \theta } ( a _ { t } \mid s _ { t } ) + \beta \mathcal { H } \bigl ( \pi _ { \theta } ( \cdot \mid s _ { t } ) \bigr ) \right] ,\tag{3}
+$$
+
+## 2.3. Adaptive Tri-Paradigm Predictor
+
+Multi-paradigm modeling and optimization. Three parallel branches provide complementary predictions. Retrieval uses $s$ as a global reference pool and encodes patches and expression into a shared semantic space. The top-K cosine-matched references are softmax-weighted to obtain ${ \hat { y } } _ { i } ^ { \mathrm { r e t } }$ . Regression uses pretrained CONCH and a lightweight head to predict $\hat { y } _ { i } ^ { \mathrm { r e g } }$ , providing predictions for regions poorly covered by the reference pool. The 3D imputation branch incorporates crosssection structure through ${ \mathcal { G } } .$ . It aggregates sequenced neighbors $\mathcal { N } _ { i } ^ { \mathrm { c r o s s } } \subset \mathcal { S }$ with normalized attention weights $\alpha _ { i j }$ ∝ $w _ { i j } ^ { \mathrm { c r o s s } } \exp ( \cos ( f _ { i } , f _ { j } ) )$ ), yielding $\begin{array} { r } { \hat { y } _ { i } ^ { 3 \mathrm { d } } = \sum _ { j } \alpha _ { i j } y _ { j } } \end{array}$ as a samplelevel consistency prior, where $y _ { j }$ is measured expression.
+
+Retrieval aligns paired visual and expression embeddings through a symmetric contrastive loss. Let $v _ { i }$ and $h _ { i }$ denote paired visual and expression embeddings in a batch of N spots, with contrastive temperature $\tau = 0 . 0 7$ . Each branch computes its loss independently with decoupled gradients:
+
+$$
+\begin{array} { l } { { \displaystyle { \mathcal L } _ { R e t } = - \frac { 1 } { 2 N } \sum _ { i = 1 } ^ { N } \biggl [ \log \frac { \exp ( v _ { i } ^ { \top } h _ { i } / \tau ) } { \sum _ { j = 1 } ^ { N } \exp ( v _ { i } ^ { \top } h _ { j } / \tau ) } + ( v  h ) \biggr ] , } } \\ { { \displaystyle { \mathcal L } _ { R e g } = \mathrm { M S E } \bigl ( \hat { y } _ { i } ^ { r e g } , y _ { i } \bigr ) + \lambda _ { \mathrm { c o n } } \mathrm { M S E } \bigl ( \hat { y } _ { i } ^ { r e g } , \hat { y } _ { i } ^ { 3 \mathrm { d } } \bigr ) . } } \end{array}\tag{4}
+$$
+
+Here, $( v  h )$ denotes the second logarithmic term obtained by exchanging v and h. MSE denotes mean squared error. The regression loss includes a 3D consistency term weighted by $\lambda _ { \mathrm { c o n } }$ , as a soft teacher to transfer structural supervision.
+
+Adaptive expert routing fusion. We introduce a lightweight adaptive fusion head to route each spot toward an optimal combination of the three branches. After training, we cache their predictions and 3D confidence on the sampled set S and train the fusion head on these outputs. Two global learnable scalars $w _ { 3 } , w _ { r } \in \mathbb { R }$ , together with spot-level confidence $\rho _ { i } = \operatorname* { m a x } _ { j } \alpha _ { i j }$ , determine the branch weights.
+
+Routing proceeds in two stages. First, the 3D contribution is $\alpha _ { i } ^ { 3 \mathrm { d } } = \rho _ { i } \sigma ( w _ { 3 } )$ , where σ denotes sigmoid. The confidence $\rho _ { i }$ adaptively scales this contribution, reducing the influence of 3D imputation when confidence is low. The remaining weight $1 - \alpha _ { i } ^ { 3 \mathrm { d } }$ is split as $\alpha _ { i } ^ { \mathrm { r e t } } = ( 1 - \alpha _ { i } ^ { 3 \mathrm { d } } ) \sigma ( w _ { r } )$ and $\alpha _ { i } ^ { \mathrm { r e g } } = ( 1 - \alpha _ { i } ^ { 3 \mathrm { d } } ) ( \bar { 1 } - \sigma ( w _ { r } ) )$ , using $\sigma ( w _ { r } )$ to balance retrieval and regression. These weights adapt the three-branch combination for each spot, yielding the final prediction:
+
+$$
+\hat { y } _ { i } = \alpha _ { i } ^ { \mathrm { r e t } } \hat { y } _ { i } ^ { \mathrm { r e t } } + \alpha _ { i } ^ { \mathrm { r e g } } \hat { y } _ { i } ^ { \mathrm { r e g } } + \alpha _ { i } ^ { 3 \mathrm { d } } \hat { y } _ { i } ^ { 3 \mathrm { d } } .\tag{5}
+$$
+
+## 3. EXPERIMENT AND RESULT
+
+Experimental Setup. We evaluate on public HER2 [3], Breast [1], cSCC [8], and private Kidney cohorts using spot-centered 224 × 224 H&E patches and $\log ( 1 + x ) .$ transformed counts of the top 300 highly variable genes, following BLEEP [7]. Prototype distillation uses ∼2M Kidney cells, ∼3M cells for HER2/Breast, and cSCC single-cell references. Prediction baselines are ST-Net [1], EGN [9], His2ST [4], BLEEP [7], mclSTExp [10], OmiCLIP [6], and ASIGN [5]. Sampling baselines share a predictor and include Random, Learning Loss (L.Loss) [11], MaxHerding (Maxh) [12], ProbCover [13], and spatial Poisson sampling. We report Pearson correlation coefficient (PCC) and mean squared error (MSE). Experiments use one RTX A6000 and patient-level cross-validation, using each patient’s middle slice for training and 3D imputation anchoring and remaining slices for evaluation [5]. Learning rates are $5 \times 1 0 ^ { - 4 }$ (retrieval/fusion), $5 \times 1 0 ^ { - 5 }$ (regression), and $3 \times 1 0 ^ { - 4 }$ (policy). Retrieval/regression use weight decay $1 0 ^ { - 4 }$ and batch size 64; retrieval uses top- $\cdot k { = } 2 5$ , fusion trains for 30 epochs, and policy hidden dimension is 128. Sampling runs every 5 epochs after 5 warmup epochs through epoch 50, with $\gamma = 0 . 0 5 , \eta _ { \mathrm { s c } } = 0 . 0 3 , \kappa = 1 . 3 .$ , and $\beta$ annealed from 0.1 to 0.01. All methods share splits and protocols at budget ratios {0.1, 0.3, 0.5, 0.75}.
+
+Gene Expression Prediction. We systematically evaluate STRATA against SOTA methods across cohorts. As shown in Table 1, STRATA achieves the highest PCC and lowest MSE across all cohorts. On HER2, compared with the strongest baseline, PCC increases from 0.314 to 0.361 (15.0%), while MSE decreases from 0.434 to 0.356 (18.0%). By operating on a 3D voxel representation and adaptively fusing three complementary modeling paradigms, STRATA enables more effective integration of cross-paradigm information, leading to improved overall prediction performance.
+
+Active Sampling under Limited Budgets. Figure 2 compares sampling strategies across three predictors on HER2 and cSCC. Our policy achieves the highest PCC at a 10% budget. With ST-Net on cSCC, it improves PCC from 0.075 to 0.085 (12.4%), demonstrating comparable accuracy with fewer measurements. Gains extend to BLEEP and STRATA across both evaluated cohorts. This stability is attributed to the complementary modeling between the 3D graph and the tri-branch predictor, enabling STRATA to maintain reliable performance in clinically realistic low-budget scenarios with limited measurement resources for practical deployment.
+
+Table 1. Quantitative comparison on gene expression prediction. STRATA achieves the best overall performance.
+<table><tr><td>Method</td><td colspan="2">HER2 [3]</td><td colspan="2">Breast [1]</td><td colspan="2">cSCC [8]</td><td colspan="2">Kidney</td></tr><tr><td></td><td>MSE↓</td><td>PCC↑ MSE↓</td><td></td><td>PCC↑ MSE↓</td><td></td><td></td><td>PCC↑ MSE↓</td><td>PCC↑</td></tr><tr><td colspan="9">2D Monolithic Models</td></tr><tr><td>ST-Net [1]</td><td rowspan="6">0.527</td><td colspan="2">0.271 0.623</td><td>0.152</td><td>1.515</td><td>0.137</td><td>0.728</td><td>0.227</td></tr><tr><td>His2ST [4]</td><td>0.603 0.244</td><td>0.740</td><td>0.148</td><td>1.667</td><td>0.117</td><td>0.776</td><td>0.148</td></tr><tr><td>EGN [9]</td><td>0.603 0.268</td><td>0.677</td><td>0.124</td><td>1.601</td><td>0.137</td><td>0.770</td><td>0.118</td></tr><tr><td>mclSTExp [10]</td><td>0.593 0.259</td><td>0.745</td><td>0.128</td><td>1.804</td><td>0.142</td><td>0.871</td><td>0.201</td></tr><tr><td>OmiCLIP [6]</td><td>0.469 0.305</td><td>0.662</td><td>0.140</td><td>1.487</td><td>0.165</td><td>0.732</td><td>0.282</td></tr><tr><td>BLEEP [7]</td><td>0.456 0.287</td><td>0.590</td><td>0.169</td><td>1.445</td><td>0.186</td><td>0.682</td><td>0.325</td></tr><tr><td colspan="8">3D Volumetric Models</td></tr><tr><td>ASIGN [5]</td><td colspan="2">0.472</td><td colspan="2">0.3000.537 0.208</td><td>1.518</td><td>0.197 0.876</td><td></td><td>0.244</td></tr><tr><td>STRATA (Ours)</td><td colspan="2">0.356 0.361</td><td>0.471</td><td>0.230</td><td>1.337</td><td>0.227</td><td>0.660</td><td>0.361</td></tr></table>
+
+![](images/fa4df99441f01a20044d1f8739d718a4e61fcf7157b68273571ddae2c8955096.jpg)  
+Fig. 2. Comparison of active sampling strategies, reporting PCC across backbones and datasets. STRATA achieves superior or competitive performance in most settings, with notable gains in the low-budget regime.
+
+Predictor Ablation. Table 2 shows that branch effectiveness varies across cohorts. Regression achieves the highest single-branch PCC on HER2 (0.328), whereas 3D imputation performs best on cSCC (0.200), motivating their complementary integration. Adding 3D consistency supervision improves PCC from 0.314 to 0.328 on HER2. Finally, the full tri-branch STRATA achieves the best performance, indicating that the branches are complementary and a lightweight fusion head with learnable global preferences enables effective integration across heterogeneous cohorts.
+
+Sampling Reward Ablation. We ablate the RL agent’s reward with four variants. Figure 3 examines the contributions of loss reduction, cellular coverage, and 3D redundancy rewards on cSCC. At a 10% budget, removing any component lowers PCC for both predictors, while jointly removing the two prior terms further weakens performance. The full reward remains best across the plotted budgets with STRATA; with ST-Net, its advantage is clearest at 10–15%. These observations are consistent with cellular coverage and redundancy rewards supplying per-spot guidance when round-level loss feedback is sparse, helping balance prototype coverage and spatial diversity under tight budgets. Together, all rewards equip our sampling agent with sparse calibration and priordriven per-step guidance acting at complementary scales.
+
+![](images/b9d1f2e10d0a0f176f0c7c2218ed63148ef5a39089cb8f81f8ae3109ea10253a.jpg)  
+Fig. 3. Reward ablation on the RL sampling agent. Each curve denotes one reward variant.
+
+Table 2. Ablation study in STRATA. Individual branches provide complementary signals, while adaptive fusion consistently improves performance.
+<table><tr><td rowspan="2">Model</td><td colspan="2">HER2 [3]</td><td colspan="2">cSCC [8]</td></tr><tr><td>MSE↓</td><td>PCC↑</td><td>MSE↓</td><td>PCC↑</td></tr><tr><td colspan="5">Single Branch</td></tr><tr><td> $\mathrm { w } . 0 . 3 \mathrm { D } L _ { c o n }$ </td><td> $0 . 4 3 4 _ { \pm 0 . 1 3 2 }$ </td><td> $0 . 3 1 4 _ { \pm 0 . 0 5 3 }$ </td><td> $1 . 5 0 0 _ { \pm 0 . 0 8 3 }$ </td><td> $0 . 1 5 5 _ { \pm 0 . 1 7 7 }$ </td></tr><tr><td> $\mathbf { S T R A T A } _ { R e g }$ </td><td> $0 . 4 0 4 _ { \pm } \thinspace 0 . 1 3 2$ </td><td> $0 . 3 2 8 _ { \pm 0 . 0 5 2 }$ </td><td>1.524± 0.080</td><td> $0 . 1 7 7 _ { \pm 0 . 1 9 4 }$ </td></tr><tr><td> $\mathbf { S T R A T A } _ { R e t }$ </td><td> $0 . 4 4 3 _ { \pm 0 . 1 2 4 }$ </td><td> $0 . 2 8 7 _ { \pm 0 . 1 1 0 }$ </td><td>1.431± 0.063</td><td> $0 . 1 9 0 _ { \pm 0 . 1 6 5 }$ </td></tr><tr><td colspan="5">Multiple Branch Fusion</td></tr><tr><td> $\mathbf { S T R A T A } _ { R e g + 3 D }$ </td><td> $0 . 3 8 6 _ { \pm 0 . 1 3 4 }$ </td><td> $0 . 3 3 8 _ { \pm 0 . 0 5 1 }$ </td><td> $1 . 4 8 3 _ { \pm 0 . 0 9 0 }$ </td><td> $0 . 1 8 5 _ { \pm 0 . 1 8 9 }$ </td></tr><tr><td> $\mathbf { S T R A T A } _ { R e t + 3 D }$ </td><td> $0 . 4 3 2 _ { \pm 0 . 1 3 0 }$ </td><td>0.322± 0.068</td><td> $1 . 3 4 8 _ { \pm 0 . 0 8 5 }$ </td><td> $0 . 2 1 9 _ { \pm 0 . 1 9 9 }$ </td></tr><tr><td> $\mathbf { S T R A T A } _ { R e g + R e t }$ </td><td> $0 . 3 8 2 _ { \pm 0 . 1 3 3 }$ </td><td>0.349 ± 0.053 1.375± 0.084</td><td></td><td> $0 . 2 1 6 _ { \pm 0 . 1 9 8 }$ </td></tr><tr><td>STRATA (Ours)</td><td> $\mathbf { 0 . 3 5 6 _ { \pm 0 . 1 2 3 } }$ </td><td>0.361± 0.049 1.338± 0.078</td><td></td><td> $\mathbf { 0 . 2 2 8 _ { \pm 0 . 1 5 3 } }$ </td></tr></table>
+
+## 4. CONCLUSION
+
+We propose STRATA, a framework that moves beyond conventional 2D fixed-grid sampling and mono-paradigm prediction in spatial transcriptomics, toward budget-aware multi-paradigm adaptive fusion over 3D volumetric structures. STRATA introduces an RL-driven sampling agent on a 3D graph, leveraging single-cell prototype priors to capture cellular rarity and spatial redundancy. Building upon this, a tri-paradigm adaptation network further performs soft routing by assigning preference weights over complementary strategies. Extensive experiments demonstrate that STRATA consistently outperforms current methods. By recasting ST as a co-optimized sampling-prediction problem over 3D voxel volumes, STRATA charts a scalable and cost-effective path toward 3D tissue-level molecular mapping.
+
+## 5. COMPLIANCE WITH ETHICAL STANDARDS
+
+The private kidney dataset was collected under approval from the Institutional Review Board (IRB) of Vanderbilt University Medical Center (IRB No. 230223).
+
+## 6. ACKNOWLEDGMENTS
+
+This research was supported by the National Institutes of Health (NIH) under grant R01DK135597, with \$20000, representing 66% of the total project costs. The content is solely the responsibility of the authors and does not necessarily represent the official views of NIH. This material is based upon work supported by the U.S. National Science Foundation under Award Number 2434229. A total of \$5000 representing 17% of the total project costs, was financed with this funding. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the U.S. National Science Foundation. A total of \$5000 representing 17% of the total project costs, was financed with non-governmental funds.
+
+## 7. REFERENCES
+
+[1] Bryan He, Ludvig Bergenstrahle, Linnea Stenbeck,˚ Abubakar Abid, Alma Andersson, Ake Borg, Jonas<sup>˚</sup> Maaskola, Joakim Lundeberg, and James Zou, “Integrating spatial gene expression and breast tumour morphology via deep learning,” Nature biomedical engineering, vol. 4, no. 8, pp. 827–834, 2020.
+
+[2] Patrik L Stahl, Fredrik Salm˚ en, Sanja Vickovic, Anna´ Lundmark, Jose Fern´ andez Navarro, Jens Magnusson,´ Stefania Giacomello, Michaela Asp, Jakub O Westholm, Mikael Huss, et al., “Visualization and analysis of gene expression in tissue sections by spatial transcriptomics,” Science, vol. 353, no. 6294, pp. 78–82, 2016.
+
+[3] Alma Andersson, Ludvig Larsson, Linnea Stenbeck, Fredrik Salmen, Anna Ehinger, Sunny Z Wu, Gham-´ dan Al-Eryani, Daniel Roden, Alex Swarbrick, Ake<sup>˚</sup> Borg, et al., “Spatial deconvolution of her2-positive breast cancer delineates tumor-associated cell type interactions,” Nature communications, vol. 12, no. 1, pp. 6012, 2021.
+
+[4] Yuansong Zeng, Zhuoyi Wei, Weijiang Yu, Rui Yin, Yuchen Yuan, Bingling Li, Zhonghui Tang, Yutong Lu, and Yuedong Yang, “Spatial transcriptomics prediction from histology jointly through transformer and graph neural networks,” Briefings in Bioinformatics, vol. 23, no. 5, pp. bbac297, 2022.
+
+[5] Junchao Zhu, Ruining Deng, Tianyuan Yao, Juming Xiong, Chongyu Qu, Junlin Guo, Siqi Lu, Mengmeng
+
+Yin, Yu Wang, Shilin Zhao, et al., “Asign: an anatomyaware spatial imputation graphic network for 3d spatial transcriptomics,” in Proceedings ofthe Computer Vision and Pattern Recognition Conference, 2025, pp. 30829– 30838.
+
+[6] Weiqing Chen, Pengzhi Zhang, Tu N Tran, Yiwei Xiao, Shengyu Li, Vrutant V Shah, Hao Cheng, Kristopher W Brannan, Keith Youker, Li Lai, et al., “A visual–omics foundation model to bridge histopathology with spatial transcriptomics,” Nature Methods, pp. 1–15, 2025.
+
+[7] Ronald Xie, Kuan Pang, Sai Chung, Catia Perciani, Sonya MacParland, Bo Wang, and Gary Bader, “Spatially resolved gene expression prediction from histology images via bi-modal contrastive learning,” Advances in Neural Information Processing Systems, vol. 36, 2024.
+
+[8] Andrew L Ji, Adam J Rubin, Kim Thrane, Sizun Jiang, David L Reynolds, Robin M Meyers, Margaret G Guo, Benson M George, Annelie Mollbrink, Joseph Bergenstrahle, et al., “Multimodal analysis of composition and˚ spatial architecture in human squamous cell carcinoma,” cell, vol. 182, no. 2, pp. 497–514, 2020.
+
+[9] Yan Yang, Md Zakir Hossain, Eric A Stone, and Shafin Rahman, “Exemplar guided deep neural network for spatial transcriptomics analysis of gene expression prediction,” in Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision, 2023, pp. 5039–5048.
+
+[10] Wenwen Min, Zhiceng Shi, Jun Zhang, Jun Wan, and Changmiao Wang, “Multimodal contrastive learning for spatial gene expression prediction using histology images,” Briefings in Bioinformatics, vol. 25, no. 6, pp. bbae551, 2024.
+
+[11] Donggeun Yoo and In So Kweon, “Learning loss for active learning,” in Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, 2019, pp. 93–102.
+
+[12] Wonho Bae, Junhyug Noh, and Danica J Sutherland, “Generalized coverage for more robust low-budget active learning,” in European conference on computer vision. Springer, 2024, pp. 318–334.
+
+[13] Ofer Yehuda, Avihu Dekel, Guy Hacohen, and Daphna Weinshall, “Active learning through a covering lens,” Advances in Neural Information Processing Systems, vol. 35, pp. 22354–22367, 2022.
